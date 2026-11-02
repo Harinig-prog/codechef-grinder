@@ -3,9 +3,9 @@ using namespace std;
 
 /**
  * Problem: HOW MANY DIGITS DO I HAVE
- * Approach: Read the input as a string to easily determine the number of digits,
- * or read as an integer and check ranges. Since the constraint is up to 1,000,000,
- * reading as a string is robust and handles the digit count logic efficiently.
+ * Approach: Read the number as a string to easily determine its length,
+ * or read as an integer and check ranges. Since N <= 1,000,000,
+ * string length is the most robust way to handle the digit count.
  */
 
 int main() {

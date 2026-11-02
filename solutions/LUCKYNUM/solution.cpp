@@ -3,14 +3,13 @@ using namespace std;
 
 /**
  * Problem: LUCKYNUM
- * The task is to check if at least one of the three given digits (A, B, C) is equal to 7.
- * Constraints: 0 <= A, B, C <= 9, 1 <= T <= 1000.
- * Time Complexity: O(T) where T is the number of test cases.
+ * The task is to check if at least one of the three given digits (A, B, C) is 7.
+ * Time Complexity: O(T), where T is the number of test cases.
  * Space Complexity: O(1).
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

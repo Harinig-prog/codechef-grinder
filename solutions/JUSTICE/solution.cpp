@@ -15,8 +15,9 @@ int main() {
 
     // The problem description implies a single test case based on the input format,
     // but standard competitive programming practice often involves handling 
-    // potential multiple test cases if specified. Given the constraints and 
-    // description, we read X and Y.
+    // multiple test cases if specified. Given the constraints and description,
+    // we read X and Y and compare them.
+    
     long long X, Y;
     if (cin >> X >> Y) {
         if (X >= Y) {

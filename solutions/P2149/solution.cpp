@@ -1,48 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/**
- * Problem Analysis:
- * We have a red rectangle (A x B) and a blue square (X x X).
- * We want Area(Rectangle) <= Area(Square), i.e., A * B <= X * X.
- * Each change of a dimension (A or B) costs 1 unit.
- * Since we want to minimize cost, we check:
- * 0 moves: If A * B <= X * X, cost is 0.
- * 1 move: If we can change A to A' or B to B' such that A' * B <= X * X or A * B' <= X * X.
- *         Since we want to minimize the area, we can change a dimension to 1.
- *         If A * 1 <= X * X or 1 * B <= X * X, cost is 1.
- * 2 moves: If neither 0 nor 1 move works, we can change both dimensions to 1.
- *          1 * 1 <= X * X is always true since X >= 1. So cost is 2.
- */
-
 void solve() {
-    int A, B, X;
+    long long A, B, X;
     cin >> A >> B >> X;
 
-    long long rectArea = (long long)A * B;
-    long long squareArea = (long long)X * X;
+    long long red_area = A * B;
+    long long blue_area = X * X;
 
-    // Case 0: Already satisfied
-    if (rectArea <= squareArea) {
+    if (red_area <= blue_area) {
         cout << 0 << "\n";
-        return;
+    } else {
+        // If we change one dimension, say A to 1, area becomes 1 * B.
+        // If 1 * B <= blue_area or 1 * A <= blue_area, cost is 1.
+        // Wait, can we always do it in 1 move? 
+        // For example, if we change A to X, or B to 1, etc.
+        // Let's check if changing just A can make A * B <= blue_area:
+        // We need new_A * B <= blue_area => new_A <= blue_area / B.
+        // Since dimensions must be positive integers, we need at least 1.
+        // So if 1 * B <= blue_area, we can change A to something small (or 1), cost = 1.
+        // Similarly, if A * 1 <= blue_area, cost = 1.
+        // If even reducing one dimension to 1 doesn't work (i.e., 1 * A > blue_area and 1 * B > blue_area, which happens if min(A, B) > blue_area),
+        // then we must change BOTH dimensions to 1 (or small enough), cost = 2.
+        
+        // Actually, let's check:
+        // Can we do it in 1 move?
+        // We can change A such that A' * B <= blue_area => A' <= blue_area / B (A' >= 1).
+        // This is possible if 1 * B <= blue_area, i.e., B <= blue_area.
+        // Or we can change B such that A * B' <= blue_area => B' <= blue_area / A.
+        // This is possible if A * 1 <= blue_area, i.e., A <= blue_area.
+        
+        if (B <= blue_area || A <= blue_area) {
+            cout << 1 << "\n";
+        } else {
+            cout << 2 << "\n";
+        }
     }
-
-    // Case 1: Can we satisfy by changing one dimension?
-    // We can change A to 1 or B to 1.
-    // New area would be 1 * B or A * 1.
-    if (B <= squareArea || A <= squareArea) {
-        cout << 1 << "\n";
-        return;
-    }
-
-    // Case 2: Change both dimensions to 1.
-    // 1 * 1 = 1, and since X >= 1, 1 <= X*X is always true.
-    cout << 2 << "\n";
 }
 
 int main() {
-    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -51,5 +47,6 @@ int main() {
     while (t--) {
         solve();
     }
+
     return 0;
 }

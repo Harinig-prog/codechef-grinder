@@ -4,11 +4,12 @@ using namespace std;
 /**
  * Problem: LUCKYFR - Lucky Four
  * Approach:
- * For each test case, we read the number as a string. This allows us to easily
- * iterate through each digit of the number regardless of its size (up to 10^9).
- * We count the occurrences of the character '4' in the string.
- * Time Complexity: O(T * D), where T is the number of test cases and D is the 
- * number of digits in the integer (max 10). This is well within the 1s limit.
+ * Since the input numbers can be up to 10^9, we can treat each number as a string
+ * or process it digit by digit using modulo and division.
+ * Given the constraints (T <= 10^5), reading the input as a string is efficient
+ * and handles the digit counting easily.
+ * 
+ * Time Complexity: O(T * D), where D is the number of digits (max 10).
  * Space Complexity: O(D) to store the string representation of the number.
  */
 
