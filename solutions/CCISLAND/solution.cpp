@@ -7,18 +7,16 @@ using namespace std;
  * He needs x_r units of food and y_r units of water per day.
  * He needs to survive for D days.
  * 
- * The number of days the food will last is floor(x / x_r).
- * The number of days the water will last is floor(y / y_r).
- * The total number of days he can survive is min(floor(x / x_r), floor(y / y_r)).
+ * The number of days food will last is floor(x / x_r).
+ * The number of days water will last is floor(y / y_r).
+ * Chef can survive for min(floor(x / x_r), floor(y / y_r)) days.
  * If this value is >= D, he can reach the shore.
  * 
  * Constraints are small (up to 100), so standard integer arithmetic is sufficient.
- * Time complexity per test case: O(1).
- * Space complexity: O(1).
  */
 
 int main() {
-    // Fast I/O
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -28,14 +26,14 @@ int main() {
         long long x, y, xr, yr, d;
         cin >> x >> y >> xr >> yr >> d;
 
-        // Calculate how many days food and water will last
+        // Calculate maximum days possible for food and water
         long long food_days = x / xr;
         long long water_days = y / yr;
 
-        // The limiting factor is the minimum of the two
+        // Chef survives for the minimum of the two
         long long survival_days = min(food_days, water_days);
 
-        // Check if he can survive for at least D days
+        // Check if survival days meet the requirement D
         if (survival_days >= d) {
             cout << "YES" << "\n";
         } else {

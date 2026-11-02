@@ -5,10 +5,18 @@ using namespace std;
  * Problem Analysis:
  * We have N people at positions X_1, X_2, ..., X_N.
  * The virus spreads if the distance between two people is <= 2.
- * This is a transitive property: if A infects B, and B infects C, then A infects C.
- * For each person i, we can simulate the spread by checking adjacent distances.
- * If X_{j+1} - X_j <= 2, the infection spreads from j to j+1.
- * We can calculate the size of the connected component for each starting person i.
+ * This is a chain reaction: if person A infects B, and B is within 2 of C, 
+ * then C also gets infected.
+ * 
+ * Since N is very small (up to 8), we can simulate the process for each 
+ * starting person i (from 0 to N-1).
+ * 
+ * For a fixed starting person i:
+ * 1. The virus spreads to the left as long as X[j] - X[j-1] <= 2.
+ * 2. The virus spreads to the right as long as X[j+1] - X[j] <= 2.
+ * 
+ * We calculate the size of the infected group for every possible starting 
+ * person and find the min and max.
  */
 
 void solve() {
@@ -22,26 +30,21 @@ void solve() {
     int min_infected = N;
     int max_infected = 1;
 
-    // Try starting the infection from each person i
     for (int i = 0; i < N; ++i) {
         int current_infected = 1;
         
-        // Look to the right
-        for (int j = i; j < N - 1; ++j) {
-            if (X[j + 1] - X[j] <= 2) {
-                current_infected++;
-            } else {
-                break;
-            }
+        // Spread to the right
+        int curr = i;
+        while (curr + 1 < N && (X[curr + 1] - X[curr] <= 2)) {
+            current_infected++;
+            curr++;
         }
         
-        // Look to the left
-        for (int j = i; j > 0; --j) {
-            if (X[j] - X[j - 1] <= 2) {
-                current_infected++;
-            } else {
-                break;
-            }
+        // Spread to the left
+        curr = i;
+        while (curr - 1 >= 0 && (X[curr] - X[curr - 1] <= 2)) {
+            current_infected++;
+            curr--;
         }
         
         if (current_infected < min_infected) {
@@ -61,7 +64,7 @@ int main() {
     cin.tie(NULL);
 
     int T;
-    if (!(cin >> T)) return 0;
+    cin >> T;
     while (T--) {
         solve();
     }

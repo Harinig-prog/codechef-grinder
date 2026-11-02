@@ -3,23 +3,20 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Each player starts with 180 seconds (3 minutes).
- * In an "a + b" match, each move adds 'b' seconds to the clock.
- * Here, a = 180 and b = 2.
+ * Each player starts with 'a' minutes = 180 seconds.
+ * Total initial time for both players = 180 + 180 = 360 seconds.
  * 
- * Total time initially available to both players = 180 + 180 = 360 seconds.
- * Total time added to both players after N turns:
- * White makes floor((N+1)/2) moves.
- * Black makes floor(N/2) moves.
- * Total moves = floor((N+1)/2) + floor(N/2) = N.
- * Total time added = N * 2 seconds.
+ * In a "a + b" blitz match, 'b' seconds are added after each move.
+ * Total moves made = N.
+ * Total time added to both clocks = N * b = N * 2 seconds.
  * 
- * Total time available throughout the game = 360 + 2*N.
- * Total time remaining at the end = A + B.
+ * Total time available in the system = (Initial Time) + (Added Time)
+ * Total time available = 360 + 2 * N.
  * 
- * The duration of the game is the total time consumed:
+ * At the end of the game, the clocks show A and B seconds remaining.
+ * The duration of the game is the total time consumed by both players.
  * Duration = (Total time available) - (Total time remaining)
- * Duration = (360 + 2*N) - (A + B)
+ * Duration = (360 + 2 * N) - (A + B).
  */
 
 int main() {
@@ -29,18 +26,22 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
+    
     while (t--) {
         long long n, a, b;
         cin >> n >> a >> b;
-
-        // Total time available = 2 * 180 (initial) + 2 * N (increments)
-        long long total_time_available = 360 + 2 * n;
-        long long total_time_remaining = a + b;
-
-        long long duration = total_time_available - total_time_remaining;
-
+        
+        // Total time available = 2 * 180 + 2 * N
+        long long total_available = 360 + 2 * n;
+        
+        // Total time remaining = A + B
+        long long total_remaining = a + b;
+        
+        // Duration = Total available - Total remaining
+        long long duration = total_available - total_remaining;
+        
         cout << duration << "\n";
     }
-
+    
     return 0;
 }

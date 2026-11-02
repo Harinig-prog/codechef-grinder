@@ -4,7 +4,7 @@ using namespace std;
 /**
  * Problem Analysis:
  * To move from string S_i to S_{i+1}, the number of strings skipped is:
- * |S_{i+1} - S_i| - 1.
+ * |S_{i+1} - S_i| - 1
  * 
  * We need to sum this value for all i from 1 to N-1.
  * Total = sum_{i=1}^{N-1} (|S_{i+1} - S_i| - 1)
@@ -28,6 +28,7 @@ void solve() {
     long long total_skipped = 0;
     for (int i = 0; i < N - 1; ++i) {
         long long diff = abs(S[i+1] - S[i]);
+        // The number of strings between S_i and S_{i+1} is |S_{i+1} - S_i| - 1
         if (diff > 0) {
             total_skipped += (diff - 1);
         }
@@ -41,9 +42,9 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    int T;
-    if (!(cin >> T)) return 0;
-    while (T--) {
+    int t;
+    if (!(cin >> t)) return 0;
+    while (t--) {
         solve();
     }
     

@@ -6,19 +6,19 @@ using namespace std;
  * RCB qualifies if (X - Y) >= 18.
  * Otherwise, CSK qualifies.
  * Constraints: 150 <= X <= 250, 150 <= Y <= X + 6.
- * Time Complexity: O(1) per test case.
- * Space Complexity: O(1).
+ * Since the values fit within standard integer types, 'int' is sufficient,
+ * but 'long long' is used for safety as per instructions.
  */
 
 int main() {
-    // Fast I/O setup
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int X, Y;
-    // The problem description implies a single test case based on the format,
-    // but standard competitive programming practice often involves reading until EOF
-    // or handling a specific number of test cases. Given the problem description:
+    long long X, Y;
+    // The problem description implies a single test case per run based on the input format.
+    // However, if the platform expects multiple test cases, the logic remains the same.
+    // Based on the provided format, we read X and Y.
     if (cin >> X >> Y) {
         if (X - Y >= 18) {
             cout << "RCB" << "\n";

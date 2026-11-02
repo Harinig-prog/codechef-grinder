@@ -9,10 +9,8 @@ using namespace std;
  * Scheme 2: 300
  * We need to find the minimum of these two values.
  * 
- * Input Format:
- * The input contains a single integer X.
- * 
- * Constraints: 1 <= X <= 100.
+ * Input format: A single integer X.
+ * No test case count (T) is provided.
  */
 
 int main() {

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 382,
+  "total_solved": 400,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -384,7 +384,25 @@
     "ACS",
     "RURT",
     "ODDPAIRS",
-    "ENCMSG"
+    "ENCMSG",
+    "MOVEMENT",
+    "CHANGEPOS",
+    "GOODWEAT",
+    "ACCURACY",
+    "BLITZ3_2",
+    "LEGSP",
+    "SNCKYEAR",
+    "CHEFSTR1",
+    "COVID19",
+    "CCISLAND",
+    "PBREV",
+    "CLEARANCE",
+    "NONNEGPROD",
+    "INCAT",
+    "PAYSC",
+    "RCBCSK",
+    "WECNITK",
+    "PETSTORE"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -3843,6 +3861,168 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-01 21:41:48"
+    },
+    {
+      "code": "MOVEMENT",
+      "name": "Move Grid",
+      "status": "Accepted",
+      "solution_id": "1385363665",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:55:12"
+    },
+    {
+      "code": "CHANGEPOS",
+      "name": "Change Row and Column Both",
+      "status": "Accepted",
+      "solution_id": "1385363954",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:55:46"
+    },
+    {
+      "code": "GOODWEAT",
+      "name": "Good Weather",
+      "status": "Accepted",
+      "solution_id": "1385364579",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:56:40"
+    },
+    {
+      "code": "ACCURACY",
+      "name": "High Accuracy",
+      "status": "Accepted",
+      "solution_id": "1385364931",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:57:26"
+    },
+    {
+      "code": "BLITZ3_2",
+      "name": "Chess Match",
+      "status": "Accepted",
+      "solution_id": "1385365236",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:58:18"
+    },
+    {
+      "code": "LEGSP",
+      "name": "Leg Space",
+      "status": "Accepted",
+      "solution_id": "1385365377",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:58:53"
+    },
+    {
+      "code": "SNCKYEAR",
+      "name": "Chef and SnackDown",
+      "status": "Accepted",
+      "solution_id": "1385365621",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 07:59:38"
+    },
+    {
+      "code": "CHEFSTR1",
+      "name": "Chef and Strings",
+      "status": "Accepted",
+      "solution_id": "1385365883",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:00:27"
+    },
+    {
+      "code": "COVID19",
+      "name": "Coronavirus Spread",
+      "status": "Accepted",
+      "solution_id": "1385366373",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:01:15"
+    },
+    {
+      "code": "CCISLAND",
+      "name": "Chef On Island",
+      "status": "Accepted",
+      "solution_id": "1385366631",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:02:12"
+    },
+    {
+      "code": "PBREV",
+      "name": "Problem Reviews",
+      "status": "Accepted",
+      "solution_id": "1385366885",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:02:59"
+    },
+    {
+      "code": "CLEARANCE",
+      "name": "Clearance Sale",
+      "status": "Accepted",
+      "solution_id": "1385367184",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:03:48"
+    },
+    {
+      "code": "NONNEGPROD",
+      "name": "Non-Negative Product",
+      "status": "Accepted",
+      "solution_id": "1385367542",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:04:41"
+    },
+    {
+      "code": "INCAT",
+      "name": "Make Cat",
+      "status": "Accepted",
+      "solution_id": "1385367750",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:05:16"
+    },
+    {
+      "code": "PAYSC",
+      "name": "Payment Scheme",
+      "status": "Accepted",
+      "solution_id": "1385368115",
+      "attempts": 2,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:06:09"
+    },
+    {
+      "code": "RCBCSK",
+      "name": "RCB vs CSK ",
+      "status": "Accepted",
+      "solution_id": "1385369157",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:09:07"
+    },
+    {
+      "code": "WECNITK",
+      "name": "Access Code Equality",
+      "status": "Accepted",
+      "solution_id": "1385369375",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:09:50"
+    },
+    {
+      "code": "PETSTORE",
+      "name": "Pet Store",
+      "status": "Accepted",
+      "solution_id": "1385369568",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-02 08:10:26"
     }
   ]
 }

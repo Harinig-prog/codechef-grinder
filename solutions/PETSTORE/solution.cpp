@@ -1,40 +1,41 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 /**
  * Problem Analysis:
  * Alice and Bob must end up with the exact same multiset of animals.
- * Let the total count of animal type 'x' be C(x).
- * If Alice takes k_x animals of type 'x', Bob must take C(x) - k_x animals.
- * For their multisets to be identical, Alice and Bob must have the same number 
- * of each animal type: k_x = C(x) - k_x, which implies 2 * k_x = C(x).
- * Therefore, C(x) must be even for all types 'x'.
+ * Let the total multiset of animals in the store be S.
+ * If Alice has multiset A and Bob has multiset B, then A = B.
+ * Since A + B = S (where + denotes multiset union), this implies 2 * A = S.
+ * For this to be possible, every animal type must appear an even number of times 
+ * in the total multiset S. If any animal type appears an odd number of times, 
+ * it is impossible to split them equally between Alice and Bob.
+ * 
+ * Algorithm:
+ * 1. Count the frequency of each animal type.
+ * 2. Check if every frequency is even.
+ * 3. If all are even, output YES, otherwise output NO.
  * 
  * Complexity:
- * Time: O(N) per test case to count frequencies.
- * Space: O(1) as the frequency array size is fixed at 101.
+ * Time: O(N) per test case, where N is the number of animals.
+ * Space: O(K) where K is the range of animal types (100).
  */
 
 void solve() {
     int n;
-    if (!(cin >> n)) return;
+    cin >> n;
     
-    // Since A_i is small (1 to 100), a frequency array is optimal.
-    vector<int> counts(101, 0);
+    // Since animal types are between 1 and 100, we can use a frequency array.
+    map<int, int> counts;
     for (int i = 0; i < n; ++i) {
         int a;
         cin >> a;
-        if (a >= 1 && a <= 100) {
-            counts[a]++;
-        }
+        counts[a]++;
     }
     
-    // Check if every animal type has an even count.
     bool possible = true;
-    for (int i = 1; i <= 100; ++i) {
-        if (counts[i] % 2 != 0) {
+    for (auto const& [type, count] : counts) {
+        if (count % 2 != 0) {
             possible = false;
             break;
         }
@@ -48,12 +49,12 @@ void solve() {
 }
 
 int main() {
-    // Fast I/O for competitive programming
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
     int t;
-    if (!(cin >> t)) return 0;
+    cin >> t;
     while (t--) {
         solve();
     }
