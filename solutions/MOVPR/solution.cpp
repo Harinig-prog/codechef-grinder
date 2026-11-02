@@ -7,15 +7,16 @@ using namespace std;
 /**
  * Problem Analysis:
  * Chef needs 2 popcorns and 3 drinks.
- * Options:
+ * Let P = popcorn, D = drink.
+ * Combo = (P + D) costs Z.
+ * 
+ * Possible strategies:
  * 1. Buy everything individually: 2*X + 3*Y
- * 2. Buy 1 combo (1X + 1Y) and remaining (1X + 2Y): Z + X + 2*Y
- * 3. Buy 2 combos (2X + 2Y) and remaining (1Y): 2*Z + Y
+ * 2. Buy 1 combo: Z + 1*X + 2*Y
+ * 3. Buy 2 combos: 2*Z + 1*Y
  * 
- * Since we need 2 popcorns and 3 drinks, we can use at most 2 combos 
- * (because we only need 2 popcorns).
- * 
- * We compare these three scenarios to find the minimum cost.
+ * We calculate the minimum of these combinations.
+ * The input format consists of a single line, not multiple test cases.
  */
 
 int main() {
@@ -26,17 +27,17 @@ int main() {
     long long X, Y, Z;
     if (!(cin >> X >> Y >> Z)) return 0;
 
-    // Option 1: No combos
+    // Strategy 1: All individual
     long long cost1 = 2 * X + 3 * Y;
     
-    // Option 2: 1 combo
+    // Strategy 2: 1 combo + 1 popcorn + 2 drinks
     long long cost2 = Z + X + 2 * Y;
     
-    // Option 3: 2 combos
+    // Strategy 3: 2 combos + 1 drink
     long long cost3 = 2 * Z + Y;
     
-    // The minimum of these three options is the answer
     long long ans = min({cost1, cost2, cost3});
+    
     cout << ans << endl;
 
     return 0;

@@ -4,17 +4,18 @@ using namespace std;
 /**
  * Problem Analysis:
  * Each over consists of 6 balls.
- * The maximum runs that can be scored in a single ball is 6.
- * Therefore, the maximum runs that can be scored in 1 over is 6 * 6 = 36.
- * In M overs, the maximum runs that can be scored is M * 36.
+ * Maximum runs per ball is 6.
+ * Therefore, maximum runs per over = 6 * 6 = 36.
+ * Given M overs, the maximum runs the team can score is M * 36.
+ * The team can win if the required runs N <= M * 36.
  * 
- * Chef's team can win if the required runs N is less than or equal to 
- * the maximum possible runs they can score in M overs.
- * Condition: N <= M * 36
+ * Constraints:
+ * N <= 1000, M <= 100.
+ * M * 36 = 3600, which fits comfortably in a standard integer.
  */
 
 int main() {
-    // Fast I/O setup
+    // Fast I/O for competitive programming
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

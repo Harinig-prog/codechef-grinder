@@ -1,43 +1,42 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 /**
  * Problem Analysis:
- * Online cost after 10% discount = N - (0.1 * N) = 0.9 * N
- * We need to compare 0.9 * N with M.
- * To avoid floating point precision issues, multiply both sides by 10:
- * Compare (9 * N) with (10 * M).
+ * Online cost = N
+ * Discounted online cost = N - (10% of N) = N - 0.1 * N = 0.9 * N
+ * To avoid floating point issues, we can compare 0.9 * N with M.
+ * Multiplying both sides by 10, we compare 9 * N with 10 * M.
  * 
- * Constraints: N, M <= 1000.
- * 9 * 1000 = 9000, which fits in a standard 32-bit integer.
+ * Logic:
+ * If 9 * N < 10 * M: ONLINE
+ * If 9 * N > 10 * M: DINING
+ * If 9 * N == 10 * M: EITHER
  */
 
-void solve() {
-    int n, m;
-    if (!(cin >> n >> m)) return;
-
-    int online_scaled = 9 * n;
-    int dining_scaled = 10 * m;
-
-    if (online_scaled < dining_scaled) {
-        cout << "ONLINE" << "\n";
-    } else if (online_scaled > dining_scaled) {
-        cout << "DINING" << "\n";
-    } else {
-        cout << "EITHER" << "\n";
-    }
-}
-
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t;
     if (!(cin >> t)) return 0;
     while (t--) {
-        solve();
+        long long n, m;
+        cin >> n >> m;
+
+        // Using long long to prevent overflow, though constraints N, M <= 1000
+        // make int sufficient, long long is safer practice.
+        long long online_cost_scaled = 9 * n;
+        long long dining_cost_scaled = 10 * m;
+
+        if (online_cost_scaled < dining_cost_scaled) {
+            cout << "ONLINE" << "\n";
+        } else if (online_cost_scaled > dining_cost_scaled) {
+            cout << "DINING" << "\n";
+        } else {
+            cout << "EITHER" << "\n";
+        }
     }
 
     return 0;
