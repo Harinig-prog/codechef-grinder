@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 425,
+  "total_solved": 441,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -427,14 +427,31 @@
     "LUCKYNUM",
     "JUSTICE",
     "NOTIME",
-    "HOWMANY"
+    "HOWMANY",
+    "WINNERR",
+    "BOX2",
+    "GENE01",
+    "EQLZING",
+    "LINCHESS",
+    "MINBOTTLES",
+    "CHEFSOCKS",
+    "SPCP1",
+    "CHEFPAGES",
+    "FACEDIR",
+    "CABLE",
+    "AP",
+    "BROKPHON",
+    "SUBAADDB",
+    "VIDEOWORTH",
+    "KEPLERSLAW"
   ],
   "failed_codes": [
     "SEARCHINARR",
     "KITCHENCOST",
     "ODDSUMPAIR",
     "ICECONE",
-    "QNOT"
+    "QNOT",
+    "INPL"
   ],
   "pending": [],
   "history": [
@@ -4274,6 +4291,150 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-02 22:48:41"
+    },
+    {
+      "code": "WINNERR",
+      "name": "Determine the Winner",
+      "status": "Accepted",
+      "solution_id": "1385722298",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:06:20"
+    },
+    {
+      "code": "BOX2",
+      "name": "2 Boxes",
+      "status": "Accepted",
+      "solution_id": "1385722342",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:07:19"
+    },
+    {
+      "code": "GENE01",
+      "name": "Genes",
+      "status": "Accepted",
+      "solution_id": "1385722366",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:08:50"
+    },
+    {
+      "code": "EQLZING",
+      "name": "Equalizing Numbers",
+      "status": "Accepted",
+      "solution_id": "1385722433",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:09:35"
+    },
+    {
+      "code": "LINCHESS",
+      "name": "Chef and Linear Chess",
+      "status": "Accepted",
+      "solution_id": "1385722463",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:10:25"
+    },
+    {
+      "code": "MINBOTTLES",
+      "name": "Minimum Bottles",
+      "status": "Accepted",
+      "solution_id": "1385722479",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:11:04"
+    },
+    {
+      "code": "CHEFSOCKS",
+      "name": "Chef and Socks",
+      "status": "Accepted",
+      "solution_id": "1385722517",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:12:00"
+    },
+    {
+      "code": "SPCP1",
+      "name": "Water Park",
+      "status": "Accepted",
+      "solution_id": "1385722552",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:13:03"
+    },
+    {
+      "code": "CHEFPAGES",
+      "name": "Important Pages on CodeChef",
+      "status": "Accepted",
+      "solution_id": "1385722636",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:14:38"
+    },
+    {
+      "code": "FACEDIR",
+      "name": "Find the Direction",
+      "status": "Accepted",
+      "solution_id": "1385722667",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:15:39"
+    },
+    {
+      "code": "CABLE",
+      "name": "Volume Comparison",
+      "status": "Accepted",
+      "solution_id": "1385722704",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:16:20"
+    },
+    {
+      "code": "AP",
+      "name": "Make Arithmetic Progression",
+      "status": "Accepted",
+      "solution_id": "1385722860",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:21:33"
+    },
+    {
+      "code": "BROKPHON",
+      "name": "Broken Telephone",
+      "status": "Accepted",
+      "solution_id": "1385722940",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:22:32"
+    },
+    {
+      "code": "SUBAADDB",
+      "name": "Sub A Add B",
+      "status": "Accepted",
+      "solution_id": "1385722970",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:23:18"
+    },
+    {
+      "code": "VIDEOWORTH",
+      "name": "Worth of a Video",
+      "status": "Accepted",
+      "solution_id": "1385722999",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:24:04"
+    },
+    {
+      "code": "KEPLERSLAW",
+      "name": "Keplers Law",
+      "status": "Accepted",
+      "solution_id": "1385723037",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 00:25:12"
     }
   ]
 }

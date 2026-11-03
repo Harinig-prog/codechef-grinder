@@ -1,34 +1,41 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 /**
- * Problem: CABLE
- * Logic: 
- * 1. Calculate volume of cuboid: V_cuboid = A * B * C
- * 2. Calculate volume of cube: V_cube = X * X * X
- * 3. Compare V_cuboid and V_cube and print the corresponding result.
+ * Problem Analysis:
+ * Cuboid volume = A * B * C
+ * Cube volume = X * X * X
+ * Constraints: 1 <= A, B, C, X <= 10
+ * Since the maximum value is 10, the maximum volume is 1000, 
+ * which fits comfortably in a standard integer. 
+ * However, using long long is a good practice to prevent overflow in similar problems.
  */
+
+void solve() {
+    long long A, B, C, X;
+    if (!(cin >> A >> B >> C >> X)) return;
+
+    long long volume_cuboid = A * B * C;
+    long long volume_cube = X * X * X;
+
+    if (volume_cuboid > volume_cube) {
+        cout << "Cuboid" << "\n";
+    } else if (volume_cube > volume_cuboid) {
+        cout << "Cube" << "\n";
+    } else {
+        cout << "Equal" << "\n";
+    }
+}
 
 int main() {
     // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int A, B, C, X;
-    // Read the four integers
-    if (!(cin >> A >> B >> C >> X)) return 0;
-
-    long long vol_cuboid = (long long)A * B * C;
-    long long vol_cube = (long long)X * X * X;
-
-    if (vol_cuboid > vol_cube) {
-        cout << "Cuboid" << "\n";
-    } else if (vol_cube > vol_cuboid) {
-        cout << "Cube" << "\n";
-    } else {
-        cout << "Equal" << "\n";
-    }
+    // The problem description implies a single line of input per test case,
+    // but standard competitive programming practice often involves a test case count.
+    // Given the problem description format, we handle the single input provided.
+    solve();
 
     return 0;
 }

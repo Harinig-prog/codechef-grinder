@@ -5,28 +5,33 @@ using namespace std;
  * Problem Analysis:
  * We start with a string of length N.
  * In each step, we replace a substring of length A with a substring of length B.
- * This reduces the total length of the string by (A - B).
- * We repeat this as long as the current length L >= A.
+ * The net change in length per operation is (B - A).
+ * Since B < A, the length decreases by (A - B) in each step.
+ * We continue this as long as the current length L >= A.
  * 
  * Let L be the current length.
  * While L >= A:
  *    L = L - A + B
  * 
- * Since N is small (up to 100), we can simulate this process directly.
+ * This is equivalent to finding the smallest L such that L < A, 
+ * where L = N - k * (A - B) for some non-negative integer k.
+ * 
+ * Since N is small (up to 100), a simple while loop is perfectly efficient.
  */
 
 void solve() {
     int N, A, B;
     if (!(cin >> N >> A >> B)) return;
 
-    int current_length = N;
-    
-    // While the string length is at least A, we can perform the operation.
+    // The process continues as long as the current length is at least A.
     // Each operation reduces the length by (A - B).
+    int current_length = N;
+    int diff = A - B;
+
     while (current_length >= A) {
-        current_length = current_length - A + B;
+        current_length -= diff;
     }
-    
+
     cout << current_length << "\n";
 }
 

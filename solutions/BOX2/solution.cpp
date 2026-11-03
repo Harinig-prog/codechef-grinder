@@ -1,52 +1,66 @@
-#include <iostream>
-#include <cmath>
-#include <cstdlib>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 /**
- * Problem: BOX2
- * Approach:
- * Let S = X + Y. We want to reach a state where |X' - Y'| = K.
- * Since X' + Y' = S, we have:
- * X' - Y' = K  => 2X' = S + K => X' = (S + K) / 2
- * X' - Y' = -K => 2X' = S - K => X' = (S - K) / 2
+ * Problem Analysis:
+ * Let the number of stones in box 1 be x and box 2 be y.
+ * Total stones S = X + Y.
+ * After moving 't' stones from box 1 to box 2, box 1 has (X - t) and box 2 has (Y + t).
+ * The difference is |(X - t) - (Y + t)| = |X - Y - 2t|.
+ * We want |X - Y - 2t| = K.
+ * This implies two possibilities:
+ * 1) X - Y - 2t = K  => 2t = X - Y - K
+ * 2) X - Y - 2t = -K => 2t = X - Y + K
  * 
- * For a solution to exist:
- * 1. (S + K) must be even (i.e., S and K have the same parity).
- * 2. S >= K (since stones cannot be negative).
+ * Also, we must ensure that the number of stones in each box remains non-negative:
+ * 0 <= X - t <= S  and  0 <= Y + t <= S.
+ * Since t can be negative (moving from box 2 to box 1), we can generalize:
+ * Let 'd' be the net number of stones moved from box 1 to box 2.
+ * New box 1: X - d, New box 2: Y + d.
+ * Condition: |(X - d) - (Y + d)| = K => |X - Y - 2d| = K.
+ * Constraints: 0 <= X - d <= X + Y  =>  -Y <= d <= X.
  * 
- * The number of moves is the absolute difference between the current X and the target X'.
+ * We need to find the minimum |d| such that:
+ * X - Y - 2d = K  OR  X - Y - 2d = -K
+ * 2d = X - Y - K  OR  2d = X - Y + K
+ * 
+ * Since we want minimum |d|, we check if these equations yield an integer d 
+ * within the valid range [-Y, X].
  */
 
 void solve() {
     long long X, Y, K;
-    if (!(cin >> X >> Y >> K)) return;
+    cin >> X >> Y >> K;
 
-    long long S = X + Y;
+    long long diff = X - Y;
+    long long ans = -1;
 
-    // Check parity and feasibility
-    if ((S + K) % 2 != 0 || S < K) {
-        cout << -1 << endl;
-        return;
+    // Case 1: X - Y - 2d = K  => 2d = X - Y - K
+    if ((diff - K) % 2 == 0) {
+        long long d = (diff - K) / 2;
+        if (d >= -Y && d <= X) {
+            if (ans == -1 || abs(d) < ans) ans = abs(d);
+        }
     }
 
-    // Target X' can be (S + K) / 2 or (S - K) / 2
-    // We want to minimize |X - X'|
-    long long target1 = (S + K) / 2;
-    long long target2 = (S - K) / 2;
+    // Case 2: X - Y - 2d = -K => 2d = X - Y + K
+    if ((diff + K) % 2 == 0) {
+        long long d = (diff + K) / 2;
+        if (d >= -Y && d <= X) {
+            if (ans == -1 || abs(d) < ans) ans = abs(d);
+        }
+    }
 
-    long long ans = min(abs(X - target1), abs(X - target2));
-    cout << ans << endl;
+    cout << ans << "\n";
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int T;
-    cin >> T;
-    while (T--) {
+    int t;
+    cin >> t;
+    while (t--) {
         solve();
     }
     return 0;

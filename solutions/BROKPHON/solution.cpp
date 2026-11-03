@@ -3,35 +3,39 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * A player i (1-indexed) mishears or whispers wrongly if the message they 
- * received (A[i]) is different from the message the previous player (i-1) 
- * whispered (A[i-1]), OR if the message they whispered (A[i]) is different 
- * from the message the next player (i+1) received (A[i+1]).
+ * A player i (1-indexed) is involved in a "wrong" message if:
+ * 1. The message they received (A[i]) is different from the message the previous player (A[i-1]) sent.
+ * 2. The message they sent (A[i+1]) is different from the message they received (A[i]).
  * 
- * Essentially, if A[i] != A[i+1], then either player i whispered it wrong 
- * or player i+1 misheard it. Both players are involved in the discrepancy.
+ * Essentially, if A[i] != A[i+1], then either player i whispered it wrong, or player i+1 misheard it.
  * We need to count all unique indices i such that A[i] != A[i+1] or A[i] != A[i-1].
+ * 
+ * Let's use a boolean array 'is_wrong' of size N to mark players.
+ * For each i from 0 to N-2:
+ *    If A[i] != A[i+1]:
+ *        Mark player i as wrong.
+ *        Mark player i+1 as wrong.
+ * Finally, count the number of true values in the boolean array.
  */
 
 void solve() {
-    int n;
-    cin >> n;
-    vector<long long> a(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> a[i];
+    int N;
+    cin >> N;
+    vector<long long> A(N);
+    for (int i = 0; i < N; ++i) {
+        cin >> A[i];
     }
 
-    // Use a boolean array to mark players involved in a discrepancy
-    vector<bool> is_wrong(n, false);
-    for (int i = 0; i < n - 1; ++i) {
-        if (a[i] != a[i + 1]) {
+    vector<bool> is_wrong(N, false);
+    for (int i = 0; i < N - 1; ++i) {
+        if (A[i] != A[i + 1]) {
             is_wrong[i] = true;
             is_wrong[i + 1] = true;
         }
     }
 
     int count = 0;
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < N; ++i) {
         if (is_wrong[i]) {
             count++;
         }
@@ -44,9 +48,9 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;
-    cin >> t;
-    while (t--) {
+    int T;
+    cin >> T;
+    while (T--) {
         solve();
     }
     return 0;

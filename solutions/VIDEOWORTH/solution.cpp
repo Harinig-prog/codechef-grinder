@@ -10,11 +10,9 @@ using namespace std;
  * - Total worth = (S * 24) * 1000 = S * 24000
  * 
  * Constraints:
- * - T <= 100
- * - S <= 100
- * - Max output = 100 * 24000 = 2,400,000.
- * - This fits comfortably within a standard 32-bit signed integer (int),
- *   but using long long is good practice for competitive programming.
+ * - T <= 100, S <= 100
+ * - Max result = 100 * 24000 = 2,400,000
+ * - This fits well within a standard 32-bit integer, but using long long is safe practice.
  */
 
 int main() {
@@ -29,9 +27,10 @@ int main() {
         long long s;
         cin >> s;
         
-        // Calculate total worth: S seconds * 24 frames/sec * 1000 words/frame
+        // Calculate total worth
         long long total_worth = s * 24 * 1000;
         
+        // Output the result
         cout << total_worth << "\n";
     }
 

@@ -3,40 +3,34 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We are given X, Y, Z. We want to check if they form an AP: Y - X = Z - Y,
- * which is equivalent to 2*Y = X + Z.
+ * We are given three integers X, Y, Z.
+ * An arithmetic progression (AP) satisfies the condition: Y - X = Z - Y,
+ * which simplifies to 2 * Y = X + Z.
  * 
- * Possible outcomes:
- * 0 operations: If 2*Y == X + Z, it is already an AP.
- * 1 operation: 
- *    - Change X: We need X = 2*Y - Z. Since we can change X to any integer, 
- *      this is always possible in 1 move.
- *    - Change Y: We need Y = (X + Z) / 2. If (X + Z) is even, we can change Y 
- *      to (X + Z) / 2 in 1 move.
- *    - Change Z: We need Z = 2*Y - X. Since we can change Z to any integer, 
- *      this is always possible in 1 move.
- * 
- * Therefore:
- * - If 2*Y == X + Z, answer is 0.
- * - Else if (X + Z) % 2 == 0, answer is 1 (we can change Y to (X+Z)/2).
- * - Else, answer is 1 (we can change X or Z to satisfy the condition).
- * 
- * Wait, let's re-verify:
- * If 2*Y == X + Z, 0 moves.
- * If 2*Y != X + Z, can we always do it in 1 move?
- * Yes. We can change X to (2*Y - Z), or change Z to (2*Y - X).
- * So the answer is either 0 or 1.
+ * We want to find the minimum number of operations to satisfy this.
+ * Possible answers:
+ * 0: If 2 * Y == X + Z, it is already an AP.
+ * 1: If we can change one number to satisfy the condition.
+ *    - Change X: X = 2 * Y - Z
+ *    - Change Y: Y = (X + Z) / 2 (only possible if X + Z is even)
+ *    - Change Z: Z = 2 * Y - X
+ *    Since we can change any number to *any* integer, we can always satisfy the 
+ *    condition by changing one of the numbers. Thus, if it's not 0, it must be 1.
+ * 2: Not possible, because we can always fix the sequence in at most 1 operation.
  */
 
 void solve() {
     long long X, Y, Z;
     cin >> X >> Y >> Z;
 
+    // Check if it is already an AP
     if (2 * Y == X + Z) {
         cout << 0 << "\n";
     } else {
-        // We can always change one of the numbers to make it an AP.
-        // For example, change X to (2*Y - Z).
+        // We can always change one element to make it an AP.
+        // For example, change Z to (2 * Y - X).
+        // Since the problem asks for the minimum number of operations,
+        // and we already checked for 0, the answer must be 1.
         cout << 1 << "\n";
     }
 }
