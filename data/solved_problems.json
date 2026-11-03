@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 504,
+  "total_solved": 520,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -506,7 +506,23 @@
     "QTOO_2523",
     "TTENIS",
     "SHOEFIT",
-    "EUREKA"
+    "EUREKA",
+    "MAXFUN",
+    "FIRSTANDLAST",
+    "TESTSERIES",
+    "REMOVEBAD",
+    "VACCINE2",
+    "LITRATE",
+    "ECHOECHO",
+    "TCG",
+    "PROC18A",
+    "MAX6",
+    "CNOTE",
+    "BOP2",
+    "AVOIDCONTACT",
+    "LOOP",
+    "PSGRADE",
+    "RECTSQ"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -5066,6 +5082,150 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 18:22:30"
+    },
+    {
+      "code": "MAXFUN",
+      "name": "Maximise Function",
+      "status": "Accepted",
+      "solution_id": "1386322184",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:00:54"
+    },
+    {
+      "code": "FIRSTANDLAST",
+      "name": "First and Last",
+      "status": "Accepted",
+      "solution_id": "1386322378",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:01:46"
+    },
+    {
+      "code": "TESTSERIES",
+      "name": "Test Match Series",
+      "status": "Accepted",
+      "solution_id": "1386322589",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:02:37"
+    },
+    {
+      "code": "REMOVEBAD",
+      "name": "Remove Bad elements",
+      "status": "Accepted",
+      "solution_id": "1386322755",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:03:16"
+    },
+    {
+      "code": "VACCINE2",
+      "name": "Vaccine Distribution",
+      "status": "Accepted",
+      "solution_id": "1386322923",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:04:52"
+    },
+    {
+      "code": "LITRATE",
+      "name": "Literacy Rate",
+      "status": "Accepted",
+      "solution_id": "1386323476",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:05:46"
+    },
+    {
+      "code": "ECHOECHO",
+      "name": "Echo",
+      "status": "Accepted",
+      "solution_id": "1386323693",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:06:40"
+    },
+    {
+      "code": "TCG",
+      "name": "Capital Gain Tax",
+      "status": "Accepted",
+      "solution_id": "1386323823",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:07:17"
+    },
+    {
+      "code": "PROC18A",
+      "name": "The Great Run",
+      "status": "Accepted",
+      "solution_id": "1386324009",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:07:58"
+    },
+    {
+      "code": "MAX6",
+      "name": "Max Sixers",
+      "status": "Accepted",
+      "solution_id": "1386324202",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:08:49"
+    },
+    {
+      "code": "CNOTE",
+      "name": "Chef and Notebooks",
+      "status": "Accepted",
+      "solution_id": "1386324468",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:09:38"
+    },
+    {
+      "code": "BOP2",
+      "name": "Color Festival",
+      "status": "Accepted",
+      "solution_id": "1386324712",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:10:17"
+    },
+    {
+      "code": "AVOIDCONTACT",
+      "name": "Avoid Contact",
+      "status": "Accepted",
+      "solution_id": "1386325040",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:11:41"
+    },
+    {
+      "code": "LOOP",
+      "name": "Circular Track",
+      "status": "Accepted",
+      "solution_id": "1386325231",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:12:31"
+    },
+    {
+      "code": "PSGRADE",
+      "name": "Passing Marks",
+      "status": "Accepted",
+      "solution_id": "1386325349",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:13:06"
+    },
+    {
+      "code": "RECTSQ",
+      "name": "Farmer And His Plot",
+      "status": "Accepted",
+      "solution_id": "1386325494",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 19:13:37"
     }
   ]
 }
