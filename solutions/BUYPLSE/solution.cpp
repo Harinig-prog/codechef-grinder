@@ -3,11 +3,11 @@ using namespace std;
 
 /**
  * Problem: Buy Please
- * The problem asks to calculate the total cost: (a * x) + (b * y).
- * Constraints: 1 <= a, b, x, y <= 10^3.
- * Maximum possible value: (10^3 * 10^3) + (10^3 * 10^3) = 2 * 10^6.
- * This fits comfortably within a standard 32-bit integer, but using long long 
- * is a safe practice in competitive programming to prevent overflow.
+ * The total cost is calculated as (a * x) + (b * y).
+ * Given constraints: 1 <= a, b, x, y <= 10^3.
+ * The maximum possible value is (1000 * 1000) + (1000 * 1000) = 2,000,000.
+ * This fits comfortably within a standard 32-bit signed integer, 
+ * but using long long is a safe practice in competitive programming.
  */
 
 int main() {
@@ -17,12 +17,10 @@ int main() {
 
     long long a, b, x, y;
     
-    // Reading the 4 space-separated integers
+    // The problem description implies a single line of input containing 4 integers.
+    // There is no mention of multiple test cases (t), so we read once.
     if (cin >> a >> b >> x >> y) {
-        // Calculating total cost
         long long total_cost = (a * x) + (b * y);
-        
-        // Output the result
         cout << total_cost << "\n";
     }
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 464,
+  "total_solved": 479,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -466,7 +466,22 @@
     "GIANT",
     "MATCH_ALK",
     "SUNDAY",
-    "NAME2"
+    "NAME2",
+    "CPRIVAL",
+    "ALLZR",
+    "COVID_19",
+    "VAL142",
+    "BOMBTHEBASE",
+    "JGAMES",
+    "BIG",
+    "BUYPLSE",
+    "P1BAR",
+    "CAKEMAKE",
+    "CARCHOICE",
+    "BMI",
+    "DRUNKALK",
+    "TSTROBOT",
+    "CRDGAME"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -4665,6 +4680,141 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 13:27:09"
+    },
+    {
+      "code": "CPRIVAL",
+      "name": "Rivalry",
+      "status": "Accepted",
+      "solution_id": "1386197112",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:25:33"
+    },
+    {
+      "code": "ALLZR",
+      "name": "All Zero",
+      "status": "Accepted",
+      "solution_id": "1386197444",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:26:07"
+    },
+    {
+      "code": "COVID_19",
+      "name": "Covid and Theatre Tickets",
+      "status": "Accepted",
+      "solution_id": "1386197794",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:26:46"
+    },
+    {
+      "code": "VAL142",
+      "name": "Valentine Gifts",
+      "status": "Accepted",
+      "solution_id": "1386198322",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:27:34"
+    },
+    {
+      "code": "BOMBTHEBASE",
+      "name": "Bomb the base",
+      "status": "Accepted",
+      "solution_id": "1386199051",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:28:45"
+    },
+    {
+      "code": "JGAMES",
+      "name": "Janmansh and Games",
+      "status": "Accepted",
+      "solution_id": "1386199445",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:30:20"
+    },
+    {
+      "code": "BIG",
+      "name": "Big Achiever",
+      "status": "Accepted",
+      "solution_id": "1386200524",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:31:03"
+    },
+    {
+      "code": "BUYPLSE",
+      "name": "Buy Please",
+      "status": "Accepted",
+      "solution_id": "1386200919",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:31:43"
+    },
+    {
+      "code": "P1BAR",
+      "name": "Basketball Score",
+      "status": "Accepted",
+      "solution_id": "1386201369",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:32:30"
+    },
+    {
+      "code": "CAKEMAKE",
+      "name": "Cake Making",
+      "status": "Accepted",
+      "solution_id": "1386201963",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:33:25"
+    },
+    {
+      "code": "CARCHOICE",
+      "name": "Car Choice",
+      "status": "Accepted",
+      "solution_id": "1386202445",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:35:10"
+    },
+    {
+      "code": "BMI",
+      "name": "Body Mass Index",
+      "status": "Accepted",
+      "solution_id": "1386203456",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:35:56"
+    },
+    {
+      "code": "DRUNKALK",
+      "name": "Drunk Alcoholic",
+      "status": "Accepted",
+      "solution_id": "1386203927",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:37:35"
+    },
+    {
+      "code": "TSTROBOT",
+      "name": "Testing Robot",
+      "status": "Accepted",
+      "solution_id": "1386205288",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:39:53"
+    },
+    {
+      "code": "CRDGAME",
+      "name": "Chef and Card Game",
+      "status": "Accepted",
+      "solution_id": "1386206408",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 15:40:45"
     }
   ]
 }
