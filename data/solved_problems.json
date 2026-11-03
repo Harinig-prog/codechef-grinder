@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 479,
+  "total_solved": 492,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -481,7 +481,20 @@
     "BMI",
     "DRUNKALK",
     "TSTROBOT",
-    "CRDGAME"
+    "CRDGAME",
+    "VISA",
+    "MESSI",
+    "FINDK3",
+    "JMARKET",
+    "EPISODES",
+    "EITA",
+    "CAKEHALF",
+    "APPLEORANGE",
+    "CARRYGOLD",
+    "BFLY",
+    "BANKGLITCH",
+    "SURPLUS",
+    "CUTESTR"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -4815,6 +4828,123 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 15:40:45"
+    },
+    {
+      "code": "VISA",
+      "name": "Chefland Visa",
+      "status": "Accepted",
+      "solution_id": "1386251075",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:43:48"
+    },
+    {
+      "code": "MESSI",
+      "name": "Football Training",
+      "status": "Accepted",
+      "solution_id": "1386251755",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:44:46"
+    },
+    {
+      "code": "FINDK3",
+      "name": "FIND A and B",
+      "status": "Accepted",
+      "solution_id": "1386252898",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:46:25"
+    },
+    {
+      "code": "JMARKET",
+      "name": "Janmansh at Fruit Market",
+      "status": "Accepted",
+      "solution_id": "1386253560",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:47:23"
+    },
+    {
+      "code": "EPISODES",
+      "name": "Episodes",
+      "status": "Accepted",
+      "solution_id": "1386254693",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:50:01"
+    },
+    {
+      "code": "EITA",
+      "name": "Maximum Production",
+      "status": "Accepted",
+      "solution_id": "1386256195",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:51:59"
+    },
+    {
+      "code": "CAKEHALF",
+      "name": "Let Me Eat Cake!",
+      "status": "Accepted",
+      "solution_id": "1386257350",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:52:33"
+    },
+    {
+      "code": "APPLEORANGE",
+      "name": "Apples and oranges",
+      "status": "Accepted",
+      "solution_id": "1386259152",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:55:55"
+    },
+    {
+      "code": "CARRYGOLD",
+      "name": "Gold Mining",
+      "status": "Accepted",
+      "solution_id": "1386260986",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:57:34"
+    },
+    {
+      "code": "BFLY",
+      "name": "Butterfly",
+      "status": "Accepted",
+      "solution_id": "1386261773",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 16:58:45"
+    },
+    {
+      "code": "BANKGLITCH",
+      "name": "Bank Glitch",
+      "status": "Accepted",
+      "solution_id": "1386262861",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 17:01:16"
+    },
+    {
+      "code": "SURPLUS",
+      "name": "Trade Surplus",
+      "status": "Accepted",
+      "solution_id": "1386264350",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 17:02:15"
+    },
+    {
+      "code": "CUTESTR",
+      "name": "Cute Strings",
+      "status": "Accepted",
+      "solution_id": "1386267030",
+      "attempts": 2,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 17:06:58"
     }
   ]
 }
