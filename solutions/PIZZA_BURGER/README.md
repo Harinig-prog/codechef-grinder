@@ -1,0 +1,6 @@
+# [Hungry Ashish (PIZZA_BURGER)](https://www.codechef.com/problems/PIZZA_BURGER)
+
+- **Difficulty Rating**: 1064
+- **Solved in**: 1 attempt(s)
+
+_Explanation skipped (GENERATE_EXPLANATIONS=false) to save Gemini quota._

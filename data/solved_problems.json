@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 520,
+  "total_solved": 529,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -522,7 +522,16 @@
     "AVOIDCONTACT",
     "LOOP",
     "PSGRADE",
-    "RECTSQ"
+    "RECTSQ",
+    "RCTGLD",
+    "MODTEMP",
+    "TV",
+    "PASSINGGR",
+    "MATPAN",
+    "NEIREM",
+    "SUPINC",
+    "PIZZA_BURGER",
+    "CARDSWIPE"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -5226,6 +5235,87 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 19:13:37"
+    },
+    {
+      "code": "RCTGLD",
+      "name": "Rectangled",
+      "status": "Accepted",
+      "solution_id": "1386335001",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:15:51"
+    },
+    {
+      "code": "MODTEMP",
+      "name": "Moderate Temperatures",
+      "status": "Accepted",
+      "solution_id": "1386335101",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:16:59"
+    },
+    {
+      "code": "TV",
+      "name": "Television Channels",
+      "status": "Accepted",
+      "solution_id": "1386335163",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:17:48"
+    },
+    {
+      "code": "PASSINGGR",
+      "name": "Passing Grade",
+      "status": "Accepted",
+      "solution_id": "1386335270",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:18:41"
+    },
+    {
+      "code": "MATPAN",
+      "name": "Mathison and pangrams",
+      "status": "Accepted",
+      "solution_id": "1386335364",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:19:33"
+    },
+    {
+      "code": "NEIREM",
+      "name": "Remaining Neighborhoods",
+      "status": "Accepted",
+      "solution_id": "1386335488",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:20:58"
+    },
+    {
+      "code": "SUPINC",
+      "name": "Superincreasing",
+      "status": "Accepted",
+      "solution_id": "1386335550",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:21:49"
+    },
+    {
+      "code": "PIZZA_BURGER",
+      "name": "Hungry Ashish",
+      "status": "Accepted",
+      "solution_id": "1386335592",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:22:34"
+    },
+    {
+      "code": "CARDSWIPE",
+      "name": "Card Swipe",
+      "status": "Accepted",
+      "solution_id": "1386335726",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 20:24:17"
     }
   ]
 }
