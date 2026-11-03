@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 542,
+  "total_solved": 559,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -544,7 +544,24 @@
     "MDGT",
     "ALTSTR",
     "CHOCCUT",
-    "FRUITCHAAT"
+    "FRUITCHAAT",
+    "MASKPOL",
+    "BBWIN",
+    "SANDWICH7",
+    "PLAYPIAN",
+    "STRP",
+    "COUNTP",
+    "MXSCWN",
+    "NO25PLS",
+    "TEA",
+    "OJUMPS",
+    "FKMC",
+    "BOWLBALL",
+    "GROUPS",
+    "CHEFARRP",
+    "SRTARR",
+    "ICE_CREAM",
+    "CANDYTYPE"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -5447,6 +5464,159 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 22:10:35"
+    },
+    {
+      "code": "MASKPOL",
+      "name": "Mask Policy",
+      "status": "Accepted",
+      "solution_id": "1386340207",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:39:17"
+    },
+    {
+      "code": "BBWIN",
+      "name": "Extreme Basketball",
+      "status": "Accepted",
+      "solution_id": "1386340213",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:40:09"
+    },
+    {
+      "code": "SANDWICH7",
+      "name": "Sandwiches",
+      "status": "Accepted",
+      "solution_id": "1386340217",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:41:52"
+    },
+    {
+      "code": "PLAYPIAN",
+      "name": "Play Piano",
+      "status": "Accepted",
+      "solution_id": "1386340230",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:42:29"
+    },
+    {
+      "code": "STRP",
+      "name": "String protocol",
+      "status": "Accepted",
+      "solution_id": "1386340240",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:43:17"
+    },
+    {
+      "code": "COUNTP",
+      "name": "Counting Problem",
+      "status": "Accepted",
+      "solution_id": "1386340257",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:45:02"
+    },
+    {
+      "code": "MXSCWN",
+      "name": "Maximum Score",
+      "status": "Accepted",
+      "solution_id": "1386340288",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:45:54"
+    },
+    {
+      "code": "NO25PLS",
+      "name": "Imperfect Numbers",
+      "status": "Accepted",
+      "solution_id": "1386340302",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:46:32"
+    },
+    {
+      "code": "TEA",
+      "name": "Chef Drinks Tea",
+      "status": "Accepted",
+      "solution_id": "1386340313",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:47:24"
+    },
+    {
+      "code": "OJUMPS",
+      "name": "Chef-jumping",
+      "status": "Accepted",
+      "solution_id": "1386340327",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:48:43"
+    },
+    {
+      "code": "FKMC",
+      "name": "Fake Certificate",
+      "status": "Accepted",
+      "solution_id": "1386340343",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:49:57"
+    },
+    {
+      "code": "BOWLBALL",
+      "name": "Bowling Balls",
+      "status": "Accepted",
+      "solution_id": "1386340354",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:50:44"
+    },
+    {
+      "code": "GROUPS",
+      "name": "Chef and Groups",
+      "status": "Accepted",
+      "solution_id": "1386340370",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:52:11"
+    },
+    {
+      "code": "CHEFARRP",
+      "name": "Chef and Subarrays",
+      "status": "Accepted",
+      "solution_id": "1386340389",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:53:31"
+    },
+    {
+      "code": "SRTARR",
+      "name": "Sort the String",
+      "status": "Accepted",
+      "solution_id": "1386340421",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:55:00"
+    },
+    {
+      "code": "ICE_CREAM",
+      "name": "ICE CREAM",
+      "status": "Accepted",
+      "solution_id": "1386340429",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:56:14"
+    },
+    {
+      "code": "CANDYTYPE",
+      "name": "Candy Types",
+      "status": "Accepted",
+      "solution_id": "1386340438",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:57:54"
     }
   ]
 }
