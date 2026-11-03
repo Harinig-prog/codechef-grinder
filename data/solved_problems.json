@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 529,
+  "total_solved": 542,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -531,7 +531,20 @@
     "NEIREM",
     "SUPINC",
     "PIZZA_BURGER",
-    "CARDSWIPE"
+    "CARDSWIPE",
+    "ADVITIYA3",
+    "TOYS",
+    "BESTOFTENNIS",
+    "RETURNCHANGE",
+    "CHEFWARS",
+    "POTATOES",
+    "SELLCOIN",
+    "DICEGAME3",
+    "CHFPROFIT",
+    "MDGT",
+    "ALTSTR",
+    "CHOCCUT",
+    "FRUITCHAAT"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -540,7 +553,8 @@
     "ICECONE",
     "QNOT",
     "INPL",
-    "STREAK"
+    "STREAK",
+    "MAXCOUNT"
   ],
   "pending": [],
   "history": [
@@ -5316,6 +5330,123 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 20:24:17"
+    },
+    {
+      "code": "ADVITIYA3",
+      "name": "Cookie Day",
+      "status": "Accepted",
+      "solution_id": "1386339615",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:53:46"
+    },
+    {
+      "code": "TOYS",
+      "name": "Playing with Toys",
+      "status": "Accepted",
+      "solution_id": "1386339635",
+      "attempts": 2,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:54:41"
+    },
+    {
+      "code": "BESTOFTENNIS",
+      "name": "Best of N Sets",
+      "status": "Accepted",
+      "solution_id": "1386339670",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:55:52"
+    },
+    {
+      "code": "RETURNCHANGE",
+      "name": "Return the Change",
+      "status": "Accepted",
+      "solution_id": "1386339687",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:56:45"
+    },
+    {
+      "code": "CHEFWARS",
+      "name": "Chef Wars - Return of the Jedi",
+      "status": "Accepted",
+      "solution_id": "1386339704",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:58:20"
+    },
+    {
+      "code": "POTATOES",
+      "name": "Farmer Feb",
+      "status": "Accepted",
+      "solution_id": "1386339747",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:58:52"
+    },
+    {
+      "code": "SELLCOIN",
+      "name": "Selling Coins",
+      "status": "Accepted",
+      "solution_id": "1386339758",
+      "attempts": 2,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 21:59:55"
+    },
+    {
+      "code": "DICEGAME3",
+      "name": "Dice Game 3",
+      "status": "Accepted",
+      "solution_id": "1386339773",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:00:49"
+    },
+    {
+      "code": "CHFPROFIT",
+      "name": "Chef and Profits",
+      "status": "Accepted",
+      "solution_id": "1386339786",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:02:10"
+    },
+    {
+      "code": "MDGT",
+      "name": "Lost in the Fest!!",
+      "status": "Accepted",
+      "solution_id": "1386339801",
+      "attempts": 2,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:03:36"
+    },
+    {
+      "code": "ALTSTR",
+      "name": "Alternating String",
+      "status": "Accepted",
+      "solution_id": "1386339813",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:04:33"
+    },
+    {
+      "code": "CHOCCUT",
+      "name": "Chocolate Cutting",
+      "status": "Accepted",
+      "solution_id": "1386339823",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:05:29"
+    },
+    {
+      "code": "FRUITCHAAT",
+      "name": "Chef and His Fruit Stand",
+      "status": "Accepted",
+      "solution_id": "1386339871",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 22:10:35"
     }
   ]
 }
