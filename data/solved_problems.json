@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 492,
+  "total_solved": 504,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -494,7 +494,19 @@
     "BFLY",
     "BANKGLITCH",
     "SURPLUS",
-    "CUTESTR"
+    "CUTESTR",
+    "CARDGAME1",
+    "HOLES",
+    "BRKSTICK",
+    "CHEFBAKES77",
+    "ADVITIYA",
+    "NEARESTCOURT",
+    "CALLIM",
+    "INDEPENDENCE",
+    "QTOO_2523",
+    "TTENIS",
+    "SHOEFIT",
+    "EUREKA"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -502,7 +514,8 @@
     "ODDSUMPAIR",
     "ICECONE",
     "QNOT",
-    "INPL"
+    "INPL",
+    "STREAK"
   ],
   "pending": [],
   "history": [
@@ -4945,6 +4958,114 @@
       "attempts": 2,
       "account": "reyhaan_s",
       "time": "2026-11-03 17:06:58"
+    },
+    {
+      "code": "CARDGAME1",
+      "name": "Card Game",
+      "status": "Accepted",
+      "solution_id": "1386300846",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:01:21"
+    },
+    {
+      "code": "HOLES",
+      "name": "Holes in the text",
+      "status": "Accepted",
+      "solution_id": "1386303986",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:07:45"
+    },
+    {
+      "code": "BRKSTICK",
+      "name": "Breaking Sticks",
+      "status": "Accepted",
+      "solution_id": "1386304975",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:09:57"
+    },
+    {
+      "code": "CHEFBAKES77",
+      "name": "Chef Bakes Cake",
+      "status": "Accepted",
+      "solution_id": "1386305322",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:10:46"
+    },
+    {
+      "code": "ADVITIYA",
+      "name": "Advitiya",
+      "status": "Accepted",
+      "solution_id": "1386305821",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:11:42"
+    },
+    {
+      "code": "NEARESTCOURT",
+      "name": "Nearest Court",
+      "status": "Accepted",
+      "solution_id": "1386307613",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:15:49"
+    },
+    {
+      "code": "CALLIM",
+      "name": "Calorie Limit",
+      "status": "Accepted",
+      "solution_id": "1386308363",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:17:33"
+    },
+    {
+      "code": "INDEPENDENCE",
+      "name": "Independence Day 101",
+      "status": "Accepted",
+      "solution_id": "1386308621",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:18:16"
+    },
+    {
+      "code": "QTOO_2523",
+      "name": "Bi_lindrome!",
+      "status": "Accepted",
+      "solution_id": "1386308918",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:19:00"
+    },
+    {
+      "code": "TTENIS",
+      "name": "Chef and Table Tennis",
+      "status": "Accepted",
+      "solution_id": "1386309239",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:19:52"
+    },
+    {
+      "code": "SHOEFIT",
+      "name": "Shoe Fit",
+      "status": "Accepted",
+      "solution_id": "1386309512",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:20:38"
+    },
+    {
+      "code": "EUREKA",
+      "name": "N Queens Puzzle Solved !",
+      "status": "Accepted",
+      "solution_id": "1386309851",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 18:22:30"
     }
   ]
 }
