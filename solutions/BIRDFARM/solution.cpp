@@ -4,14 +4,18 @@ using namespace std;
 /**
  * Problem Analysis:
  * We are given X (legs per chicken), Y (legs per duck), and Z (total legs).
- * A farm can have chickens if Z is divisible by X (Z % X == 0).
- * A farm can have ducks if Z is divisible by Y (Z % Y == 0).
+ * - A farm can have chickens if Z is divisible by X (Z % X == 0).
+ * - A farm can have ducks if Z is divisible by Y (Z % Y == 0).
  * 
  * Logic:
- * - If both are divisible: ANY
- * - If only chicken is divisible: CHICKEN
- * - If only duck is divisible: DUCK
- * - If neither is divisible: NONE
+ * 1. If (Z % X == 0) and (Z % Y == 0), then both are possible -> "ANY"
+ * 2. If (Z % X == 0) and (Z % Y != 0), then only chickens -> "CHICKEN"
+ * 3. If (Z % X != 0) and (Z % Y == 0), then only ducks -> "DUCK"
+ * 4. If (Z % X != 0) and (Z % Y != 0), then neither -> "NONE"
+ * 
+ * Constraints:
+ * T <= 1000, X, Y, Z <= 1000.
+ * Standard integer types are sufficient as Z/X or Z/Y will not overflow.
  */
 
 int main() {
@@ -22,7 +26,7 @@ int main() {
     int t;
     if (!(cin >> t)) return 0;
     while (t--) {
-        long long x, y, z;
+        int x, y, z;
         cin >> x >> y >> z;
 
         bool can_chicken = (z % x == 0);

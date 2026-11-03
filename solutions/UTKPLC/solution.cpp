@@ -1,15 +1,20 @@
-#include <iostream>
-#include <vector>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 /**
  * Problem: Utkarsh and Placement tests
- * Approach:
- * Since there are only 3 companies, we can determine the preference rank 
- * by checking the position of the offered companies in the preference string.
- * The company that appears earlier in the preference list is the one chosen.
+ * Approach: 
+ * Since there are only 3 companies (A, B, C) and a fixed preference order,
+ * we can store the preference order in a way that allows us to compare
+ * the two offers (x and y) easily.
+ * 
+ * We can assign a rank to each company based on the preference order:
+ * first -> rank 0
+ * second -> rank 1
+ * third -> rank 2
+ * 
+ * Then, we simply compare the ranks of the two offered companies x and y.
+ * The company with the smaller rank is the one Utkarsh prefers.
  */
 
 void solve() {
@@ -19,12 +24,14 @@ void solve() {
     char x, y;
     cin >> x >> y;
     
-    // We check the preference order directly.
-    // If x is the first preference, it's the answer.
-    // If x is the second preference, it's the answer only if y is the third.
-    // Otherwise, y is the answer.
+    // Create a map or simple logic to determine rank
+    auto get_rank = [&](char c) {
+        if (c == p1) return 0;
+        if (c == p2) return 1;
+        return 2;
+    };
     
-    if (x == p1 || (x == p2 && y == p3)) {
+    if (get_rank(x) < get_rank(y)) {
         cout << x << "\n";
     } else {
         cout << y << "\n";
@@ -32,7 +39,7 @@ void solve() {
 }
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
@@ -41,6 +48,5 @@ int main() {
     while (t--) {
         solve();
     }
-    
     return 0;
 }

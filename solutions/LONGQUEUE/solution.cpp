@@ -3,13 +3,18 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Sushil is at the N-th position (index N-1 in 0-indexed array).
- * His wealth is A[N-1].
- * He can bully the person directly in front of him if that person's wealth 
- * is <= (Sushil's wealth / 2).
- * Since he only bullies the person directly in front of him, we check from 
- * the person at index N-2 down to 0.
- * As soon as he encounters someone he cannot bully, he stops moving forward.
+ * Sushil is at the N-th position (index N-1).
+ * Let his wealth be X = A[N-1].
+ * He can bully the person at index i (where i < N-1) if A[i] <= X / 2.
+ * Since he only bullies the person directly in front of him, he will keep
+ * moving forward as long as the person immediately in front of him satisfies
+ * the condition A[i] <= X / 2.
+ * 
+ * We start from the person at index N-2 and move backwards.
+ * If A[i] <= X / 2, he bullies them (position decreases).
+ * If A[i] > X / 2, he stops bullying because he cannot bully this person,
+ * and since he can only bully the person directly in front, he cannot reach
+ * anyone further ahead.
  */
 
 void solve() {
@@ -23,14 +28,13 @@ void solve() {
     int sushil_wealth = A[N - 1];
     int current_pos = N; // 1-based position
 
-    // Check people from the one directly in front of Sushil backwards
+    // Check people from the one directly in front of Sushil (index N-2)
+    // backwards to the start of the line.
     for (int i = N - 2; i >= 0; --i) {
-        // Condition: wealth <= sushil_wealth / 2
-        // Using integer division as per problem statement (A_i <= X/2)
-        if (A[i] <= (sushil_wealth / 2)) {
+        if (A[i] <= sushil_wealth / 2) {
             current_pos--;
         } else {
-            // Cannot bully this person, stop moving forward
+            // Cannot bully this person, so he stops here.
             break;
         }
     }

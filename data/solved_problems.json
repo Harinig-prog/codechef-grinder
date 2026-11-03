@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 441,
+  "total_solved": 449,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -443,7 +443,15 @@
     "BROKPHON",
     "SUBAADDB",
     "VIDEOWORTH",
-    "KEPLERSLAW"
+    "KEPLERSLAW",
+    "LONGQUEUE",
+    "BIRDFARM",
+    "GPUBUY",
+    "ALLEV",
+    "UTKPLC",
+    "ZEROSTRING",
+    "WRITINGSPEED",
+    "COLORB"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -4435,6 +4443,78 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 00:25:12"
+    },
+    {
+      "code": "LONGQUEUE",
+      "name": "Long Queue",
+      "status": "Accepted",
+      "solution_id": "1386083883",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:07:58"
+    },
+    {
+      "code": "BIRDFARM",
+      "name": "Chef and Bird farm",
+      "status": "Accepted",
+      "solution_id": "1386084442",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:10:09"
+    },
+    {
+      "code": "GPUBUY",
+      "name": "Buying GPU",
+      "status": "Accepted",
+      "solution_id": "1386085305",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:11:04"
+    },
+    {
+      "code": "ALLEV",
+      "name": "All Even",
+      "status": "Accepted",
+      "solution_id": "1386085627",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:11:40"
+    },
+    {
+      "code": "UTKPLC",
+      "name": "Utkarsh and Placement tests",
+      "status": "Accepted",
+      "solution_id": "1386085882",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:12:14"
+    },
+    {
+      "code": "ZEROSTRING",
+      "name": "Zero String",
+      "status": "Accepted",
+      "solution_id": "1386086231",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:13:55"
+    },
+    {
+      "code": "WRITINGSPEED",
+      "name": "Writing Speed",
+      "status": "Accepted",
+      "solution_id": "1386089515",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:20:20"
+    },
+    {
+      "code": "COLORB",
+      "name": "Coloured Orbs",
+      "status": "Accepted",
+      "solution_id": "1386094280",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 12:29:26"
     }
   ]
 }
