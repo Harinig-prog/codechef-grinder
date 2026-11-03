@@ -1,59 +1,41 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/**
- * Problem Analysis:
- * The month has 30 days.
- * Day 1 is Monday.
- * Days are numbered 1 to 30.
- * A day 'd' is a Saturday if d % 7 == 6.
- * A day 'd' is a Sunday if d % 7 == 0.
- * Holidays are:
- * 1. All Saturdays (6, 13, 20, 27)
- * 2. All Sundays (7, 14, 21, 28)
- * 3. Given festival days A_i.
- * 
- * We need to count the number of unique days that are holidays.
- * Using a boolean array of size 31 to mark holidays is efficient.
- */
-
 void solve() {
     int n;
     cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    // A 30-day month starting with Day 1 as Monday.
+    // Day 1: Mon
+    // Day 2: Tue
+    // Day 3: Wed
+    // Day 4: Thu
+    // Day 5: Fri
+    // Day 6: Sat
+    // Day 7: Sun
+    // So days where (day % 7 == 6) or (day % 7 == 0) are Saturdays and Sundays respectively.
     
-    // Use a boolean array to track holidays. 
-    // Index 1 to 30 represents the days of the month.
-    vector<bool> is_holiday(31, false);
-    
-    // Mark all Saturdays and Sundays as holidays
-    // Saturday: 6, 13, 20, 27
-    // Sunday: 7, 14, 21, 28
-    for (int i = 1; i <= 30; ++i) {
-        if (i % 7 == 6 || i % 7 == 0) {
-            is_holiday[i] = true;
+    set<int> holidays;
+    // Add weekends
+    for (int day = 1; day <= 30; day++) {
+        if (day % 7 == 6 || day % 7 == 0) {
+            holidays.insert(day);
         }
     }
-    
-    // Mark festival days as holidays
-    for (int i = 0; i < n; ++i) {
-        int day;
-        cin >> day;
-        is_holiday[day] = true;
+
+    // Add festival days
+    for (int i = 0; i < n; i++) {
+        holidays.insert(a[i]);
     }
-    
-    // Count total true values in the array
-    int count = 0;
-    for (int i = 1; i <= 30; ++i) {
-        if (is_holiday[i]) {
-            count++;
-        }
-    }
-    
-    cout << count << "\n";
+
+    cout << holidays.size() << "\n";
 }
 
 int main() {
-    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
@@ -62,5 +44,6 @@ int main() {
     while (t--) {
         solve();
     }
+    
     return 0;
 }

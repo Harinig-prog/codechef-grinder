@@ -5,15 +5,14 @@ using namespace std;
  * Problem Analysis:
  * Chef has a trip of duration M minutes.
  * The song has a duration of S minutes.
- * We need to find how many times the song can be played completely within M minutes.
+ * We need to find how many times the song can be played completely.
  * This is equivalent to finding the floor of the division M / S.
  * 
  * Constraints:
- * 1 <= T <= 1000
- * 1 <= M <= 100
- * 1 <= S <= 10
- * 
- * Since M and S are small, standard integer division will work perfectly.
+ * T <= 1000
+ * M <= 100
+ * S <= 10
+ * Since M and S are small, standard integer division is sufficient.
  * Time Complexity: O(T)
  * Space Complexity: O(1)
  */
@@ -28,14 +27,12 @@ int main() {
     
     while (t--) {
         long long m, s;
-        cin >> m >> s;
-        
-        // The number of complete plays is the integer division of M by S.
-        // If M < S, the result is 0, which is handled correctly by integer division.
-        long long result = m / s;
-        
-        cout << result << "\n";
+        if (cin >> m >> s) {
+            // The number of complete plays is the integer division of M by S
+            long long result = m / s;
+            cout << result << "\n";
+        }
     }
-    
+
     return 0;
 }

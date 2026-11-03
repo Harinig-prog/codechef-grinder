@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "reyhaan_s",
-  "total_solved": 449,
+  "total_solved": 464,
   "solved_codes": [
     "CHSERVE",
     "FINALSALE",
@@ -451,7 +451,22 @@
     "UTKPLC",
     "ZEROSTRING",
     "WRITINGSPEED",
-    "COLORB"
+    "COLORB",
+    "DEVSPORTS",
+    "EQUALIZEAB",
+    "SLOOP",
+    "MILEAGE",
+    "ALJMP",
+    "CHN09",
+    "CREDITS",
+    "ALTERADD",
+    "CRCK",
+    "TABLET",
+    "AVG",
+    "GIANT",
+    "MATCH_ALK",
+    "SUNDAY",
+    "NAME2"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -4515,6 +4530,141 @@
       "attempts": 1,
       "account": "reyhaan_s",
       "time": "2026-11-03 12:29:26"
+    },
+    {
+      "code": "DEVSPORTS",
+      "name": "Devendra and Water Sports",
+      "status": "Accepted",
+      "solution_id": "1386113641",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:09:02"
+    },
+    {
+      "code": "EQUALIZEAB",
+      "name": "Equalize AB",
+      "status": "Accepted",
+      "solution_id": "1386114594",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:09:53"
+    },
+    {
+      "code": "SLOOP",
+      "name": "Coldplay",
+      "status": "Accepted",
+      "solution_id": "1386115018",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:10:32"
+    },
+    {
+      "code": "MILEAGE",
+      "name": "Mileage matters",
+      "status": "Accepted",
+      "solution_id": "1386115978",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:12:19"
+    },
+    {
+      "code": "ALJMP",
+      "name": "Alternate Jumps",
+      "status": "Accepted",
+      "solution_id": "1386116269",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:12:57"
+    },
+    {
+      "code": "CHN09",
+      "name": "Malvika is peculiar about color of balloons",
+      "status": "Accepted",
+      "solution_id": "1386117112",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:14:24"
+    },
+    {
+      "code": "CREDITS",
+      "name": "Complete the credits",
+      "status": "Accepted",
+      "solution_id": "1386117412",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:14:57"
+    },
+    {
+      "code": "ALTERADD",
+      "name": "Alternate Additions",
+      "status": "Accepted",
+      "solution_id": "1386118030",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:16:06"
+    },
+    {
+      "code": "CRCK",
+      "name": "Christmas Cake",
+      "status": "Accepted",
+      "solution_id": "1386118426",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:16:48"
+    },
+    {
+      "code": "TABLET",
+      "name": "Buying New Tablet",
+      "status": "Accepted",
+      "solution_id": "1386118947",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:17:35"
+    },
+    {
+      "code": "AVG",
+      "name": "Average Number",
+      "status": "Accepted",
+      "solution_id": "1386119783",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:19:03"
+    },
+    {
+      "code": "GIANT",
+      "name": "Giant Wheel",
+      "status": "Accepted",
+      "solution_id": "1386120892",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:20:49"
+    },
+    {
+      "code": "MATCH_ALK",
+      "name": "Man of the Match",
+      "status": "Accepted",
+      "solution_id": "1386121845",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:23:28"
+    },
+    {
+      "code": "SUNDAY",
+      "name": "Count the Holidays",
+      "status": "Accepted",
+      "solution_id": "1386123351",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:25:06"
+    },
+    {
+      "code": "NAME2",
+      "name": "Your Name is Mine",
+      "status": "Accepted",
+      "solution_id": "1386124546",
+      "attempts": 1,
+      "account": "reyhaan_s",
+      "time": "2026-11-03 13:27:09"
     }
   ]
 }

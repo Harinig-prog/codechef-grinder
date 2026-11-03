@@ -4,39 +4,43 @@ using namespace std;
 /**
  * Problem Analysis:
  * Distance to travel: N
- * Petrol: Price X, Mileage A km/litre.
- * Amount of petrol needed = N / A litres.
- * Cost of petrol = (N / A) * X.
+ * Petrol: Price X per litre, Mileage A km/litre.
+ * Diesel: Price Y per litre, Mileage B km/litre.
  * 
- * Diesel: Price Y, Mileage B km/litre.
- * Amount of diesel needed = N / B litres.
- * Cost of diesel = (N / B) * Y.
+ * Litres of petrol needed = N / A
+ * Cost of petrol = (N / A) * X
  * 
- * To compare (N * X) / A and (N * Y) / B:
- * We can multiply both sides by (A * B) to avoid floating point precision issues:
- * Cost_Petrol_Scaled = N * X * B
- * Cost_Diesel_Scaled = N * Y * A
+ * Litres of diesel needed = N / B
+ * Cost of diesel = (N / B) * Y
  * 
- * Since N > 0, we can compare (X * B) and (Y * A).
+ * To avoid floating point precision issues, we can compare:
+ * (N * X) / A  vs  (N * Y) / B
+ * Multiply both sides by (A * B):
+ * (N * X * B)  vs  (N * Y * A)
+ * Since N > 0, we can divide by N:
+ * (X * B)  vs  (Y * A)
+ * 
+ * This comparison avoids division and floating point arithmetic entirely.
  */
 
 void solve() {
     long long N, X, Y, A, B;
     if (!(cin >> N >> X >> Y >> A >> B)) return;
 
-    // Using double for direct calculation is safe given constraints (100),
-    // but cross-multiplication with long long is robust.
-    double cost_petrol = (double)N * X / A;
-    double cost_diesel = (double)N * Y / B;
+    // Cost of petrol = (N * X) / A
+    // Cost of diesel = (N * Y) / B
+    // Compare (N * X) / A and (N * Y) / B
+    // Equivalent to comparing (N * X * B) and (N * Y * A)
+    
+    long long petrol_cost_scaled = N * X * B;
+    long long diesel_cost_scaled = N * Y * A;
 
-    // Use a small epsilon for floating point comparison, 
-    // though with these constraints, direct comparison is usually fine.
-    if (abs(cost_petrol - cost_diesel) < 1e-9) {
-        cout << "ANY" << "\n";
-    } else if (cost_petrol < cost_diesel) {
+    if (petrol_cost_scaled < diesel_cost_scaled) {
         cout << "PETROL" << "\n";
-    } else {
+    } else if (diesel_cost_scaled < petrol_cost_scaled) {
         cout << "DIESEL" << "\n";
+    } else {
+        cout << "ANY" << "\n";
     }
 }
 

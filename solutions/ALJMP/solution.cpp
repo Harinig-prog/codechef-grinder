@@ -4,36 +4,48 @@ using namespace std;
 /**
  * Problem Analysis:
  * The frog starts at position N.
- * It makes N-1 jumps.
- * Jump i (1 <= i <= N-1):
- * If i is odd: X = X - (N - i)
- * If i is even: X = X + (N - i)
+ * Jump 1 (odd): Left by (N-1) -> pos = N - (N-1) = 1
+ * Jump 2 (even): Right by (N-2) -> pos = 1 + (N-2) = N-1
+ * Jump 3 (odd): Left by (N-3) -> pos = (N-1) - (N-3) = 2
+ * Jump 4 (even): Right by (N-4) -> pos = 2 + (N-4) = N-2
+ * Jump 5 (odd): Left by (N-5) -> pos = (N-2) - (N-5) = 3
+ * Jump 6 (even): Right by (N-6) -> pos = 3 + (N-6) = N-3
  * 
- * Let's trace for small N:
- * N=2: Start 2. Jump 1 (odd): 2 - (2-1) = 1. Final: 1.
- * N=3: Start 3. Jump 1 (odd): 3 - (3-1) = 1. Jump 2 (even): 1 + (3-2) = 2. Final: 2.
- * N=4: Start 4. Jump 1: 4 - 3 = 1. Jump 2: 1 + 2 = 3. Jump 3: 3 - 1 = 2. Final: 2.
- * N=5: Start 5. Jump 1: 5 - 4 = 1. Jump 2: 1 + 3 = 4. Jump 3: 4 - 2 = 2. Jump 4: 2 + 1 = 3. Final: 3.
- * N=6: Start 6. Jump 1: 6 - 5 = 1. Jump 2: 1 + 4 = 5. Jump 3: 5 - 3 = 2. Jump 4: 2 + 2 = 4. Jump 5: 4 - 1 = 3. Final: 3.
+ * Pattern Observation:
+ * N=2: 1
+ * N=3: 2
+ * N=4: 2
+ * N=5: 3
+ * N=6: 3
+ * N=7: 4
+ * N=8: 4
  * 
- * Sequence of results:
- * N=2 -> 1
- * N=3 -> 2
- * N=4 -> 2
- * N=5 -> 3
- * N=6 -> 3
- * N=7 -> 4
- * N=8 -> 4
+ * The sequence is: 1, 2, 2, 3, 3, 4, 4, 5, 5...
+ * For N >= 2, the result is floor(N/2) + 1.
+ * Let's verify:
+ * N=2: floor(2/2) + 1 = 2 (Wait, sample says 1)
+ * Let's re-check:
+ * N=2: 1
+ * N=3: 2
+ * N=4: 2
+ * N=5: 3
+ * N=6: 3
  * 
- * Pattern: The result is ceil(N / 2).
+ * The formula is actually ceil(N/2).
+ * N=2: ceil(2/2) = 1
+ * N=3: ceil(3/2) = 2
+ * N=4: ceil(4/2) = 2
+ * N=5: ceil(5/2) = 3
+ * N=6: ceil(6/2) = 3
+ * This matches all sample cases.
  */
 
 void solve() {
     long long N;
     cin >> N;
-    // The pattern observed is ceil(N / 2.0)
-    // Using integer arithmetic: (N + 1) / 2
-    cout << (N + 1) / 2 << "\n";
+    // ceil(N/2) can be calculated as (N + 1) / 2 using integer division
+    long long ans = (N + 1) / 2;
+    cout << ans << "\n";
 }
 
 int main() {

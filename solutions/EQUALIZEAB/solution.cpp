@@ -3,35 +3,43 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We start with A and B. In one operation, we change (A, B) to (A+X, B-X) or (A-X, B+X).
- * Let the number of times we add X to A be 'k' (where k can be positive or negative).
- * The new values will be A' = A + k*X and B' = B - k*X.
- * We want A' = B'.
- * A + k*X = B - k*X
+ * We have two numbers A and B. In one operation, we can change (A, B) to:
+ * 1. (A + X, B - X)
+ * 2. (A - X, B + X)
+ * 
+ * Let the number of times we perform the first operation be k1 and the second be k2.
+ * The final values will be:
+ * A' = A + (k1 - k2) * X
+ * B' = B - (k1 - k2) * X
+ * 
+ * Let k = k1 - k2. Then:
+ * A' = A + k * X
+ * B' = B - k * X
+ * 
+ * We want A' = B', so:
+ * A + k * X = B - k * X
  * 2 * k * X = B - A
- * k = (B - A) / (2 * X)
  * 
- * For A and B to be equal, (B - A) must be divisible by (2 * X).
- * Since k must be an integer, (B - A) % (2 * X) must be 0.
+ * This implies that (B - A) must be divisible by (2 * X).
+ * If (B - A) is divisible by (2 * X), then there exists an integer k such that 
+ * 2 * k * X = B - A, and we can reach the state where A' = B'.
  * 
- * Note: The problem states we can apply the operation any number of times.
- * If A == B initially, the answer is YES (0 operations).
- * Otherwise, the difference (B - A) must be a multiple of 2*X.
+ * Note: Since k can be negative, k1 and k2 can be any non-negative integers 
+ * that satisfy the difference k.
  */
 
 void solve() {
     long long A, B, X;
     cin >> A >> B >> X;
 
-    // If A == B, they are already equal.
-    if (A == B) {
-        cout << "YES" << "\n";
-        return;
-    }
-
-    // The difference between A and B changes by 2*X in each operation.
-    // Let diff = |A - B|. We need diff to be divisible by 2*X.
-    long long diff = abs(A - B);
+    // We need (B - A) to be divisible by (2 * X)
+    // Let diff = B - A
+    // We need diff % (2 * X) == 0
+    
+    long long diff = B - A;
+    
+    // Since the operation is symmetric, we can check the absolute difference
+    // or just check if (B - A) is a multiple of 2*X.
     if (diff % (2 * X) == 0) {
         cout << "YES" << "\n";
     } else {
@@ -40,7 +48,7 @@ void solve() {
 }
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
