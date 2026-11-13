@@ -3,13 +3,14 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The problem asks us to compare two integers X (threshold) and Y (current speed).
- * Chef is prone to errors if Y > X.
+ * The problem asks us to determine if the current brain speed Y is strictly greater 
+ * than the threshold limit X.
+ * If Y > X, Chef is prone to errors (YES).
+ * Otherwise, Chef is not prone to errors (NO).
  * 
- * Constraints:
- * 1 <= X, Y <= 100
- * Time Complexity: O(1) per test case
- * Space Complexity: O(1)
+ * Constraints: 1 <= X, Y <= 100.
+ * Time Complexity: O(1) per test case.
+ * Space Complexity: O(1).
  */
 
 int main() {
@@ -17,12 +18,9 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem description does not explicitly state multiple test cases,
-    // but the instructions suggest handling them. Given the input format 
-    // "The only line of input contains two space separated integers", 
-    // we read X and Y directly.
-    
     int X, Y;
+    // The problem description implies a single test case per run based on the input format,
+    // but standard competitive programming practice handles input as provided.
     if (cin >> X >> Y) {
         if (Y > X) {
             cout << "YES" << "\n";

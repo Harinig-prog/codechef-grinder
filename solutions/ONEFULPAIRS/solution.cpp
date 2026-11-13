@@ -16,12 +16,12 @@ int main() {
     cin.tie(NULL);
 
     long long a, b;
-    // The problem description implies a single pair input per execution 
-    // based on the sample test cases provided.
+    // The problem description implies a single test case based on the input format,
+    // but we structure it to handle the input provided.
     if (cin >> a >> b) {
         // Calculate the expression a + b + (a * b)
         // Using long long to prevent any potential overflow, 
-        // though with constraints up to 1000, int would suffice.
+        // though with a, b <= 1000, int would suffice (max ~1,002,000).
         long long result = a + b + (a * b);
 
         if (result == 111) {

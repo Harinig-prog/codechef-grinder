@@ -7,25 +7,28 @@ using namespace std;
  * Each stove can cook 1 packet per minute.
  * In Y minutes, each stove can cook Y packets.
  * Total packets = X * Y.
- * Since each customer orders 1 packet, the total number of customers served is X * Y.
+ * Since each customer orders 1 packet, the total number of customers is X * Y.
  * 
  * Constraints:
  * 1 <= X, Y <= 1000
- * The maximum result is 1000 * 1000 = 1,000,000, which fits in a standard 32-bit integer.
- * Using long long is safe practice to prevent overflow in similar problems.
+ * The maximum value of X * Y is 1,000,000, which fits comfortably in a standard 32-bit integer.
+ * However, using long long is a safe practice in competitive programming to prevent overflow.
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize standard I/O operations for speed
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     long long X, Y;
-    // The problem description implies a single test case per run based on the input format.
-    // However, if the platform expects multiple test cases, the logic remains X * Y.
-    // Based on the provided input format description: "The first and only line of input contains..."
+    
+    // Read the input values X and Y
     if (cin >> X >> Y) {
-        cout << (X * Y) << "\n";
+        // Calculate the total number of customers
+        long long result = X * Y;
+        
+        // Output the result
+        cout << result << "\n";
     }
 
     return 0;

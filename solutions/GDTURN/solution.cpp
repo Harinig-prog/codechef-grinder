@@ -3,10 +3,9 @@ using namespace std;
 
 /**
  * Problem: GDTURN
- * Logic: A turn is good if X + Y > 6.
+ * The problem asks us to determine if the sum of two dice rolls (X and Y) is greater than 6.
  * Constraints: 1 <= T <= 100, 1 <= X, Y <= 6.
- * Time Complexity: O(T)
- * Space Complexity: O(1)
+ * Since the maximum sum is 12, standard 'int' is sufficient.
  */
 
 int main() {
@@ -16,18 +15,18 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
-    
+
     while (t--) {
-        long long x, y;
+        int x, y;
         cin >> x >> y;
-        
-        // Check if the sum is strictly greater than 6
+
+        // A turn is "good" if the sum of the dice is strictly greater than 6.
         if (x + y > 6) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";
         }
     }
-    
+
     return 0;
 }

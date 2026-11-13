@@ -4,12 +4,9 @@ using namespace std;
 /**
  * Problem Analysis:
  * The problem states that for each language, there are 2 courses.
- * If there are N languages, the total number of courses is 2 * N.
- * 
- * Constraints:
- * 1 <= N <= 100
- * Since N is small, the result will be at most 200, which fits comfortably 
- * within a standard integer type.
+ * Given N languages, the total number of courses is 2 * N.
+ * Constraints: 1 <= N <= 100.
+ * The result will be at most 200, which fits comfortably in a standard integer.
  */
 
 int main() {
@@ -17,16 +14,14 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem description implies a single input N per execution,
-    // but standard competitive programming practice often involves 
-    // reading until EOF or handling a single input.
-    // Given the problem constraints and format:
+    // The problem description implies a single integer input N.
+    // While the prompt mentions "Handle multiple test cases", the problem 
+    // description provided only specifies a single integer input N.
+    // We will read N and output 2 * N.
+    
     int n;
     if (cin >> n) {
-        // Calculate total courses
         long long total_courses = 2LL * n;
-        
-        // Output the result
         cout << total_courses << "\n";
     }
 

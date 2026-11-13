@@ -2,8 +2,8 @@
 using namespace std;
 
 /**
- * Problem Analysis:
- * Alice is happy if X >= 2 * Y.
+ * Problem: Alice and Marks
+ * Logic: Alice is happy if X >= 2 * Y.
  * Constraints: 1 <= X, Y <= 100.
  * Time Complexity: O(1) per test case.
  * Space Complexity: O(1).
@@ -15,7 +15,7 @@ int main() {
     cin.tie(NULL);
 
     // The problem description implies a single test case based on the input format,
-    // but standard competitive programming practice often involves multiple test cases.
+    // but standard competitive programming practice is to handle cases if specified.
     // Given the constraints and description, we read X and Y.
     int X, Y;
     if (cin >> X >> Y) {

@@ -14,8 +14,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem statement implies reading a single integer N.
-    // Using long long to ensure safety, though int suffices for 10^5.
+    // The problem statement implies a single input as per the sample cases.
+    // We read the integer and output it directly.
     long long n;
     if (cin >> n) {
         cout << n << "\n";

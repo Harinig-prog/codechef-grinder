@@ -3,8 +3,8 @@ using namespace std;
 
 /**
  * Problem: Life, the Universe, and Everything
- * Approach: Read integers one by one from standard input. 
- * If the integer is 42, terminate the program. 
+ * Approach: Read integers one by one from standard input.
+ * If the integer is 42, terminate the program.
  * Otherwise, print the integer to standard output.
  */
 

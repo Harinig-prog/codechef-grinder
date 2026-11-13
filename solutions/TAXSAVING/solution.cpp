@@ -6,20 +6,18 @@ using namespace std;
  * Chef earns X rupees.
  * Tax is applied if income > Y.
  * To avoid tax, the effective income (X - investment) must be <= Y.
- * We want to find the minimum investment (I) such that:
+ * We want to minimize the investment (I).
  * X - I <= Y
  * X - Y <= I
- * Therefore, the minimum investment I is X - Y.
+ * The minimum integer I that satisfies this is X - Y.
  * 
- * Constraints:
- * 1 <= T <= 100
- * 1 <= Y < X <= 100
+ * Constraints: 1 <= Y < X <= 100.
  * Since X and Y are small, standard integers are sufficient, 
  * but using long long is good practice for competitive programming.
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -36,6 +34,6 @@ int main() {
         
         cout << min_investment << "\n";
     }
-    
+
     return 0;
 }

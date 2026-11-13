@@ -8,7 +8,7 @@ using namespace std;
  * (A + B) / 2 > C  <=>  A + B > 2 * C
  * 
  * Constraints: 1 <= A, B, C <= 10.
- * The values are small, so standard integer types are sufficient.
+ * The values are small, so standard 'int' is sufficient.
  */
 
 int main() {
@@ -18,10 +18,11 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
+    
     while (t--) {
-        long long a, b, c;
+        int a, b, c;
         cin >> a >> b >> c;
-
+        
         // Using the derived inequality: A + B > 2 * C
         if ((a + b) > (2 * c)) {
             cout << "YES" << "\n";
@@ -29,6 +30,6 @@ int main() {
             cout << "NO" << "\n";
         }
     }
-
+    
     return 0;
 }

@@ -19,15 +19,13 @@ int main() {
     double Y;
 
     // The problem statement implies a single test case per execution based on the 
-    // standard format of this specific legacy problem.
+    // standard format for this specific problem (HS08TEST).
     if (cin >> X >> Y) {
-        // Check if withdrawal amount is a multiple of 5
-        // AND if the account has enough balance (X + 0.50 <= Y)
+        // Check if X is a multiple of 5 and if balance is sufficient
         if (X % 5 == 0 && (double)X + 0.50 <= Y) {
-            double remaining_balance = Y - X - 0.50;
-            cout << fixed << setprecision(2) << remaining_balance << "\n";
+            cout << fixed << setprecision(2) << (Y - (double)X - 0.50) << "\n";
         } else {
-            // Transaction fails, print original balance
+            // Transaction failed, print original balance
             cout << fixed << setprecision(2) << Y << "\n";
         }
     }

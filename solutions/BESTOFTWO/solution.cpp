@@ -1,15 +1,32 @@
-#include <iostream>
-#include <algorithm>
+#include <bits/stdc++.h>
+using namespace std;
+
+/**
+ * Problem: BESTOFTWO
+ * The goal is to find the maximum of two integers X and Y.
+ * Time Complexity: O(1) per test case.
+ * Space Complexity: O(1).
+ */
 
 int main() {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    // Optimize I/O operations
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     int t;
-    std::cin >> t;
+    if (!(cin >> t)) return 0;
+    
     while (t--) {
-        int x, y;
-        std::cin >> x >> y;
-        std::cout << std::max(x, y) << "\n";
+        long long x, y;
+        cin >> x >> y;
+        
+        // The final score is the maximum of the two attempts
+        if (x >= y) {
+            cout << x << "\n";
+        } else {
+            cout << y << "\n";
+        }
     }
+    
     return 0;
 }

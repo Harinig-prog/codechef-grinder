@@ -6,8 +6,8 @@ using namespace std;
  * Approach:
  * To reverse an integer, we can repeatedly extract the last digit using the modulo operator (%)
  * and build the reversed number by multiplying the current result by 10 and adding the digit.
- * Since the input N is up to 1,000,000, a standard integer is sufficient, but we use
- * long long to be safe and follow best practices.
+ * Since the problem constraints are N <= 1,000,000, a standard 32-bit integer (int) is sufficient,
+ * but using long long is safer practice in competitive programming.
  */
 
 void solve() {

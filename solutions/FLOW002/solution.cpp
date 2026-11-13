@@ -2,11 +2,11 @@
 using namespace std;
 
 /**
- * Problem: FLOW002 - Find Remainder
- * The problem asks for the remainder of A divided by B.
+ * Problem: Find Remainder
+ * The task is to compute A % B for T test cases.
  * Constraints: 1 <= T <= 1000, 1 <= A, B <= 10000.
- * Since A and B fit within standard integer types, 'int' is sufficient,
- * but 'long long' is used for robustness as per instructions.
+ * Time Complexity: O(T)
+ * Space Complexity: O(1)
  */
 
 int main() {
@@ -20,8 +20,9 @@ int main() {
     while (t--) {
         long long a, b;
         if (cin >> a >> b) {
-            // The remainder operator '%' in C++ returns the remainder of the division.
-            // Given constraints 1 <= A, B <= 10000, no division by zero will occur.
+            // The remainder operator % in C++ returns the remainder of division.
+            // Given constraints 1 <= A, B <= 10000, no overflow issues with int,
+            // but long long is used for safety as per instructions.
             cout << (a % b) << "\n";
         }
     }
