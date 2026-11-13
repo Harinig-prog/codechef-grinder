@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 22,
+  "total_solved": 46,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -24,9 +24,35 @@
     "TAXSAVING",
     "PRACTICEPERF",
     "TEST",
-    "AVGPROBLEM"
+    "AVGPROBLEM",
+    "FCTRL2",
+    "AMR15A",
+    "PRACLIST",
+    "DETSCORE",
+    "TOP10",
+    "SNDMAX",
+    "CWC23QUALIF",
+    "LUDO",
+    "LUCKYSEVEN",
+    "CABS",
+    "TSORT",
+    "TALLER",
+    "CLEARDAY",
+    "AUDIBLE",
+    "KITCHENTIME",
+    "TIMELY",
+    "PRIZEPOOL",
+    "REACHTARGET",
+    "MINHEIGHT",
+    "TODOLIST",
+    "FSQRT",
+    "PAR2",
+    "VOLCONTROL",
+    "SUBSCRIBE_"
   ],
-  "failed_codes": [],
+  "failed_codes": [
+    "SEARCHINARR"
+  ],
   "pending": [],
   "history": [
     {
@@ -226,6 +252,222 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-13 17:41:44"
+    },
+    {
+      "code": "FCTRL2",
+      "name": "Small factorials",
+      "status": "Accepted",
+      "solution_id": "1391390330",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 22:55:26"
+    },
+    {
+      "code": "AMR15A",
+      "name": "Mahasena",
+      "status": "Accepted",
+      "solution_id": "1391390361",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 22:57:19"
+    },
+    {
+      "code": "PRACLIST",
+      "name": "How many unattempted problems",
+      "status": "Accepted",
+      "solution_id": "1391390407",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 22:58:11"
+    },
+    {
+      "code": "DETSCORE",
+      "name": "Determine the Score",
+      "status": "Accepted",
+      "solution_id": "1391390421",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 22:58:43"
+    },
+    {
+      "code": "TOP10",
+      "name": "Masterchef finals",
+      "status": "Accepted",
+      "solution_id": "1391390452",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 22:59:29"
+    },
+    {
+      "code": "SNDMAX",
+      "name": "Second Max of Three Numbers",
+      "status": "Accepted",
+      "solution_id": "1391390475",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:00:00"
+    },
+    {
+      "code": "CWC23QUALIF",
+      "name": "Cricket World Cup Qualifier",
+      "status": "Accepted",
+      "solution_id": "1391390506",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:00:53"
+    },
+    {
+      "code": "LUDO",
+      "name": "Chef Plays Ludo",
+      "status": "Accepted",
+      "solution_id": "1391390539",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:01:46"
+    },
+    {
+      "code": "LUCKYSEVEN",
+      "name": "Lucky Seven",
+      "status": "Accepted",
+      "solution_id": "1391390559",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:02:22"
+    },
+    {
+      "code": "CABS",
+      "name": "The Cheaper Cab",
+      "status": "Accepted",
+      "solution_id": "1391390576",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:02:53"
+    },
+    {
+      "code": "TSORT",
+      "name": "Simple Sorting",
+      "status": "Accepted",
+      "solution_id": "1391390618",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:04:26"
+    },
+    {
+      "code": "TALLER",
+      "name": "Who is taller!",
+      "status": "Accepted",
+      "solution_id": "1391390645",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:05:11"
+    },
+    {
+      "code": "CLEARDAY",
+      "name": "Clear Day",
+      "status": "Accepted",
+      "solution_id": "1391390661",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:05:42"
+    },
+    {
+      "code": "AUDIBLE",
+      "name": "Audible Range",
+      "status": "Accepted",
+      "solution_id": "1391390687",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:06:32"
+    },
+    {
+      "code": "KITCHENTIME",
+      "name": "Kitchen Timings",
+      "status": "Accepted",
+      "solution_id": "1391390712",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:07:22"
+    },
+    {
+      "code": "TIMELY",
+      "name": "Reach on Time",
+      "status": "Accepted",
+      "solution_id": "1391390739",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:08:01"
+    },
+    {
+      "code": "PRIZEPOOL",
+      "name": "Total Prize Money",
+      "status": "Accepted",
+      "solution_id": "1391390767",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:08:48"
+    },
+    {
+      "code": "REACHTARGET",
+      "name": "Reach the Target",
+      "status": "Accepted",
+      "solution_id": "1391390802",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:09:20"
+    },
+    {
+      "code": "MINHEIGHT",
+      "name": "Roller Coaster",
+      "status": "Accepted",
+      "solution_id": "1391390847",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:10:18"
+    },
+    {
+      "code": "TODOLIST",
+      "name": "Problems in your to-do list",
+      "status": "Accepted",
+      "solution_id": "1391390864",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:10:51"
+    },
+    {
+      "code": "FSQRT",
+      "name": "Finding Square Roots",
+      "status": "Accepted",
+      "solution_id": "1391390884",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:11:30"
+    },
+    {
+      "code": "PAR2",
+      "name": "Parity",
+      "status": "Accepted",
+      "solution_id": "1391390921",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:12:28"
+    },
+    {
+      "code": "VOLCONTROL",
+      "name": "Volume Control",
+      "status": "Accepted",
+      "solution_id": "1391390940",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:13:17"
+    },
+    {
+      "code": "SUBSCRIBE_",
+      "name": "Subscriptions",
+      "status": "Accepted",
+      "solution_id": "1391390979",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-13 23:14:06"
     }
   ]
 }

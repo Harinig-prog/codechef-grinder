@@ -13,9 +13,11 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem description implies a single input X per run based on the 
-    // sample format, but standard competitive programming practice handles 
-    // the input as provided.
+    // The problem description implies a single integer input X per run,
+    // but standard competitive programming practice often involves 
+    // handling test cases if specified. Given the constraints and format,
+    // we read the single integer X.
+    
     long long X;
     if (cin >> X) {
         if (X >= 12) {

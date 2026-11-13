@@ -6,11 +6,12 @@ using namespace std;
  * The problem asks for the minimum number of button presses to change volume from X to Y.
  * Each press changes the volume by exactly 1.
  * Therefore, the minimum number of presses is the absolute difference between X and Y.
- * |X - Y| gives the distance between the two values, which corresponds to the 
- * number of +1 or -1 operations required.
+ * |X - Y| = max(X, Y) - min(X, Y).
  * 
- * Time Complexity: O(1) per test case.
- * Space Complexity: O(1).
+ * Constraints:
+ * 1 <= T <= 100
+ * 1 <= X, Y <= 100
+ * The values fit within standard integer types.
  */
 
 int main() {
@@ -22,11 +23,11 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        long long x, y;
+        int x, y;
         cin >> x >> y;
         
-        // The minimum number of button presses is the absolute difference
-        long long result = abs(x - y);
+        // The minimum number of presses is the absolute difference
+        int result = abs(x - y);
         
         cout << result << "\n";
     }

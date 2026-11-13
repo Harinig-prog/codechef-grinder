@@ -20,7 +20,7 @@ int main() {
         long long arr[3];
         cin >> arr[0] >> arr[1] >> arr[2];
 
-        // Sorting the three numbers
+        // Sort the three numbers
         sort(arr, arr + 3);
 
         // The second maximum is the element at index 1 after sorting

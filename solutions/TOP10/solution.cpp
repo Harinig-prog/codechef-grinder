@@ -2,14 +2,20 @@
 using namespace std;
 
 /**
- * Problem: Masterchef finals
- * Logic: Chef makes it to the top 10 if his rank X is less than or equal to 10.
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only use a single integer variable per test case.
+ * Problem Analysis:
+ * Chef is ranked X. We need to determine if he is in the top 10.
+ * This means we check if X <= 10.
+ * 
+ * Constraints:
+ * 1 <= T <= 100
+ * 1 <= X <= 100
+ * 
+ * Time Complexity: O(T) - We process each test case in constant time.
+ * Space Complexity: O(1) - We use a constant amount of extra space.
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O for performance
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -17,7 +23,7 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        long long x;
+        int x;
         cin >> x;
         
         // Check if rank is within the top 10

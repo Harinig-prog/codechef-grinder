@@ -3,19 +3,20 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Each subscription covers 6 people.
- * If there are N people, the number of subscriptions required is ceil(N / 6).
+ * We have N friends, and each subscription covers 6 people.
+ * To cover N people, we need ceil(N / 6.0) subscriptions.
  * Using integer arithmetic, ceil(N / 6) can be calculated as (N + 5) / 6.
- * Total cost = (number of subscriptions) * X.
+ * The total cost is then (number of subscriptions) * X.
  * 
  * Constraints:
  * N <= 100, X <= 1000.
  * The maximum cost would be ceil(100/6) * 1000 = 17 * 1000 = 17000.
- * This fits well within a standard 32-bit integer, but using long long is safe practice.
+ * This fits well within a standard 32-bit integer, but using long long 
+ * is good practice to prevent overflow in similar problems.
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -25,13 +26,13 @@ int main() {
         long long n, x;
         cin >> n >> x;
 
-        // Calculate number of subscriptions needed using ceiling division
-        // (n + 5) / 6 is equivalent to ceil(n / 6.0) for integers
+        // Calculate number of subscriptions needed using integer ceiling division
+        // (n + 6 - 1) / 6 is the standard formula for ceil(n / 6)
         long long subscriptions = (n + 5) / 6;
         
         // Calculate total cost
         long long total_cost = subscriptions * x;
-        
+
         cout << total_cost << "\n";
     }
 

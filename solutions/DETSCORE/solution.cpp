@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The problem states that a problem is worth X points and has 10 test cases.
+ * The problem states that a problem is worth X points and consists of 10 test cases.
  * Each test case is worth the same amount of points.
  * Therefore, the points per test case = X / 10.
  * If Chef passes N test cases, the total score = (X / 10) * N.
@@ -19,7 +19,7 @@ using namespace std;
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -36,7 +36,6 @@ int main() {
         // Calculate total score
         long long total_score = points_per_case * n;
         
-        // Output the result
         cout << total_score << "\n";
     }
     

@@ -2,20 +2,17 @@
 using namespace std;
 
 /**
- * Problem Analysis:
- * Chef wants to keep problems with difficulty rating < 1000.
- * We need to count how many problems have a difficulty rating >= 1000.
- * These are the problems that must be removed.
+ * Problem: TODOLIST
+ * The goal is to count how many problems have a difficulty rating >= 1000.
+ * Chef wants to keep only problems with difficulty < 1000.
+ * Therefore, we need to remove all problems where D_i >= 1000.
  * 
- * Constraints:
- * T <= 1000, N <= 1000.
- * Total operations per test case: O(N).
- * Total time complexity: O(T * N), which is 10^6 operations, well within the 4s limit.
- * Space complexity: O(1) auxiliary space if we process input on the fly.
+ * Time Complexity: O(N) per test case, where N is the number of problems.
+ * Space Complexity: O(1) auxiliary space.
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Optimize standard I/O operations for competitive programming
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

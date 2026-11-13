@@ -14,10 +14,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem description implies a single string input per run,
-    // but standard competitive programming practice often involves 
-    // reading until EOF or a specific count. Given the constraints, 
-    // we read the string S.
+    // The problem description implies a single string input per execution 
+    // based on the sample cases provided.
     string s;
     if (cin >> s) {
         // The 7th character is at index 6 (0-indexed)

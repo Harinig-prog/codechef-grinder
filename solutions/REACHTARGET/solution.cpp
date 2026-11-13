@@ -3,15 +3,15 @@ using namespace std;
 
 /**
  * Problem: Reach the Target
- * The problem asks for the number of runs required to reach a target X given a current score Y.
- * The number of runs needed is simply X - Y.
- * Constraints: 50 <= Y < X <= 200.
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1).
+ * The problem asks for the difference between the target score (X) 
+ * and the current score (Y).
+ * 
+ * Time Complexity: O(T), where T is the number of test cases.
+ * Space Complexity: O(1), as we only use a few variables.
  */
 
 int main() {
-    // Optimize standard I/O operations for competitive programming
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -20,14 +20,12 @@ int main() {
     
     while (t--) {
         long long x, y;
-        cin >> x >> y;
-        
-        // Calculate the remaining runs needed to win
-        long long runs_needed = x - y;
-        
-        // Output the result followed by a newline
-        cout << runs_needed << "\n";
+        // Read target score X and current score Y
+        if (cin >> x >> y) {
+            // The number of runs needed to win is X - Y
+            cout << (x - y) << "\n";
+        }
     }
-    
+
     return 0;
 }

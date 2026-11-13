@@ -4,8 +4,8 @@ using namespace std;
 /**
  * Problem: FSQRT - Finding Square Roots
  * The task is to find the integer square root of a given number N.
- * Using the built-in sqrt() function from <cmath> is efficient and 
- * sufficient for the given constraints.
+ * Using the built-in sqrt() function and casting to an integer effectively
+ * performs the floor operation required.
  */
 
 int main() {
@@ -19,8 +19,8 @@ int main() {
     while (t--) {
         long long n;
         if (cin >> n) {
-            // sqrt() returns a double, casting to long long 
-            // effectively rounds down to the nearest integer.
+            // sqrt() returns a double, casting to int/long long truncates the decimal part,
+            // which is equivalent to rounding down to the nearest integer.
             long long result = static_cast<long long>(sqrt(n));
             cout << result << "\n";
         }
