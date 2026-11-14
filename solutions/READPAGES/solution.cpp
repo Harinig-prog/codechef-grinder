@@ -5,15 +5,15 @@ using namespace std;
  * Problem Analysis:
  * Chef has N pages to read.
  * Chef can read at most X pages per day for Y days.
- * The maximum number of pages Chef can read in Y days is X * Y.
- * If (X * Y) >= N, then it is possible to complete the book.
- * Otherwise, it is not possible.
+ * The total number of pages Chef can read in Y days is X * Y.
+ * If (X * Y) >= N, Chef can complete the book.
+ * Otherwise, Chef cannot.
  * 
  * Constraints:
- * N <= 100, X <= 10, Y <= 10.
+ * N <= 100, X, Y <= 10.
  * The product X * Y will be at most 100, which fits in a standard integer.
- * Time complexity per test case: O(1)
- * Space complexity: O(1)
+ * Time complexity per test case: O(1).
+ * Space complexity: O(1).
  */
 
 int main() {

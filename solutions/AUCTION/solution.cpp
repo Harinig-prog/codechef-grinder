@@ -3,11 +3,11 @@ using namespace std;
 
 /**
  * Problem: AUCTION
- * The goal is to identify the maximum of three distinct integers A, B, and C.
+ * The problem asks us to identify the maximum of three distinct integers A, B, and C.
  * Alice bids A, Bob bids B, and Charlie bids C.
- * Since A, B, and C are distinct, there is always a unique maximum.
+ * Since A, B, and C are distinct, there will always be a unique maximum.
  * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only store three integers.
+ * Space Complexity: O(1) as we only use a few variables.
  */
 
 void solve() {

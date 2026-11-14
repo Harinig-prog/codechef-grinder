@@ -3,12 +3,9 @@ using namespace std;
 
 /**
  * Problem: EZSPEAK
- * Logic:
- * Iterate through the string and maintain a counter of consecutive consonants.
- * If a vowel is encountered, reset the counter to 0.
- * If a consonant is encountered, increment the counter.
- * If the counter reaches 4, the word is "hard to pronounce" (NO).
- * If the loop finishes without the counter reaching 4, it is "easy to pronounce" (YES).
+ * Logic: Iterate through the string and maintain a counter of consecutive consonants.
+ * If the counter reaches 4, the word is hard to pronounce.
+ * Vowels are {a, e, i, o, u}.
  */
 
 bool is_vowel(char c) {

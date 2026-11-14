@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef has N hours.
+ * Chef has N hours of free time.
  * Each game takes 20 minutes.
  * Since there are 60 minutes in an hour, the number of games per hour is 60 / 20 = 3.
  * Therefore, in N hours, Chef can play N * 3 games.
@@ -15,7 +15,7 @@ using namespace std;
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

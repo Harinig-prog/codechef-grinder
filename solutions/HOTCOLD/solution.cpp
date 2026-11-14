@@ -3,14 +3,13 @@ using namespace std;
 
 /**
  * Problem: HOTCOLD
- * Logic: If temperature C > 20, output HOT, else output COLD.
- * Constraints: 0 <= C <= 40, T <= 50.
- * Time Complexity: O(T)
- * Space Complexity: O(1)
+ * Logic: If temperature C > 20, print HOT, else print COLD.
+ * Time Complexity: O(T) where T is the number of test cases.
+ * Space Complexity: O(1) as we only use a single integer variable.
  */
 
 int main() {
-    // Optimize standard I/O operations for competitive programming
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -18,10 +17,10 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        int c;
+        long long c;
         cin >> c;
         
-        // Check if temperature is strictly greater than 20
+        // Check if temperature is strictly above 20
         if (c > 20) {
             cout << "HOT" << "\n";
         } else {

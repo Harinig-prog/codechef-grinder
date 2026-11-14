@@ -5,7 +5,7 @@ using namespace std;
  * Problem Analysis:
  * Chef's current age = 20
  * Chefina's current age = 10
- * The age difference is 20 - 10 = 10 years.
+ * The age difference between Chef and Chefina is 20 - 10 = 10 years.
  * Since they age at the same rate, the difference remains constant.
  * When Chef is X years old, Chefina's age will be X - 10.
  * 

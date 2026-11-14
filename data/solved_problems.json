@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 68,
+  "total_solved": 89,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -70,7 +70,28 @@
     "DONDRIVE",
     "SUBSCRIBE",
     "MANIPULATE",
-    "COURSEREG"
+    "COURSEREG",
+    "FEVER",
+    "OFFBY1",
+    "EZSPEAK",
+    "DECINC",
+    "CREDSCORE",
+    "TAXES",
+    "CCHOCOLATES",
+    "BATTERYLOW",
+    "LTIME",
+    "BULLBEAR",
+    "EXAMCHEF",
+    "HOTCOLD",
+    "ATM2",
+    "FLOW018",
+    "SCALENE",
+    "READPAGES",
+    "INCRIQ",
+    "CHESSTIME",
+    "FLOW013",
+    "AUCTION",
+    "AGEING"
   ],
   "failed_codes": [
     "SEARCHINARR"
@@ -688,6 +709,195 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-14 12:04:40"
+    },
+    {
+      "code": "FEVER",
+      "name": "Fever",
+      "status": "Accepted",
+      "solution_id": "1392140556",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:41:08"
+    },
+    {
+      "code": "OFFBY1",
+      "name": "Off By One",
+      "status": "Accepted",
+      "solution_id": "1392141663",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:42:07"
+    },
+    {
+      "code": "EZSPEAK",
+      "name": "Easy Pronunciation",
+      "status": "Accepted",
+      "solution_id": "1392142374",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:42:42"
+    },
+    {
+      "code": "DECINC",
+      "name": "Decrement OR Increment",
+      "status": "Accepted",
+      "solution_id": "1392143408",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:43:32"
+    },
+    {
+      "code": "CREDSCORE",
+      "name": "Credit score",
+      "status": "Accepted",
+      "solution_id": "1392144782",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:45:34"
+    },
+    {
+      "code": "TAXES",
+      "name": "Tax in Chefland",
+      "status": "Accepted",
+      "solution_id": "1392147113",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:46:28"
+    },
+    {
+      "code": "CCHOCOLATES",
+      "name": "Chef and Chocolates",
+      "status": "Accepted",
+      "solution_id": "1392148168",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:47:20"
+    },
+    {
+      "code": "BATTERYLOW",
+      "name": "Battery Low",
+      "status": "Accepted",
+      "solution_id": "1392149964",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:48:52"
+    },
+    {
+      "code": "LTIME",
+      "name": "Lunchtime",
+      "status": "Accepted",
+      "solution_id": "1392150756",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:49:28"
+    },
+    {
+      "code": "BULLBEAR",
+      "name": "Bull or Bear",
+      "status": "Accepted",
+      "solution_id": "1392151629",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:50:10"
+    },
+    {
+      "code": "EXAMCHEF",
+      "name": "Exams",
+      "status": "Accepted",
+      "solution_id": "1392153233",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:51:26"
+    },
+    {
+      "code": "HOTCOLD",
+      "name": "Is it hot or cold",
+      "status": "Accepted",
+      "solution_id": "1392154891",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:52:48"
+    },
+    {
+      "code": "ATM2",
+      "name": "ATM Machine",
+      "status": "Accepted",
+      "solution_id": "1392155637",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:53:25"
+    },
+    {
+      "code": "FLOW018",
+      "name": "Small Factorial",
+      "status": "Accepted",
+      "solution_id": "1392156762",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:54:19"
+    },
+    {
+      "code": "SCALENE",
+      "name": "Scalene Triangle",
+      "status": "Accepted",
+      "solution_id": "1392157784",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:56:05"
+    },
+    {
+      "code": "READPAGES",
+      "name": "Read Pages",
+      "status": "Accepted",
+      "solution_id": "1392159771",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:56:43"
+    },
+    {
+      "code": "INCRIQ",
+      "name": "Increase IQ",
+      "status": "Accepted",
+      "solution_id": "1392160626",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:57:23"
+    },
+    {
+      "code": "CHESSTIME",
+      "name": "Chess Time",
+      "status": "Accepted",
+      "solution_id": "1392162019",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:58:34"
+    },
+    {
+      "code": "FLOW013",
+      "name": "Valid Triangles",
+      "status": "Accepted",
+      "solution_id": "1392163498",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 15:59:44"
+    },
+    {
+      "code": "AUCTION",
+      "name": "Bidding",
+      "status": "Accepted",
+      "solution_id": "1392164491",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 16:00:34"
+    },
+    {
+      "code": "AGEING",
+      "name": "Ageing",
+      "status": "Accepted",
+      "solution_id": "1392166153",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 16:01:53"
     }
   ]
 }

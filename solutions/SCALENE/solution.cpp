@@ -10,13 +10,9 @@ using namespace std;
  * Constraints:
  * 1 <= T <= 100
  * 1 <= A <= B <= C <= 10
- * Since A <= B <= C, the condition simplifies to:
- * A != B AND B != C.
- * If A != B and B != C, then A must also be != C (because if A == C, 
- * then A == B == C, which contradicts A != B).
- * 
- * Time Complexity: O(T)
- * Space Complexity: O(1)
+ * Since the constraints are very small, standard integer types are sufficient.
+ * Time complexity per test case: O(1)
+ * Space complexity: O(1)
  */
 
 int main() {
@@ -32,9 +28,10 @@ int main() {
         cin >> a >> b >> c;
         
         // A triangle is scalene if all sides are distinct.
-        // Given the constraint A <= B <= C, we only need to check
-        // if A != B and B != C.
-        if (a != b && b != c) {
+        // Given the constraint A <= B <= C, we only need to check:
+        // A != B and B != C.
+        // If A != B and B != C, then A must also be != C.
+        if (a != b && b != c && a != c) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";

@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem: BATTERYLOW
- * Logic: If the battery level X is 15 or less, output "Yes". Otherwise, output "No".
+ * Logic: If the battery level X is 15 or less, output "Yes", otherwise "No".
  * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1) as we only use a single integer variable.
  */
@@ -17,7 +17,7 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        int x;
+        long long x;
         cin >> x;
         
         // Check if battery level is 15% or less

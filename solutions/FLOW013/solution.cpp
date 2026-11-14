@@ -21,9 +21,7 @@ int main() {
         long long a, b, c;
         cin >> a >> b >> c;
 
-        // A triangle is valid if the sum of its angles is exactly 180.
-        // Given constraints 1 <= A, B, C <= 180, the sum will fit in a standard integer,
-        // but long long is used as per instructions.
+        // Check if the sum of angles is exactly 180
         if ((a + b + c) == 180) {
             cout << "YES" << "\n";
         } else {
