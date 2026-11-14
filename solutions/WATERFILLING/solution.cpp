@@ -7,6 +7,7 @@ using namespace std;
  * 0 = empty, 1 = full.
  * Condition for "Water filling time": At least two bottles are empty.
  * This means the count of 0s in the input must be >= 2.
+ * Otherwise, output "Not now".
  * 
  * Time Complexity: O(1) per test case.
  * Space Complexity: O(1).

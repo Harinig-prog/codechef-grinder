@@ -9,7 +9,7 @@ using namespace std;
  * 2. Reverse the integer mathematically and compare it with the original.
  * 
  * Given the constraints and the nature of the problem, reading as a string 
- * is efficient and handles potential integer overflow issues easily.
+ * is the most efficient and straightforward approach.
  */
 
 void solve() {
@@ -27,7 +27,7 @@ void solve() {
 }
 
 int main() {
-    // Fast I/O setup
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     

@@ -7,23 +7,32 @@ using namespace std;
  * The number of leftover cupcakes is N % A.
  * We want to maximize N % A.
  * 
- * Let's test small values of N:
- * N = 2: 2%1=0, 2%2=0. Max leftover 0, largest A is 2.
- * N = 3: 3%1=0, 3%2=1, 3%3=0. Max leftover 1, largest A is 2.
- * N = 4: 4%1=0, 4%2=0, 4%3=1, 4%4=0. Max leftover 1, largest A is 3.
- * N = 5: 5%1=0, 5%2=1, 5%3=2, 5%4=1, 5%5=0. Max leftover 2, largest A is 3.
- * N = 6: 6%1=0, 6%2=0, 6%3=0, 6%4=2, 6%5=1, 6%6=0. Max leftover 2, largest A is 4.
+ * If we choose A = N, N % N = 0.
+ * If we choose A = N/2 + 1, then:
+ * N = 2 * (N/2) + (0 or 1).
+ * If N is even, N = 2k, N % (k+1) = 2k % (k+1) = k-1.
+ * If N is odd, N = 2k+1, N % (k+1) = (2k+1) % (k+1) = k.
  * 
- * Pattern:
- * If we choose A = floor(N/2) + 1, then N % A = N % (floor(N/2) + 1).
- * For N=5, A=3, 5%3=2.
- * For N=6, A=4, 6%4=2.
- * For any N > 2, choosing A = N/2 + 1 results in N % A = N - (N/2 + 1) = N/2 - 1.
- * This is the maximum possible remainder because if A > N/2, the remainder is N - A.
- * To maximize N - A, we need the smallest A > N/2, which is floor(N/2) + 1.
+ * Mathematically, for any N > 2, the remainder N % A is maximized when A > N/2.
+ * Specifically, if we choose A = N/2 + 1, the remainder is N - (N/2 + 1) = N/2 - 1 (for even)
+ * or N - (N/2 + 1) = N/2 (for odd).
+ * Actually, the simplest way to get the maximum remainder is to pick A such that 
+ * the remainder is as large as possible. For any N, choosing A = N/2 + 1 
+ * results in a remainder of floor(N/2) - 1 or floor(N/2).
  * 
- * For N=2, the formula gives 2/2 + 1 = 2. 2%2 = 0. Correct.
- * For N > 2, the answer is N/2 + 1.
+ * Testing small values:
+ * N=2: A=2, rem=0. Output 2.
+ * N=3: A=2, rem=1. Output 2. (Wait, sample says 3 for N=5? Let's recheck)
+ * N=5: 
+ * A=1: 5%1=0
+ * A=2: 5%2=1
+ * A=3: 5%3=2
+ * A=4: 5%4=1
+ * A=5: 5%5=0
+ * Max remainder is 2, achieved at A=3.
+ * 
+ * The pattern is: for N > 2, the answer is N/2 + 1.
+ * For N=2, the answer is 2.
  */
 
 int main() {
@@ -36,13 +45,10 @@ int main() {
     while (t--) {
         long long n;
         cin >> n;
-        
-        // Based on the mathematical derivation:
-        // For N=2, output 2.
-        // For N > 2, output N/2 + 1.
-        if (n <= 2) {
-            cout << n << "\n";
+        if (n == 2) {
+            cout << 2 << "\n";
         } else {
+            // For N > 2, N/2 + 1 is the optimal package size
             cout << (n / 2) + 1 << "\n";
         }
     }

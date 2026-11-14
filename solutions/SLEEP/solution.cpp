@@ -2,20 +2,14 @@
 using namespace std;
 
 /**
- * Problem Analysis:
- * A person is sleep deprived if they slept strictly less than 7 hours.
- * Given X hours, we need to check if X < 7.
- * 
- * Constraints:
- * 1 <= T <= 20
- * 1 <= X <= 15
- * 
- * Time Complexity: O(T)
- * Space Complexity: O(1)
+ * Problem: Sleep deprivation
+ * Logic: A person is sleep deprived if X < 7.
+ * Time Complexity: O(T), where T is the number of test cases.
+ * Space Complexity: O(1).
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize standard I/O operations for speed
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -23,10 +17,10 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        int x;
+        long long x;
         cin >> x;
         
-        // Check if sleep duration is strictly less than 7
+        // Check if Chef slept strictly less than 7 hours
         if (x < 7) {
             cout << "YES" << "\n";
         } else {

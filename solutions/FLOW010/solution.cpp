@@ -3,9 +3,10 @@ using namespace std;
 
 /**
  * Problem: Id and Ship (FLOW010)
- * Logic: Read the character ID and map it to the corresponding ship class.
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only store a single character per test case.
+ * Approach: Read the character and use a series of if-else or switch statements
+ * to map the character ID to the corresponding ship class.
+ * Time Complexity: O(T), where T is the number of test cases.
+ * Space Complexity: O(1).
  */
 
 int main() {

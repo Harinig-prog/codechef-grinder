@@ -11,12 +11,12 @@ using namespace std;
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t;
-    cin >> t;
+    if (!(cin >> t)) return 0;
     while (t--) {
         long long n, x;
         cin >> n >> x;
@@ -25,7 +25,7 @@ int main() {
             cout << 0 << "\n";
         } else {
             long long needed = n - x;
-            // Calculate ceil(needed / 4)
+            // Calculate ceiling of needed / 4
             long long packets = (needed + 3) / 4;
             cout << packets << "\n";
         }

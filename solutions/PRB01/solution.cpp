@@ -4,7 +4,7 @@ using namespace std;
 /**
  * Problem: Primality Test
  * Logic: A number N is prime if it is greater than 1 and has no divisors 
- * other than 1 and itself. We check for divisibility up to sqrt(N).
+ * other than 1 and itself. We check for divisors up to sqrt(N).
  * Time Complexity: O(T * sqrt(N))
  * Space Complexity: O(1)
  */

@@ -3,20 +3,21 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef earns X, Chefina earns Y, where Y > X.
+ * Chef earns X, Chefina earns Y (where Y > X).
  * They want to end up with the same amount by donating the difference.
- * The difference is simply Y - X.
+ * The amount to be donated is simply Y - X.
  * 
  * Constraints:
  * 1 <= T <= 100
  * 1 <= X < Y <= 10
+ * 
  * Since the values are very small, standard integer types are sufficient.
  * Time Complexity: O(T)
  * Space Complexity: O(1)
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -27,11 +28,11 @@ int main() {
         long long x, y;
         cin >> x >> y;
         
-        // The amount to donate is the difference between their incomes
+        // The difference to be donated
         long long donation = y - x;
         
         cout << donation << "\n";
     }
-    
+
     return 0;
 }

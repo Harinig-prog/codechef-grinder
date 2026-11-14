@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 111,
+  "total_solved": 136,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -113,7 +113,32 @@
     "POPULATION",
     "M1ENROL",
     "RIGHTTHERE",
-    "SUGARCANE"
+    "SUGARCANE",
+    "HELIUM3",
+    "SLEEP",
+    "FBC",
+    "SEMCOURSES",
+    "RAINFALL1",
+    "CHEFCAND",
+    "TRUESCORE",
+    "DNATION",
+    "MUFFINS3",
+    "CARTRIP",
+    "MANAPTS",
+    "EXPERT",
+    "PALL01",
+    "MISSP",
+    "FOURTICKETS",
+    "WATERFILLING",
+    "CMASKS",
+    "FLOW010",
+    "MAXIMUMSUBS",
+    "PRB01",
+    "TVDISC",
+    "SPECIALITY",
+    "LARGESECOND",
+    "DISCUS",
+    "HEIGHTRATION"
   ],
   "failed_codes": [
     "SEARCHINARR"
@@ -1118,6 +1143,231 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-14 19:12:33"
+    },
+    {
+      "code": "HELIUM3",
+      "name": "Chef and NextGen",
+      "status": "Accepted",
+      "solution_id": "1392422444",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:42:29"
+    },
+    {
+      "code": "SLEEP",
+      "name": "Sleep deprivation",
+      "status": "Accepted",
+      "solution_id": "1392422539",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:43:19"
+    },
+    {
+      "code": "FBC",
+      "name": "Fill the Bucket",
+      "status": "Accepted",
+      "solution_id": "1392422643",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:44:12"
+    },
+    {
+      "code": "SEMCOURSES",
+      "name": "Chef and Chapters",
+      "status": "Accepted",
+      "solution_id": "1392422719",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:44:44"
+    },
+    {
+      "code": "RAINFALL1",
+      "name": "Rain in Chefland",
+      "status": "Accepted",
+      "solution_id": "1392422848",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:45:38"
+    },
+    {
+      "code": "CHEFCAND",
+      "name": "Chef and Candies",
+      "status": "Accepted",
+      "solution_id": "1392422949",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:46:21"
+    },
+    {
+      "code": "TRUESCORE",
+      "name": "Is the Score Consistent",
+      "status": "Accepted",
+      "solution_id": "1392423099",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:47:21"
+    },
+    {
+      "code": "DNATION",
+      "name": "Chef and Donation",
+      "status": "Accepted",
+      "solution_id": "1392423184",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:47:54"
+    },
+    {
+      "code": "MUFFINS3",
+      "name": "Packaging Cupcakes",
+      "status": "Accepted",
+      "solution_id": "1392423308",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:48:46"
+    },
+    {
+      "code": "CARTRIP",
+      "name": "Car Trip",
+      "status": "Accepted",
+      "solution_id": "1392423453",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:49:42"
+    },
+    {
+      "code": "MANAPTS",
+      "name": "Mana Points",
+      "status": "Accepted",
+      "solution_id": "1392423605",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:50:37"
+    },
+    {
+      "code": "EXPERT",
+      "name": "Expert Setter",
+      "status": "Accepted",
+      "solution_id": "1392423736",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:51:24"
+    },
+    {
+      "code": "PALL01",
+      "name": "The Block Game",
+      "status": "Accepted",
+      "solution_id": "1392423875",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:52:21"
+    },
+    {
+      "code": "MISSP",
+      "name": "Chef and Dolls",
+      "status": "Accepted",
+      "solution_id": "1392423956",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:52:56"
+    },
+    {
+      "code": "FOURTICKETS",
+      "name": "Four Tickets",
+      "status": "Accepted",
+      "solution_id": "1392424085",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:53:45"
+    },
+    {
+      "code": "WATERFILLING",
+      "name": "Water Filling",
+      "status": "Accepted",
+      "solution_id": "1392424222",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:54:30"
+    },
+    {
+      "code": "CMASKS",
+      "name": "Chef and Masks",
+      "status": "Accepted",
+      "solution_id": "1392424305",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:55:02"
+    },
+    {
+      "code": "FLOW010",
+      "name": "Id and Ship",
+      "status": "Accepted",
+      "solution_id": "1392424388",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:56:39"
+    },
+    {
+      "code": "MAXIMUMSUBS",
+      "name": "Maximum Submissions",
+      "status": "Accepted",
+      "solution_id": "1392424599",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:57:13"
+    },
+    {
+      "code": "PRB01",
+      "name": "Primality Test",
+      "status": "Accepted",
+      "solution_id": "1392424731",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:58:07"
+    },
+    {
+      "code": "TVDISC",
+      "name": "TV Discount",
+      "status": "Accepted",
+      "solution_id": "1392424851",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:59:00"
+    },
+    {
+      "code": "SPECIALITY",
+      "name": "Speciality",
+      "status": "Accepted",
+      "solution_id": "1392424965",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 21:59:55"
+    },
+    {
+      "code": "LARGESECOND",
+      "name": "Largest and Second Largest",
+      "status": "Accepted",
+      "solution_id": "1392425066",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 22:00:36"
+    },
+    {
+      "code": "DISCUS",
+      "name": "Discus Throw",
+      "status": "Accepted",
+      "solution_id": "1392425149",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 22:02:15"
+    },
+    {
+      "code": "HEIGHTRATION",
+      "name": "Height of Rationals",
+      "status": "Accepted",
+      "solution_id": "1392425353",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 22:02:49"
     }
   ]
 }

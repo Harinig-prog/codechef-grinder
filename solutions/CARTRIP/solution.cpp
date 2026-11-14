@@ -3,20 +3,20 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef pays Rs 10 per km.
+ * The cost is 10 per km.
  * There is a minimum charge for 300 kms.
- * If X < 300, cost = 300 * 10 = 3000.
- * If X >= 300, cost = X * 10.
- * This can be simplified to: cost = max(X, 300) * 10.
+ * If X < 300, the cost is 300 * 10 = 3000.
+ * If X >= 300, the cost is X * 10.
+ * This can be simplified as max(X, 300) * 10.
  * 
  * Constraints:
- * T <= 100, X <= 1000.
- * The maximum cost will be 1000 * 10 = 10,000, which fits in a standard int.
- * Using long long is safe practice for competitive programming.
+ * T <= 100
+ * X <= 1000
+ * The maximum possible cost is 1000 * 10 = 10000, which fits in a standard int.
  */
 
 int main() {
-    // Fast I/O for performance
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -24,14 +24,14 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        long long x;
+        int x;
         cin >> x;
         
-        // Calculate the distance to be charged
-        long long distance_charged = max(x, 300LL);
+        // Calculate the effective distance to charge for
+        int effective_kms = max(x, 300);
         
         // Calculate total cost
-        long long cost = distance_charged * 10;
+        long long cost = (long long)effective_kms * 10;
         
         cout << cost << "\n";
     }

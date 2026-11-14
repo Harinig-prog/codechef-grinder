@@ -3,10 +3,12 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The score can change from A:B to C:D if and only if the number of goals 
- * for each team does not decrease.
- * That is, team 1 must have scored at least A goals (C >= A) 
- * and team 2 must have scored at least B goals (D >= B).
+ * The score can change from A:B to C:D if and only if:
+ * 1. Team 1's score does not decrease (C >= A)
+ * 2. Team 2's score does not decrease (D >= B)
+ * 
+ * Since goals can only be added, the number of goals for each team 
+ * must be greater than or equal to their initial score.
  * 
  * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1) as we only use a few integer variables.
@@ -22,17 +24,15 @@ int main() {
     
     while (t--) {
         int a, b, c, d;
-        cin >> a >> b;
-        cin >> c >> d;
-
+        cin >> a >> b >> c >> d;
+        
         // Check if the final score is reachable from the initial score
-        // A score is reachable if C >= A and D >= B
         if (c >= a && d >= b) {
             cout << "POSSIBLE" << "\n";
         } else {
             cout << "IMPOSSIBLE" << "\n";
         }
     }
-
+    
     return 0;
 }

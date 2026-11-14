@@ -3,9 +3,9 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * There are 4 friends, each ticket costs X.
+ * Four friends want to attend a concert. Each ticket costs X.
  * Total cost = 4 * X.
- * Condition: Total cost <= 1000.
+ * Condition to go: Total cost <= 1000.
  * 
  * Constraints:
  * 1 <= T <= 100

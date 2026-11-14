@@ -3,12 +3,12 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We are given three distinct integers X, Y, and Z representing the number of 
- * problems set, tested, and written editorials for. We need to identify which 
- * category has the maximum value.
+ * We are given three distinct integers X, Y, and Z representing the count of problems
+ * set, tested, and written editorials for. We need to identify which category has
+ * the maximum value.
  * 
  * Since X, Y, and Z are distinct, there will always be a unique maximum.
- * Time Complexity: O(1) per test case.
+ * Time Complexity: O(1) per test case, O(T) total.
  * Space Complexity: O(1).
  */
 

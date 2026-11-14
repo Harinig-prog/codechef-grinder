@@ -2,15 +2,38 @@
 using namespace std;
 
 /**
- * Problem: TVDISC
- * The problem asks us to compare the final prices of two TVs after applying their respective discounts.
- * Final price of TV 1 = A - C
- * Final price of TV 2 = B - D
- * We compare these two values and output "First", "Second", or "Any".
+ * Problem Analysis:
+ * We are given the marked prices A and B, and discounts C and D.
+ * The final price of the first TV is (A - C).
+ * The final price of the second TV is (B - D).
+ * We need to compare these two values and output:
+ * - "First" if (A - C) < (B - D)
+ * - "Second" if (A - C) > (B - D)
+ * - "Any" if (A - C) == (B - D)
  * 
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only use a few integer variables.
+ * Constraints:
+ * T <= 5000
+ * A, B <= 100
+ * C <= A, D <= B
+ * Since the values are small, standard 'int' is sufficient, but 'long long' 
+ * is used for good practice in competitive programming.
  */
+
+void solve() {
+    long long A, B, C, D;
+    if (!(cin >> A >> B >> C >> D)) return;
+
+    long long price1 = A - C;
+    long long price2 = B - D;
+
+    if (price1 < price2) {
+        cout << "First" << "\n";
+    } else if (price2 < price1) {
+        cout << "Second" << "\n";
+    } else {
+        cout << "Any" << "\n";
+    }
+}
 
 int main() {
     // Fast I/O setup
@@ -19,22 +42,8 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
-    
     while (t--) {
-        long long a, b, c, d;
-        cin >> a >> b >> c >> d;
-        
-        long long price1 = a - c;
-        long long price2 = b - d;
-        
-        if (price1 < price2) {
-            cout << "First" << "\n";
-        } else if (price2 < price1) {
-            cout << "Second" << "\n";
-        } else {
-            cout << "Any" << "\n";
-        }
+        solve();
     }
-    
     return 0;
 }

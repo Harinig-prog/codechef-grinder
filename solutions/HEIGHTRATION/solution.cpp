@@ -2,22 +2,25 @@
 using namespace std;
 
 /**
- * Problem: Height of Rationals
- * The height of a fraction a/b is defined as max(a, b).
- * Given the constraints 1 <= a, b <= 100, we simply need to read two integers
- * and output the larger of the two.
+ * Problem Analysis:
+ * The problem asks for the "Height" of a fraction a/b, defined as max(a, b).
+ * Constraints are small (1 <= a, b <= 100), so standard integer types are sufficient.
+ * Time Complexity: O(1) per test case.
+ * Space Complexity: O(1).
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    long long a, b;
     // The problem description implies a single test case based on the input format,
-    // but we structure it to handle the input provided.
+    // but we structure it to handle input robustly.
+    long long a, b;
     if (cin >> a >> b) {
-        cout << max(a, b) << "\n";
+        // The height is defined as the maximum of the numerator and denominator.
+        long long height = max(a, b);
+        cout << height << "\n";
     }
 
     return 0;

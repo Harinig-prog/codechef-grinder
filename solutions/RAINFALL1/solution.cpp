@@ -2,16 +2,12 @@
 using namespace std;
 
 /**
- * Problem Analysis:
+ * Problem: RAINFALL1
+ * Logic:
  * - LIGHT: X < 3
  * - MODERATE: 3 <= X < 7
  * - HEAVY: X >= 7
- * 
- * Constraints:
- * - 1 <= T <= 20
- * - 1 <= X <= 20
- * 
- * Time Complexity: O(T)
+ * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1)
  */
 
@@ -22,11 +18,11 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
-
+    
     while (t--) {
-        int x;
+        long long x;
         cin >> x;
-
+        
         if (x < 3) {
             cout << "LIGHT" << "\n";
         } else if (x >= 3 && x < 7) {
@@ -35,6 +31,6 @@ int main() {
             cout << "HEAVY" << "\n";
         }
     }
-
+    
     return 0;
 }

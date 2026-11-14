@@ -3,18 +3,17 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Disposable masks: Cost X per day. For 100 days, total cost = X * 100.
- * Cloth masks: Cost Y for 10 days. For 100 days, we need 100/10 = 10 masks.
- * Total cost for cloth masks = Y * 10.
+ * Disposable masks: Cost X per day, lasts 1 day.
+ * Total cost for 100 days = X * 100.
+ * Cloth masks: Cost Y per 10 days, lasts 10 days.
+ * Total cost for 100 days = (Y / 10) * 100 = Y * 10.
  * 
- * Decision logic:
- * If (Y * 10) <= (X * 100), Chef chooses CLOTH (due to eco-friendly tie-break).
- * Otherwise, Chef chooses DISPOSABLE.
+ * Comparison:
+ * Cost_Disposable = X * 100
+ * Cost_Cloth = Y * 10
  * 
- * Constraints:
- * T <= 5000
- * 1 <= X < Y <= 100
- * Calculations will fit within standard integer types, but long long is used for safety.
+ * Chef chooses Cloth if Cost_Cloth <= Cost_Disposable.
+ * Otherwise, Chef chooses Disposable.
  */
 
 int main() {
@@ -31,7 +30,7 @@ int main() {
         long long cost_disposable = x * 100;
         long long cost_cloth = y * 10;
 
-        // If cloth cost is less than or equal to disposable, choose CLOTH.
+        // If cloth cost is less than or equal to disposable cost, choose cloth.
         // The problem states: "In case there is a tie... choose the cloth masks."
         if (cost_cloth <= cost_disposable) {
             cout << "CLOTH" << "\n";
