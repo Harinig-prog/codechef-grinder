@@ -4,14 +4,15 @@ using namespace std;
 /**
  * Problem Analysis:
  * We have N candies and 3 friends.
- * We need to distribute all N candies equally among 3 friends.
+ * We need to distribute all N candies equally among the 3 friends.
  * This is possible if and only if N is divisible by 3.
  * Mathematically, N % 3 == 0.
  * 
  * Constraints:
  * 1 <= T <= 100
  * 1 <= N <= 100
- * Since N is small, standard integer types are sufficient.
+ * Time complexity per test case: O(1)
+ * Space complexity: O(1)
  */
 
 int main() {

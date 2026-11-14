@@ -3,17 +3,17 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Tom can catch Jerry if and only if Tom's speed (Y) is strictly greater 
- * than Jerry's speed (X).
- * If Y > X, the distance between them decreases over time, allowing Tom to catch Jerry.
- * If Y <= X, the distance remains constant or increases, so Tom will never catch Jerry.
+ * Tom can catch Jerry if and only if Tom's speed (Y) is strictly greater than 
+ * Jerry's speed (X). If Tom's speed is less than or equal to Jerry's speed, 
+ * and they start at different positions, the distance between them will 
+ * either increase or remain constant, meaning Tom will never catch Jerry.
  * 
  * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1) as we only use a few variables.
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O for competitive programming
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -24,7 +24,7 @@ int main() {
         long long x, y;
         cin >> x >> y;
         
-        // Tom catches Jerry if his speed is strictly greater than Jerry's
+        // Tom catches Jerry if Y > X
         if (y > x) {
             cout << "YES" << "\n";
         } else {

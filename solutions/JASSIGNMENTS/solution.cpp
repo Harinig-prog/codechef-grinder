@@ -5,9 +5,9 @@ using namespace std;
  * Problem Analysis:
  * Janmansh has 3 assignments, each taking 1 hour.
  * Total time required = 3 hours.
- * He must finish by 10 pm.
+ * Deadline is 10 pm.
  * If he starts at X pm, he finishes at X + 3 pm.
- * Condition for completion: X + 3 <= 10, which simplifies to X <= 7.
+ * He can complete the assignments if X + 3 <= 10, which simplifies to X <= 7.
  * 
  * Constraints:
  * 1 <= T <= 10
@@ -17,7 +17,7 @@ using namespace std;
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -29,7 +29,7 @@ int main() {
         cin >> x;
         
         // If he starts at X, he finishes at X + 3.
-        // He must finish by 10 pm.
+        // The deadline is 10 pm.
         if (x + 3 <= 10) {
             cout << "Yes" << "\n";
         } else {

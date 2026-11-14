@@ -3,29 +3,26 @@ using namespace std;
 
 /**
  * Problem: WORDLE
- * Approach:
- * We are given two strings S and T of length 5.
- * We need to construct a string M of length 5 where:
- * M[i] = 'G' if S[i] == T[i]
- * M[i] = 'B' if S[i] != T[i]
+ * The task is to compare two strings S and T of length 5 character by character.
+ * If S[i] == T[i], the result character is 'G', otherwise it is 'B'.
  * 
- * Time Complexity: O(T * L) where T is the number of test cases and L is the length of the string (5).
- * Space Complexity: O(L) to store the result string.
+ * Time Complexity: O(T * N) where T is the number of test cases and N=5.
+ * Space Complexity: O(N) to store the strings.
  */
 
 void solve() {
-    string S, T;
-    cin >> S >> T;
+    string s, t;
+    cin >> s >> t;
     
-    string M = "";
+    string m = "";
     for (int i = 0; i < 5; ++i) {
-        if (S[i] == T[i]) {
-            M += 'G';
+        if (s[i] == t[i]) {
+            m += 'G';
         } else {
-            M += 'B';
+            m += 'B';
         }
     }
-    cout << M << "\n";
+    cout << m << "\n";
 }
 
 int main() {

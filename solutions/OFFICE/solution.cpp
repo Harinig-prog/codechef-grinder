@@ -11,9 +11,7 @@ using namespace std;
  * T <= 100
  * 2 <= X <= 12
  * 1 <= Y < X
- * 
- * The maximum possible value is (4 * 12) + 11 = 59, which fits well within a standard integer.
- * Using long long is safe practice for competitive programming.
+ * The maximum possible value is (4 * 12) + 11 = 59, which fits easily into a standard integer.
  */
 
 int main() {

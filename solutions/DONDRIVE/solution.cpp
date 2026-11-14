@@ -17,7 +17,7 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
-
+    
     while (t--) {
         long long n, x;
         cin >> n >> x;
@@ -28,6 +28,6 @@ int main() {
         
         cout << remaining << "\n";
     }
-
+    
     return 0;
 }

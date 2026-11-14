@@ -4,14 +4,15 @@ using namespace std;
 /**
  * Problem Analysis:
  * We have N students and M tickets.
- * If N > M, the number of students who won't get a ticket is (N - M).
- * If N <= M, all students get a ticket, so the number of students who won't get one is 0.
+ * If N > M, then (N - M) students will not get tickets.
+ * If N <= M, then all students get tickets, so 0 students are left out.
  * This can be represented as max(0, N - M).
  * 
  * Constraints:
  * T <= 1000
  * N, M <= 10^5
- * The result will fit in a standard integer, but using long long is safe practice.
+ * Time complexity: O(T)
+ * Space complexity: O(1)
  */
 
 int main() {

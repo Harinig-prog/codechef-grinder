@@ -2,11 +2,17 @@
 using namespace std;
 
 /**
- * Problem: Ezio and Guards
- * Logic: Ezio can manipulate at most X guards. If the number of guards Y is 
- * less than or equal to X, he can manipulate all of them.
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only use a few variables.
+ * Problem Analysis:
+ * Ezio can manipulate at most X guards.
+ * There are Y guards.
+ * He can manipulate all of them if X >= Y.
+ * 
+ * Constraints:
+ * 1 <= T <= 100
+ * 1 <= X, Y <= 100
+ * Since X and Y are small (up to 100), standard int is sufficient.
+ * Time complexity: O(T)
+ * Space complexity: O(1)
  */
 
 int main() {
@@ -18,10 +24,10 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        long long x, y;
+        int x, y;
         cin >> x >> y;
         
-        // Check if Ezio's capacity X is sufficient for Y guards
+        // Check if Ezio's capacity X is greater than or equal to the number of guards Y
         if (x >= y) {
             cout << "YES" << "\n";
         } else {

@@ -29,8 +29,8 @@ int main() {
         int x, y;
         cin >> x >> y;
         
-        // Calculate the difference. If students exceed chairs, output the difference.
-        // Otherwise, output 0.
+        // Calculate the difference. If x > y, we need x - y chairs.
+        // Otherwise, we need 0.
         if (x > y) {
             cout << (x - y) << "\n";
         } else {

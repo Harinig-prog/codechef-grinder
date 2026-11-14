@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 46,
+  "total_solved": 68,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -48,7 +48,29 @@
     "FSQRT",
     "PAR2",
     "VOLCONTROL",
-    "SUBSCRIBE_"
+    "SUBSCRIBE_",
+    "UWCOI20A",
+    "CHEFONDATE",
+    "DOUBLERENT",
+    "BURGERS",
+    "JASSIGNMENTS",
+    "BTRYHLTH",
+    "IPLTRSH",
+    "CNTWRD",
+    "TLG",
+    "CHAIRS_",
+    "CHOPRT",
+    "WORDLE",
+    "FLOW017",
+    "CANDIVIDE",
+    "JERRYCHASE",
+    "OFFICE",
+    "WAITTIME",
+    "PUZHUNT",
+    "DONDRIVE",
+    "SUBSCRIBE",
+    "MANIPULATE",
+    "COURSEREG"
   ],
   "failed_codes": [
     "SEARCHINARR"
@@ -468,6 +490,204 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-13 23:14:06"
+    },
+    {
+      "code": "UWCOI20A",
+      "name": "Find maximum in an Array",
+      "status": "Accepted",
+      "solution_id": "1391919980",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:47:42"
+    },
+    {
+      "code": "CHEFONDATE",
+      "name": "Chef On Date",
+      "status": "Accepted",
+      "solution_id": "1391920651",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:48:29"
+    },
+    {
+      "code": "DOUBLERENT",
+      "name": "Double Rent",
+      "status": "Accepted",
+      "solution_id": "1391921202",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:49:08"
+    },
+    {
+      "code": "BURGERS",
+      "name": "Burgers",
+      "status": "Accepted",
+      "solution_id": "1391921708",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:49:45"
+    },
+    {
+      "code": "JASSIGNMENTS",
+      "name": "Janmansh and Assignments",
+      "status": "Accepted",
+      "solution_id": "1391922363",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:50:33"
+    },
+    {
+      "code": "BTRYHLTH",
+      "name": "Battery Health",
+      "status": "Accepted",
+      "solution_id": "1391922965",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:51:15"
+    },
+    {
+      "code": "IPLTRSH",
+      "name": "IPL Ticket Rush",
+      "status": "Accepted",
+      "solution_id": "1391923794",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:52:13"
+    },
+    {
+      "code": "CNTWRD",
+      "name": "Counting Words",
+      "status": "Accepted",
+      "solution_id": "1391924482",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:53:07"
+    },
+    {
+      "code": "TLG",
+      "name": "The Lead Game",
+      "status": "Accepted",
+      "solution_id": "1391925083",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:53:55"
+    },
+    {
+      "code": "CHAIRS_",
+      "name": "Chairs Requirement",
+      "status": "Accepted",
+      "solution_id": "1391925570",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:54:32"
+    },
+    {
+      "code": "CHOPRT",
+      "name": "Chef And Operators",
+      "status": "Accepted",
+      "solution_id": "1391926157",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:55:18"
+    },
+    {
+      "code": "WORDLE",
+      "name": "Wordle",
+      "status": "Accepted",
+      "solution_id": "1391926706",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:56:00"
+    },
+    {
+      "code": "FLOW017",
+      "name": "Second Largest",
+      "status": "Accepted",
+      "solution_id": "1391927312",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:56:46"
+    },
+    {
+      "code": "CANDIVIDE",
+      "name": "Candy Division",
+      "status": "Accepted",
+      "solution_id": "1391928002",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:58:34"
+    },
+    {
+      "code": "JERRYCHASE",
+      "name": "Tom and Jerry Chase",
+      "status": "Accepted",
+      "solution_id": "1391929387",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:59:14"
+    },
+    {
+      "code": "OFFICE",
+      "name": "Chef in his Office",
+      "status": "Accepted",
+      "solution_id": "1391929823",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 11:59:47"
+    },
+    {
+      "code": "WAITTIME",
+      "name": "Waiting Time",
+      "status": "Accepted",
+      "solution_id": "1391930533",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:00:37"
+    },
+    {
+      "code": "PUZHUNT",
+      "name": "Puzzle Hunt",
+      "status": "Accepted",
+      "solution_id": "1391931179",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:01:27"
+    },
+    {
+      "code": "DONDRIVE",
+      "name": "Donation Drive",
+      "status": "Accepted",
+      "solution_id": "1391931932",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:02:20"
+    },
+    {
+      "code": "SUBSCRIBE",
+      "name": "Get Subscription",
+      "status": "Accepted",
+      "solution_id": "1391932550",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:03:08"
+    },
+    {
+      "code": "MANIPULATE",
+      "name": "Ezio and Guards",
+      "status": "Accepted",
+      "solution_id": "1391933261",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:04:07"
+    },
+    {
+      "code": "COURSEREG",
+      "name": "Course Registration",
+      "status": "Accepted",
+      "solution_id": "1391933723",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 12:04:40"
     }
   ]
 }

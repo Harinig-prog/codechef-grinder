@@ -3,9 +3,9 @@ using namespace std;
 
 /**
  * Problem: Battery Health
- * Logic: Check if X >= 80.
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only use a single integer variable.
+ * Logic: An iPhone is in optimal condition if battery health X >= 80.
+ * Time Complexity: O(T), where T is the number of test cases.
+ * Space Complexity: O(1).
  */
 
 int main() {
