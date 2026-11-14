@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 89,
+  "total_solved": 111,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -91,7 +91,29 @@
     "CHESSTIME",
     "FLOW013",
     "AUCTION",
-    "AGEING"
+    "AGEING",
+    "RIP2000",
+    "ONEMORE",
+    "CREDCOINS",
+    "MINPIZZA",
+    "PASSORFAIL",
+    "FAIRPASS",
+    "SIXFRIENDS",
+    "NOTEBOOK",
+    "THREETOPICS",
+    "WATERREQ",
+    "DISCNT",
+    "ERROR404",
+    "CWIREFRAME",
+    "F1RULE",
+    "SALESEASON",
+    "CHEFGAMES",
+    "SUMM",
+    "INSTAGRAM",
+    "POPULATION",
+    "M1ENROL",
+    "RIGHTTHERE",
+    "SUGARCANE"
   ],
   "failed_codes": [
     "SEARCHINARR"
@@ -898,6 +920,204 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-14 16:01:53"
+    },
+    {
+      "code": "RIP2000",
+      "name": "2000",
+      "status": "Accepted",
+      "solution_id": "1392359923",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:52:41"
+    },
+    {
+      "code": "ONEMORE",
+      "name": "Just One More Episode",
+      "status": "Accepted",
+      "solution_id": "1392360420",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:53:24"
+    },
+    {
+      "code": "CREDCOINS",
+      "name": "CRED Coins",
+      "status": "Accepted",
+      "solution_id": "1392360982",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:54:18"
+    },
+    {
+      "code": "MINPIZZA",
+      "name": "Minimum Pizzas",
+      "status": "Accepted",
+      "solution_id": "1392361556",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:55:08"
+    },
+    {
+      "code": "PASSORFAIL",
+      "name": "Pass or Fail",
+      "status": "Accepted",
+      "solution_id": "1392362145",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:55:59"
+    },
+    {
+      "code": "FAIRPASS",
+      "name": "Passes for Fair",
+      "status": "Accepted",
+      "solution_id": "1392362678",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:56:50"
+    },
+    {
+      "code": "SIXFRIENDS",
+      "name": "Six Friends",
+      "status": "Accepted",
+      "solution_id": "1392363328",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:58:44"
+    },
+    {
+      "code": "NOTEBOOK",
+      "name": "Count the Notebooks",
+      "status": "Accepted",
+      "solution_id": "1392364364",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 18:59:17"
+    },
+    {
+      "code": "THREETOPICS",
+      "name": "The Three Topics",
+      "status": "Accepted",
+      "solution_id": "1392364988",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:01:09"
+    },
+    {
+      "code": "WATERREQ",
+      "name": "Water Requirement",
+      "status": "Accepted",
+      "solution_id": "1392366072",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:01:57"
+    },
+    {
+      "code": "DISCNT",
+      "name": "Discount",
+      "status": "Accepted",
+      "solution_id": "1392366619",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:02:45"
+    },
+    {
+      "code": "ERROR404",
+      "name": "404 Not Found",
+      "status": "Accepted",
+      "solution_id": "1392366957",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:03:20"
+    },
+    {
+      "code": "CWIREFRAME",
+      "name": "Chef and Wire Frames",
+      "status": "Accepted",
+      "solution_id": "1392367485",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:04:08"
+    },
+    {
+      "code": "F1RULE",
+      "name": "Miami GP",
+      "status": "Accepted",
+      "solution_id": "1392368488",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:05:42"
+    },
+    {
+      "code": "SALESEASON",
+      "name": "Sale Season",
+      "status": "Accepted",
+      "solution_id": "1392369099",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:06:36"
+    },
+    {
+      "code": "CHEFGAMES",
+      "name": "Chefland Games",
+      "status": "Accepted",
+      "solution_id": "1392369436",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:07:06"
+    },
+    {
+      "code": "SUMM",
+      "name": "Sum it",
+      "status": "Accepted",
+      "solution_id": "1392369792",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:07:42"
+    },
+    {
+      "code": "INSTAGRAM",
+      "name": "Instagram",
+      "status": "Accepted",
+      "solution_id": "1392370149",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:09:12"
+    },
+    {
+      "code": "POPULATION",
+      "name": "Final Population",
+      "status": "Accepted",
+      "solution_id": "1392371329",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:10:00"
+    },
+    {
+      "code": "M1ENROL",
+      "name": "MATH1 Enrolment",
+      "status": "Accepted",
+      "solution_id": "1392371755",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:10:42"
+    },
+    {
+      "code": "RIGHTTHERE",
+      "name": "Right There",
+      "status": "Accepted",
+      "solution_id": "1392372388",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:11:38"
+    },
+    {
+      "code": "SUGARCANE",
+      "name": "Sugarcane Juice Business",
+      "status": "Accepted",
+      "solution_id": "1392373034",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-14 19:12:33"
     }
   ]
 }

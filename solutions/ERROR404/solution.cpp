@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem: 404 Not Found
- * Logic: Read the integer X. If X == 404, output "NOT FOUND". Otherwise, output "FOUND".
+ * Logic: Read the integer X. If X == 404, output "NOT FOUND", else "FOUND".
  * Time Complexity: O(1)
  * Space Complexity: O(1)
  */

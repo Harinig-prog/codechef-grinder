@@ -22,7 +22,7 @@ int main() {
         long long x, y;
         cin >> x >> y;
         
-        // Check if following count (x) is strictly greater than 10 * follower count (y)
+        // Check if following count (x) is strictly greater than 10 times follower count (y)
         if (x > 10 * y) {
             cout << "YES" << "\n";
         } else {

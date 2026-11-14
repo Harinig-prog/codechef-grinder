@@ -3,13 +3,14 @@ using namespace std;
 
 /**
  * Problem: Final Population
- * Logic: The final population is calculated as (Initial Population - People Left + People Immigrated).
+ * Logic: The final population is calculated by taking the initial population X,
+ * subtracting the people who left (Y), and adding the people who immigrated (Z).
  * Formula: Final = X - Y + Z
- * Constraints are small (up to 10), so standard integer types are sufficient.
+ * Constraints: X, Y, Z are small (up to 10), so standard int is sufficient.
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

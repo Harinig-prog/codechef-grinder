@@ -3,16 +3,15 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The perimeter of a rectangle with length N and width M is given by the formula:
- * Perimeter = 2 * (N + M)
+ * The perimeter of a rectangle with length N and width M is given by 2 * (N + M).
  * The cost per cm is X.
- * Total Cost = Perimeter * X = 2 * (N + M) * X
+ * Therefore, the total cost = 2 * (N + M) * X.
  * 
  * Constraints:
- * N, M, X <= 1000
- * Max possible cost = 2 * (1000 + 1000) * 1000 = 4,000,000
- * This fits within a standard 32-bit signed integer, but using 'long long' 
- * is a best practice in competitive programming to prevent overflow in 
+ * N, M, X <= 1000.
+ * Maximum possible cost = 2 * (1000 + 1000) * 1000 = 4,000,000.
+ * This fits within a standard 32-bit integer, but using long long is 
+ * safer practice in competitive programming to prevent overflow in 
  * similar problems with larger constraints.
  */
 
@@ -29,7 +28,7 @@ int main() {
         cin >> n >> m >> x;
         
         // Calculate perimeter: 2 * (N + M)
-        // Calculate total cost: Perimeter * X
+        // Calculate total cost: perimeter * X
         long long perimeter = 2 * (n + m);
         long long total_cost = perimeter * x;
         

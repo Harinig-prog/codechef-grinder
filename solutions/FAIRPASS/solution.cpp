@@ -5,7 +5,7 @@ using namespace std;
  * Problem Analysis:
  * Chef wants to enter the fair with his N friends.
  * Total people = Chef + N friends = N + 1 people.
- * Each person requires 1 pass.
+ * Each person needs 1 pass.
  * Total passes required = N + 1.
  * Chef has K passes.
  * Condition for entry: K >= N + 1.
@@ -26,9 +26,9 @@ int main() {
         long long n, k;
         cin >> n >> k;
 
-        // Chef needs N + 1 passes in total.
-        // If K >= N + 1, output YES, else NO.
-        if (k >= n + 1) {
+        // Chef needs (n + 1) passes in total.
+        // If k >= n + 1, he can enter with all his friends.
+        if (k > n) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";

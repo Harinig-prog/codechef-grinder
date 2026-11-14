@@ -26,11 +26,13 @@ int main() {
         long long n;
         cin >> n;
         
-        // Calculate notebooks: 1 kg = 10 notebooks
+        // Calculation: 
+        // Total pages = n * 1000
+        // Total notebooks = (n * 1000) / 100 = n * 10
         long long notebooks = n * 10;
         
         cout << notebooks << "\n";
     }
-    
+
     return 0;
 }

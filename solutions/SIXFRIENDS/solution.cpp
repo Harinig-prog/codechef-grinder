@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * There are 6 friends.
+ * Six friends need accommodation.
  * Option 1: 3 double rooms. Cost = 3 * X.
  * Option 2: 2 triple rooms. Cost = 2 * Y.
  * We need to find the minimum of (3 * X) and (2 * Y).
@@ -11,8 +11,8 @@ using namespace std;
  * Constraints:
  * 1 <= T <= 100
  * 1 <= X < Y <= 100
- * Since X and Y are small, the result will fit in a standard integer,
- * but using long long is good practice for competitive programming.
+ * Since X and Y are small, standard 'int' is sufficient, but 'long long' 
+ * is used for good practice in competitive programming.
  */
 
 int main() {

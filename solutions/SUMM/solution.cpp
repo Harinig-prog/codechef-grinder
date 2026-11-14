@@ -16,11 +16,11 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
-    
+
     while (t--) {
         long long a, b, c;
         cin >> a >> b >> c;
-        
+
         // Check if the sum of A and B equals C
         if (a + b == c) {
             cout << "YES" << "\n";
@@ -28,6 +28,6 @@ int main() {
             cout << "NO" << "\n";
         }
     }
-    
+
     return 0;
 }

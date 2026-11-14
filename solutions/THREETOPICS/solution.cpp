@@ -11,16 +11,15 @@ using namespace std;
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int A, B, C, X;
-    
     // The problem description implies a single line of input per test case.
     // Reading the four integers.
     if (cin >> A >> B >> C >> X) {
-        // Check if X matches any of the prepared topics
+        // Check if X matches any of the prepared topics A, B, or C.
         if (X == A || X == B || X == C) {
             cout << "Yes" << "\n";
         } else {

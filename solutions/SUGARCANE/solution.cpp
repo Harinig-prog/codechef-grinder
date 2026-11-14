@@ -16,11 +16,11 @@ using namespace std;
  * Constraints:
  * N <= 10^6, T <= 1000
  * Max Profit = 15 * 10^6 = 1.5 * 10^7, which fits in a standard 32-bit integer.
- * Using long long is safe practice.
+ * Using long long is safe practice for competitive programming.
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -35,6 +35,6 @@ int main() {
         
         cout << profit << "\n";
     }
-    
+
     return 0;
 }

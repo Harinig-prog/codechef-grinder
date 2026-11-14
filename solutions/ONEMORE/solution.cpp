@@ -3,17 +3,17 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The episode length is 24 minutes.
- * Chef needs to finish the episode strictly before the exam starts.
- * The exam starts in X minutes.
- * "Strictly before" means the time taken (24 minutes) must be less than X.
+ * Chef has X minutes until the exam.
+ * An episode is 24 minutes long.
+ * Chef needs to finish the episode "strictly before" the exam starts.
+ * This means the time taken (24 minutes) must be strictly less than X.
  * Condition: X > 24
  * 
  * Constraints:
  * 1 <= T <= 100
  * 1 <= X <= 100
- * Time Complexity: O(T)
- * Space Complexity: O(1)
+ * Time complexity: O(T)
+ * Space complexity: O(1)
  */
 
 int main() {

@@ -15,17 +15,16 @@ using namespace std;
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t;
     if (!(cin >> t)) return 0;
-    
     while (t--) {
         long long x, y;
         cin >> x >> y;
-        
+
         // Check if Chef's time Y is within 107% of X
         // Using the derived inequality: 100 * Y <= 107 * X
         if (100 * y <= 107 * x) {
@@ -34,6 +33,6 @@ int main() {
             cout << "NO" << "\n";
         }
     }
-    
+
     return 0;
 }

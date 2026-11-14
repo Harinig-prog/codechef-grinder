@@ -10,9 +10,9 @@ using namespace std;
  * Constraints:
  * 1 <= T <= 100
  * 1 <= N, X <= 10
- * 
- * Time Complexity: O(T) - We process each test case in constant time.
- * Space Complexity: O(1) - No extra data structures are used.
+ * Since N and X are small, standard integer types are sufficient.
+ * Time Complexity: O(T) where T is the number of test cases.
+ * Space Complexity: O(1).
  */
 
 int main() {
@@ -27,7 +27,7 @@ int main() {
         long long n, x;
         cin >> n >> x;
         
-        // Check if the number of people is within the hall capacity
+        // Check if the number of people is within the hall's capacity
         if (n <= x) {
             cout << "YES" << "\n";
         } else {
