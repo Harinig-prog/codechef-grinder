@@ -11,7 +11,7 @@ using namespace std;
  * Constraints:
  * 1 <= T <= 100
  * 1 <= X, Y <= 1000
- * X * 5 will be at most 5000, which fits comfortably in a standard integer.
+ * X * 5 will be at most 5000, which fits in a standard integer.
  */
 
 int main() {
@@ -29,7 +29,7 @@ int main() {
         // Calculate maximum distance possible
         long long max_distance = x * 5;
         
-        // Check if distance to home is reachable
+        // Check if Chef can reach home
         if (max_distance >= y) {
             cout << "YES" << "\n";
         } else {

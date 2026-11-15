@@ -30,10 +30,10 @@ int main() {
         int n, m;
         cin >> n >> m;
         
-        // Check if N is divisible by M
+        // Check if candies can be distributed equally
         if (n % m == 0) {
-            // Check if the quotient is even
             int candies_per_friend = n / m;
+            // Check if the equal share is an even number
             if (candies_per_friend % 2 == 0) {
                 cout << "Yes" << "\n";
             } else {

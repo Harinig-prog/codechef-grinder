@@ -9,7 +9,7 @@ using namespace std;
  * - If repair cost Y > X, rebate is X.
  * 
  * This is equivalent to finding the minimum of X and Y.
- * Time Complexity: O(T), where T is the number of test cases.
+ * Time Complexity: O(1) per test case.
  * Space Complexity: O(1).
  */
 

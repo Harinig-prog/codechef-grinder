@@ -9,20 +9,18 @@ using namespace std;
  * Distance to Exit 1 = |X - 1| = X - 1
  * Distance to Exit 2 = |X - 100| = 100 - X
  * 
- * If (X - 1) < (100 - X), the passenger chooses LEFT.
- * If (X - 1) >= (100 - X), the passenger chooses RIGHT.
+ * The passenger chooses the nearest exit.
+ * If (X - 1) < (100 - X), they choose LEFT.
+ * If (X - 1) > (100 - X), they choose RIGHT.
+ * If (X - 1) == (100 - X), the problem implies we check the condition.
+ * Sample case 2: X=50. Distance to 1 is 49, distance to 100 is 50. 49 < 50, so LEFT.
+ * Sample case 5: X=51. Distance to 1 is 50, distance to 100 is 49. 50 > 49, so RIGHT.
  * 
- * Simplifying the condition:
- * X - 1 < 100 - X
- * 2X < 101
- * X < 50.5
- * 
- * So, if X <= 50, the passenger chooses LEFT.
- * If X > 50, the passenger chooses RIGHT.
+ * Therefore, if X <= 50, output LEFT. Otherwise, output RIGHT.
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -32,18 +30,16 @@ int main() {
         int x;
         cin >> x;
         
-        // Based on the logic derived:
-        // Distance to left exit: x - 1
-        // Distance to right exit: 100 - x
-        // If x - 1 < 100 - x, go LEFT.
-        // If x - 1 >= 100 - x, go RIGHT.
+        // Calculate distances
+        int dist_left = x - 1;
+        int dist_right = 100 - x;
         
-        if (x <= 50) {
+        if (dist_left < dist_right) {
             cout << "LEFT" << "\n";
         } else {
             cout << "RIGHT" << "\n";
         }
     }
-
+    
     return 0;
 }

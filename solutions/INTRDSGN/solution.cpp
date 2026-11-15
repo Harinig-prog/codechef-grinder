@@ -3,14 +3,15 @@ using namespace std;
 
 /**
  * Problem: Interior Design
- * The task is to compare the total cost of two interior design styles.
+ * The problem asks us to compare the total cost of two styles.
  * Style 1 cost = X1 + Y1
  * Style 2 cost = X2 + Y2
- * Chef pays the minimum of these two values.
+ * We need to output min(X1 + Y1, X2 + Y2).
  * 
- * Constraints: 1 <= X1, Y1, X2, Y2 <= 100
- * The maximum possible sum is 200, which fits comfortably in an integer.
- * Using long long is safe practice for competitive programming.
+ * Constraints: 1 <= X1, Y1, X2, Y2 <= 100.
+ * The maximum possible sum is 200, which fits easily into a standard integer.
+ * Time Complexity: O(T) where T is the number of test cases.
+ * Space Complexity: O(1).
  */
 
 int main() {
@@ -28,8 +29,7 @@ int main() {
         long long cost1 = x1 + y1;
         long long cost2 = x2 + y2;
         
-        // Output the minimum of the two costs
-        if (cost1 <= cost2) {
+        if (cost1 < cost2) {
             cout << cost1 << "\n";
         } else {
             cout << cost2 << "\n";

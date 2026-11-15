@@ -3,18 +3,16 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef has N friends. Each burger costs X.
- * Total cost required = N * X.
+ * Chef has N friends, each burger costs X.
+ * Total cost = N * X.
  * Chef has K rupees.
  * Chef can afford the party if (N * X) <= K.
  * 
  * Constraints:
- * T <= 1000
  * N, X <= 100
  * K <= 10000
- * N * X max value = 100 * 100 = 10000.
- * Since 10000 fits in a standard 32-bit integer, 'int' is sufficient.
- * However, using 'long long' is good practice to prevent overflow in similar problems.
+ * N * X max value is 100 * 100 = 10000.
+ * This fits within a standard 32-bit integer, but using long long is safe practice.
  */
 
 int main() {

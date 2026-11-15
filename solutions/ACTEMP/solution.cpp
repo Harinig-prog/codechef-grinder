@@ -11,7 +11,7 @@ using namespace std;
  * T must be >= A AND T must be >= C.
  * This is equivalent to T >= max(A, C).
  * 
- * So, we need to find if there exists a T such that:
+ * So we need to find if there exists a T such that:
  * max(A, C) <= T <= B.
  * 
  * Such a T exists if and only if max(A, C) <= B.

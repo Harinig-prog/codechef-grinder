@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 136,
+  "total_solved": 155,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -138,10 +138,30 @@
     "SPECIALITY",
     "LARGESECOND",
     "DISCUS",
-    "HEIGHTRATION"
+    "HEIGHTRATION",
+    "MVR",
+    "FAVOURITENUM",
+    "PARTY2",
+    "DIFFSUM",
+    "LAPIN",
+    "INTRDSGN",
+    "KNGTOR",
+    "NEARESTEXIT",
+    "INSURANCE",
+    "REACH_HOME",
+    "AIRINDEX",
+    "BNE_APT",
+    "NETFLIX",
+    "CREDS",
+    "CANDYSTORE",
+    "CHEAPFOOD",
+    "TYRE",
+    "CANDYDIST",
+    "ACTEMP"
   ],
   "failed_codes": [
-    "SEARCHINARR"
+    "SEARCHINARR",
+    "KITCHENCOST"
   ],
   "pending": [],
   "history": [
@@ -1368,6 +1388,177 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-14 22:02:49"
+    },
+    {
+      "code": "MVR",
+      "name": "Messi vs Ronaldo",
+      "status": "Accepted",
+      "solution_id": "1392913616",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:20:10"
+    },
+    {
+      "code": "FAVOURITENUM",
+      "name": "Favourite Numbers",
+      "status": "Accepted",
+      "solution_id": "1392915253",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:22:57"
+    },
+    {
+      "code": "PARTY2",
+      "name": "Chef gives Party",
+      "status": "Accepted",
+      "solution_id": "1392917075",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:24:00"
+    },
+    {
+      "code": "DIFFSUM",
+      "name": "Sum OR Difference",
+      "status": "Accepted",
+      "solution_id": "1392917636",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:24:36"
+    },
+    {
+      "code": "LAPIN",
+      "name": "Lapindromes",
+      "status": "Accepted",
+      "solution_id": "1392918470",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:25:35"
+    },
+    {
+      "code": "INTRDSGN",
+      "name": "Interior Design",
+      "status": "Accepted",
+      "solution_id": "1392919074",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:26:14"
+    },
+    {
+      "code": "KNGTOR",
+      "name": "Tour of King",
+      "status": "Accepted",
+      "solution_id": "1392919811",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:27:04"
+    },
+    {
+      "code": "NEARESTEXIT",
+      "name": "Nearest Exit",
+      "status": "Accepted",
+      "solution_id": "1392920496",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:27:49"
+    },
+    {
+      "code": "INSURANCE",
+      "name": "Insurance",
+      "status": "Accepted",
+      "solution_id": "1392921038",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:28:27"
+    },
+    {
+      "code": "REACH_HOME",
+      "name": "Reach Home",
+      "status": "Accepted",
+      "solution_id": "1392921856",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:29:20"
+    },
+    {
+      "code": "AIRINDEX",
+      "name": "Air Quality Index",
+      "status": "Accepted",
+      "solution_id": "1392922877",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:30:25"
+    },
+    {
+      "code": "BNE_APT",
+      "name": "Bone Appetit",
+      "status": "Accepted",
+      "solution_id": "1392923633",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:31:17"
+    },
+    {
+      "code": "NETFLIX",
+      "name": "Netflix",
+      "status": "Accepted",
+      "solution_id": "1392924392",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:32:04"
+    },
+    {
+      "code": "CREDS",
+      "name": "Number of Credits",
+      "status": "Accepted",
+      "solution_id": "1392924955",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:32:40"
+    },
+    {
+      "code": "CANDYSTORE",
+      "name": "Candy Store",
+      "status": "Accepted",
+      "solution_id": "1392925662",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:34:24"
+    },
+    {
+      "code": "CHEAPFOOD",
+      "name": "Best Coupon",
+      "status": "Accepted",
+      "solution_id": "1392927533",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:35:34"
+    },
+    {
+      "code": "TYRE",
+      "name": "Tyre problem",
+      "status": "Accepted",
+      "solution_id": "1392930254",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:38:39"
+    },
+    {
+      "code": "CANDYDIST",
+      "name": "Candy Distribution",
+      "status": "Accepted",
+      "solution_id": "1392931285",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:39:51"
+    },
+    {
+      "code": "ACTEMP",
+      "name": "Air Conditioner Temperature",
+      "status": "Accepted",
+      "solution_id": "1392932711",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 12:41:28"
     }
   ]
 }

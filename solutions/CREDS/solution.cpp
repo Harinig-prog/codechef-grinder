@@ -5,13 +5,13 @@ using namespace std;
  * Problem Analysis:
  * We are given X RTP courses (4 credits each), Y Audit courses (2 credits each),
  * and Z Non-RTP courses (0 credits each).
- * Total Credits = (X * 4) + (Y * 2) + (Z * 0)
+ * Total credits = (X * 4) + (Y * 2) + (Z * 0).
  * 
  * Constraints:
  * 1 <= T <= 10
  * 1 <= X, Y, Z <= 10
  * The maximum possible value is (10 * 4) + (10 * 2) + (10 * 0) = 60.
- * This fits well within a standard integer, but we will use long long for safety.
+ * This fits well within a standard integer, but we use long long for safety.
  */
 
 int main() {
@@ -26,7 +26,8 @@ int main() {
         long long x, y, z;
         if (!(cin >> x >> y >> z)) break;
 
-        // Calculate total credits based on the problem description
+        // Calculate total credits
+        // RTP: 4 credits, Audit: 2 credits, Non-RTP: 0 credits
         long long total_credits = (x * 4) + (y * 2) + (z * 0);
 
         // Output the result

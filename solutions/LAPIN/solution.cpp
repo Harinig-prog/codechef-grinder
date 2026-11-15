@@ -10,7 +10,7 @@ using namespace std;
  *    the occurrences of each character in both halves.
  * 4. Compare the two frequency arrays. If they are identical, it's a lapindrome.
  * 
- * Time Complexity: O(T * |S|), where T is the number of test cases and |S| is the string length.
+ * Time Complexity: O(T * |S|), where T is the number of test cases and |S| is the length of the string.
  * Space Complexity: O(1) as the frequency array size is constant (26).
  */
 
