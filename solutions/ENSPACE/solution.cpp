@@ -6,14 +6,14 @@ using namespace std;
  * Chef has N GB of space.
  * He has X files of 1 GB each and Y files of 2 GB each.
  * Total size required = (X * 1) + (Y * 2).
- * Condition: Chef can save files if (X + 2 * Y) <= N.
+ * Chef can save the files if (X + 2 * Y) <= N.
  * 
  * Constraints:
  * T <= 100
  * N, X, Y <= 100
- * The total size will be at most 100 + 2 * 100 = 300, which fits in a standard int.
- * Time complexity per test case: O(1)
- * Total time complexity: O(T)
+ * The maximum possible size is 100 + 2 * 100 = 300, which fits in a standard int.
+ * Time complexity: O(T)
+ * Space complexity: O(1)
  */
 
 int main() {
@@ -28,11 +28,11 @@ int main() {
         long long n, x, y;
         cin >> n >> x >> y;
         
-        // Calculate total size required
-        long long total_size = x + (2 * y);
+        // Calculate total space required
+        long long total_required = x + (2 * y);
         
-        // Check if total size fits in N
-        if (total_size <= n) {
+        // Check if total space required is less than or equal to available space
+        if (total_required <= n) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";

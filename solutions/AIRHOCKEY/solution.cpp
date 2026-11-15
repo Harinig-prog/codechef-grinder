@@ -27,12 +27,12 @@ int main() {
         int a, b;
         cin >> a >> b;
         
-        // Calculate points needed for each player to reach 7
+        // Calculate points remaining for each player to reach 7
         int alice_needed = 7 - a;
         int bob_needed = 7 - b;
         
         // The game ends when the first person reaches 7, 
-        // so we take the minimum of the two.
+        // so we take the minimum of the two requirements.
         int result = min(alice_needed, bob_needed);
         
         cout << result << "\n";

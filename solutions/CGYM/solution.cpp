@@ -8,13 +8,13 @@ using namespace std;
  * - Z: Total budget
  * 
  * Logic:
- * 1. If (X + Y) <= Z: Chef can afford both, output 2.
- * 2. Else if X <= Z: Chef can afford only the gym, output 1.
- * 3. Else: Chef cannot afford the gym, output 0.
+ * 1. If (X + Y) <= Z, Chef can afford both gym and trainer. Output: 2
+ * 2. Else if X <= Z, Chef can only afford the gym. Output: 1
+ * 3. Else, Chef cannot afford the gym. Output: 0
  * 
  * Constraints:
  * T <= 100, X, Y, Z <= 100.
- * Standard integer types are sufficient as the maximum sum is 200.
+ * Standard integer types are sufficient as the sum will not exceed 200.
  */
 
 int main() {
@@ -29,17 +29,17 @@ int main() {
         long long x, y, z;
         cin >> x >> y >> z;
         
-        // Check if both gym and trainer are affordable
+        // Check if Chef can afford both gym and trainer
         if (x + y <= z) {
-            cout << "2" << "\n";
-        } 
-        // Check if only gym is affordable
+            cout << 2 << "\n";
+        }
+        // Check if Chef can afford only the gym
         else if (x <= z) {
-            cout << "1" << "\n";
-        } 
-        // Cannot afford gym
+            cout << 1 << "\n";
+        }
+        // Chef cannot afford the gym
         else {
-            cout << "0" << "\n";
+            cout << 0 << "\n";
         }
     }
     

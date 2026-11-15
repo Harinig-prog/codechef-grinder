@@ -5,8 +5,8 @@ using namespace std;
  * Problem Analysis:
  * Chef needs C chocolates in total.
  * Chef already has X chocolates.
- * Number of chocolates to buy = C - X.
- * Cost per chocolate = Y.
+ * Therefore, Chef needs to buy (C - X) chocolates.
+ * Each chocolate costs Y rupees.
  * Total cost = (C - X) * Y.
  * 
  * Constraints:
@@ -15,8 +15,8 @@ using namespace std;
  * 0 <= X <= C
  * 1 <= Y <= 100
  * 
- * Since the maximum possible cost is (100 - 0) * 100 = 10,000,
- * standard 'int' is sufficient, but 'long long' is used for safety.
+ * Since the maximum value of (C - X) * Y is (100 - 0) * 100 = 10,000,
+ * standard 'int' is sufficient to store the result.
  */
 
 int main() {
@@ -26,6 +26,7 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
+    
     while (t--) {
         long long c, x, y;
         cin >> c >> x >> y;
@@ -33,7 +34,7 @@ int main() {
         // Calculate the number of chocolates needed
         long long needed = c - x;
         
-        // Calculate total cost
+        // Calculate the total cost
         long long total_cost = needed * y;
         
         // Output the result

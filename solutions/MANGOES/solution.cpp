@@ -7,14 +7,13 @@ using namespace std;
  * The weight of N mangoes is N * X.
  * The weight of the truck is Y.
  * The total weight is (N * X) + Y.
- * The bridge can withstand weight Z.
- * We need: (N * X) + Y <= Z
+ * The bridge can withstand Z kilograms, so:
+ * (N * X) + Y <= Z
  * N * X <= Z - Y
  * N <= (Z - Y) / X
  * Since we want the maximum number of mangoes, N = floor((Z - Y) / X).
- * 
- * Constraints: 1 <= X <= Y <= Z <= 100.
- * Since the values are small, standard integer types are sufficient.
+ * Given the constraints 1 <= X, Y, Z <= 100, integer division in C++ 
+ * naturally performs the floor operation for positive integers.
  */
 
 int main() {
@@ -25,19 +24,20 @@ int main() {
     int t;
     if (!(cin >> t)) return 0;
     while (t--) {
-        int x, y, z;
+        long long x, y, z;
         cin >> x >> y >> z;
         
-        // Calculate the remaining capacity for mangoes
-        int remaining_capacity = z - y;
+        // Calculate remaining capacity for mangoes
+        long long remaining_capacity = z - y;
         
-        // Calculate the maximum number of mangoes
-        // Since x >= 1, we don't need to worry about division by zero.
-        int max_mangoes = remaining_capacity / x;
-        
-        // Output the result
-        cout << max_mangoes << "\n";
+        // Calculate maximum number of mangoes
+        // If remaining_capacity is negative (though constraints say Y <= Z), 
+        // the result should be 0.
+        if (remaining_capacity < 0) {
+            cout << 0 << "\n";
+        } else {
+            cout << (remaining_capacity / x) << "\n";
+        }
     }
-
     return 0;
 }

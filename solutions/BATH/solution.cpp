@@ -11,7 +11,7 @@ using namespace std;
  * Constraints:
  * - 1 <= T <= 1000
  * - 1 <= X, Y <= 100
- * - Since X and Y are small, standard integer division is sufficient.
+ * - Since X and Y are small, standard integer arithmetic is sufficient.
  * - Time complexity per test case: O(1)
  * - Space complexity: O(1)
  */
@@ -28,11 +28,9 @@ int main() {
         int x, y;
         cin >> x >> y;
         
-        // Each person needs 2 * y litres of water.
-        // The number of people is the total water divided by water per person.
+        // Each person needs 2 buckets of size Y, so 2 * Y total.
+        // The number of people is the integer division of total water by water per person.
         int water_per_person = 2 * y;
-        
-        // Integer division automatically performs the floor operation.
         int max_people = x / water_per_person;
         
         cout << max_people << "\n";

@@ -4,17 +4,18 @@ using namespace std;
 /**
  * Problem Analysis:
  * We are given N horses with skill levels S[i]. We need to find the minimum 
- * difference between any two horses' skills.
+ * difference between any two horses' skill levels.
  * 
  * Approach:
- * 1. If we sort the array of skills, the minimum difference must exist between 
- *    two adjacent elements in the sorted array.
+ * 1. If we sort the array of skill levels, the minimum difference must occur 
+ *    between two adjacent elements in the sorted array.
  * 2. Sorting takes O(N log N) time.
- * 3. Iterating through the sorted array to find the minimum difference takes O(N) time.
+ * 3. After sorting, we iterate through the array once to find the minimum 
+ *    difference between adjacent elements, which takes O(N) time.
  * 4. Total time complexity per test case: O(N log N).
- * 5. Given N <= 5000 and T <= 10, O(T * N log N) is well within the 1.5s time limit.
- * 6. Skills can be up to 10^9, so the difference fits in a standard 32-bit integer, 
- *    but using long long is safer for general competitive programming practices.
+ * 5. Given N <= 5000 and T <= 10, O(T * N log N) is well within the 1.5s limit.
+ * 6. Skill values are up to 10^9, so the difference fits in a standard 32-bit 
+ *    integer, but using long long is safer for general competitive programming.
  */
 
 void solve() {
@@ -30,7 +31,7 @@ void solve() {
     sort(s.begin(), s.end());
     
     // Initialize min_diff with a large value
-    long long min_diff = 2000000000; // Max possible difference is 10^9
+    long long min_diff = 2000000000LL; // Larger than max possible difference (10^9)
     
     // Compare adjacent elements
     for (int i = 0; i < n - 1; ++i) {

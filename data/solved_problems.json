@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 201,
+  "total_solved": 223,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -203,7 +203,29 @@
     "MAXTASTE",
     "MINCOINS",
     "WATERFLOW",
-    "CHEFBOTTLE"
+    "CHEFBOTTLE",
+    "CHEFCHOCO",
+    "POLTHIEF",
+    "TASTEDEC",
+    "RUNCOMPARE",
+    "CHN15A",
+    "BATH",
+    "DOMINANT",
+    "TRICOIN",
+    "HORSES",
+    "FLOW005",
+    "MANGOES",
+    "JENGA",
+    "SONGS",
+    "CGYM",
+    "MANGOLASSI",
+    "AIRLINES",
+    "AIRHOCKEY",
+    "FLIPCARDS",
+    "MAXDIFFMIN",
+    "ENSPACE",
+    "BUILDINGRACE",
+    "CS2023_GIFT"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -2019,6 +2041,204 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-15 19:49:54"
+    },
+    {
+      "code": "CHEFCHOCO",
+      "name": "Chef and Chocolates",
+      "status": "Accepted",
+      "solution_id": "1393281614",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:08:52"
+    },
+    {
+      "code": "POLTHIEF",
+      "name": "Police and Thief",
+      "status": "Accepted",
+      "solution_id": "1393281668",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:09:34"
+    },
+    {
+      "code": "TASTEDEC",
+      "name": "Tasty Decisions",
+      "status": "Accepted",
+      "solution_id": "1393281686",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:11:05"
+    },
+    {
+      "code": "RUNCOMPARE",
+      "name": "Running Comparison",
+      "status": "Accepted",
+      "solution_id": "1393281751",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:12:27"
+    },
+    {
+      "code": "CHN15A",
+      "name": "Mutated Minions",
+      "status": "Accepted",
+      "solution_id": "1393281779",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:13:21"
+    },
+    {
+      "code": "BATH",
+      "name": "Bath in Winters",
+      "status": "Accepted",
+      "solution_id": "1393281802",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:13:55"
+    },
+    {
+      "code": "DOMINANT",
+      "name": "Dominant Army",
+      "status": "Accepted",
+      "solution_id": "1393281828",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:14:33"
+    },
+    {
+      "code": "TRICOIN",
+      "name": "Coins And Triangle",
+      "status": "Accepted",
+      "solution_id": "1393281848",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:15:12"
+    },
+    {
+      "code": "HORSES",
+      "name": "Racing Horses",
+      "status": "Accepted",
+      "solution_id": "1393281879",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:15:52"
+    },
+    {
+      "code": "FLOW005",
+      "name": "Smallest Numbers of Notes",
+      "status": "Accepted",
+      "solution_id": "1393281905",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:17:31"
+    },
+    {
+      "code": "MANGOES",
+      "name": "The Mango Truck",
+      "status": "Accepted",
+      "solution_id": "1393281964",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:18:11"
+    },
+    {
+      "code": "JENGA",
+      "name": "Jenga Night",
+      "status": "Accepted",
+      "solution_id": "1393281991",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:18:44"
+    },
+    {
+      "code": "SONGS",
+      "name": "Playlist",
+      "status": "Accepted",
+      "solution_id": "1393282015",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:20:22"
+    },
+    {
+      "code": "CGYM",
+      "name": "Chef and Gym",
+      "status": "Accepted",
+      "solution_id": "1393282099",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:21:15"
+    },
+    {
+      "code": "MANGOLASSI",
+      "name": "Summer Time",
+      "status": "Accepted",
+      "solution_id": "1393282143",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:22:04"
+    },
+    {
+      "code": "AIRLINES",
+      "name": "Codechef Airlines",
+      "status": "Accepted",
+      "solution_id": "1393282190",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:23:05"
+    },
+    {
+      "code": "AIRHOCKEY",
+      "name": "Air Hockey",
+      "status": "Accepted",
+      "solution_id": "1393282230",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:23:49"
+    },
+    {
+      "code": "FLIPCARDS",
+      "name": "Flip the cards",
+      "status": "Accepted",
+      "solution_id": "1393282270",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:24:33"
+    },
+    {
+      "code": "MAXDIFFMIN",
+      "name": "Max minus Min",
+      "status": "Accepted",
+      "solution_id": "1393282302",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:25:10"
+    },
+    {
+      "code": "ENSPACE",
+      "name": "Enough Space",
+      "status": "Accepted",
+      "solution_id": "1393282332",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:25:50"
+    },
+    {
+      "code": "BUILDINGRACE",
+      "name": "Building Race",
+      "status": "Accepted",
+      "solution_id": "1393282385",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:26:37"
+    },
+    {
+      "code": "CS2023_GIFT",
+      "name": "The Gift",
+      "status": "Accepted",
+      "solution_id": "1393282431",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 22:27:23"
     }
   ]
 }

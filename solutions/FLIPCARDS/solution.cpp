@@ -7,11 +7,11 @@ using namespace std;
  * X cards are face-up.
  * (N - X) cards are face-down.
  * 
- * To make all cards face-up, we need to flip all (N - X) face-down cards.
- * To make all cards face-down, we need to flip all X face-up cards.
+ * To make all cards face-up, we must flip all (N - X) face-down cards.
+ * To make all cards face-down, we must flip all X face-up cards.
  * 
- * The minimum number of operations is the minimum of these two values:
- * min(X, N - X).
+ * The goal is to find the minimum number of operations, which is:
+ * min(X, N - X)
  */
 
 int main() {
@@ -24,14 +24,16 @@ int main() {
     while (t--) {
         int n, x;
         cin >> n >> x;
-        
-        // Calculate the two possibilities:
-        // 1. Flip all face-up cards to make them all face-down (cost = x)
-        // 2. Flip all face-down cards to make them all face-up (cost = n - x)
+
+        // The number of face-up cards is x.
+        // The number of face-down cards is (n - x).
+        // We can either flip all face-up cards to make them face-down,
+        // or flip all face-down cards to make them face-up.
+        // The minimum operations is the smaller of these two counts.
         int result = min(x, n - x);
         
         cout << result << "\n";
     }
-    
+
     return 0;
 }

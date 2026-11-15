@@ -2,17 +2,15 @@
 using namespace std;
 
 /**
- * Problem Analysis:
- * Chef is at floor A with speed X. Time taken = A / X.
- * Chefina is at floor B with speed Y. Time taken = B / Y.
- * We need to compare A/X and B/Y.
- * To avoid floating point precision issues, we compare A/X and B/Y by cross-multiplying:
- * A/X < B/Y  <=> A * Y < B * X
- * A/X > B/Y  <=> A * Y > B * X
- * A/X == B/Y <=> A * Y == B * X
+ * Problem: Building Race
+ * Chef takes A/X minutes to reach the ground floor.
+ * Chefina takes B/Y minutes to reach the ground floor.
+ * To compare A/X and B/Y without floating point precision issues,
+ * we compare A * Y and B * X.
  * 
- * Constraints: A, B <= 100; X, Y <= 10.
- * A * Y and B * X will be at most 1000, which fits easily in an integer.
+ * If A * Y < B * X, then A/X < B/Y (Chef is faster).
+ * If A * Y > B * X, then A/X > B/Y (Chefina is faster).
+ * If A * Y == B * X, then A/X == B/Y (Both reach at the same time).
  */
 
 int main() {
@@ -26,14 +24,15 @@ int main() {
         long long a, b, x, y;
         cin >> a >> b >> x >> y;
 
-        // Time for Chef = a/x, Time for Chefina = b/y
-        // Compare (a/x) and (b/y) using cross-multiplication: a*y vs b*x
-        long long chef_time_val = a * y;
-        long long chefina_time_val = b * x;
+        // Time for Chef = a/x
+        // Time for Chefina = b/y
+        // Compare a/x vs b/y by cross-multiplying: a*y vs b*x
+        long long timeChef = a * y;
+        long long timeChefina = b * x;
 
-        if (chef_time_val < chefina_time_val) {
+        if (timeChef < timeChefina) {
             cout << "Chef" << "\n";
-        } else if (chefina_time_val < chef_time_val) {
+        } else if (timeChefina < timeChef) {
             cout << "Chefina" << "\n";
         } else {
             cout << "Both" << "\n";

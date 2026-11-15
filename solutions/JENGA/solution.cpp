@@ -4,18 +4,17 @@ using namespace std;
 /**
  * Problem Analysis:
  * There are N people and X tiles.
- * In each round, every person takes 1 tile.
- * This means in one round, N tiles are consumed.
+ * In each round, every person picks 1 tile.
+ * This means in one round, N tiles are used.
  * For the game to be valid:
- * 1. All players must have a tile in each round (X must be at least N).
- * 2. All tiles must be used at the end (X must be perfectly divisible by N).
+ * 1. X must be divisible by N (X % N == 0), so that all tiles are used exactly.
+ * 2. X must be greater than or equal to N (X >= N), so that at least one round can be played.
  * 
- * Mathematically, this is equivalent to:
- * X >= N AND X % N == 0.
+ * Combining these, the condition is (X % N == 0) AND (X >= N).
  */
 
 int main() {
-    // Optimize I/O operations
+    // Optimize standard I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -26,7 +25,7 @@ int main() {
         cin >> n >> x;
 
         // Check if X is divisible by N and X is at least N
-        if (x >= n && x % n == 0) {
+        if (x % n == 0 && x >= n) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";

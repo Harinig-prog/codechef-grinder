@@ -7,32 +7,32 @@ using namespace std;
  * Laptop costs N rupees.
  * Gymkhana fund has M rupees.
  * Om can use the fund as much as he wants.
- * Therefore, the total money Om can have is X + M.
- * He can buy the laptop if (X + M) >= N.
+ * Therefore, the total amount Om can spend is X + M.
+ * Om can buy the laptop if (X + M) >= N.
  * 
  * Constraints: 1 <= X, N, M <= 10^3.
- * The sum X + M will be at most 2000, which fits in a standard integer.
- * Using long long is safe practice for competitive programming.
+ * Using long long is safe to prevent any potential overflow, 
+ * though int is sufficient for these constraints.
  */
 
 int main() {
-    // Fast I/O
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     // The problem description implies a single test case based on the input format,
-    // but standard competitive programming practice often involves handling multiple 
-    // test cases if specified. Given the problem description says "The first and only line",
-    // we read the three integers once.
+    // but standard competitive programming practice suggests handling potential 
+    // multiple inputs if the problem structure allows. Given the description:
+    // "The first and only line of input contains three space-separated integers"
+    // we read exactly one set of inputs.
     
     long long X, N, M;
-    if (!(cin >> X >> N >> M)) return 0;
-
-    // Check if total available money is sufficient
-    if (X + M >= N) {
-        cout << "YES" << "\n";
-    } else {
-        cout << "NO" << "\n";
+    if (cin >> X >> N >> M) {
+        if (X + M >= N) {
+            cout << "YES" << "\n";
+        } else {
+            cout << "NO" << "\n";
+        }
     }
 
     return 0;

@@ -3,13 +3,13 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We are given three integers A, B, and C such that A < B < C.
- * We need to find max(A, B, C) - min(A, B, C).
- * Since A < B < C, the maximum value is always C and the minimum value is always A.
+ * Given A < B < C, the maximum value is C and the minimum value is A.
+ * The problem asks for max(A, B, C) - min(A, B, C).
+ * Since A < B < C, max(A, B, C) = C and min(A, B, C) = A.
  * Therefore, the result is simply C - A.
  * 
  * Constraints: 1 <= A < B < C <= 10.
- * Time Complexity: O(1) per test case.
+ * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1).
  */
 
@@ -24,11 +24,11 @@ int main() {
         long long a, b, c;
         cin >> a >> b >> c;
         
-        // Given A < B < C, max is C and min is A.
-        // The difference is C - A.
-        long long result = c - a;
-        
-        cout << result << "\n";
+        // Since A < B < C is guaranteed:
+        // max(A, B, C) is C
+        // min(A, B, C) is A
+        // Result is C - A
+        cout << (c - a) << "\n";
     }
 
     return 0;

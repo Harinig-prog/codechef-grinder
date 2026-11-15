@@ -16,7 +16,7 @@ using namespace std;
  */
 
 int main() {
-    // Optimize standard I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -24,24 +24,24 @@ int main() {
     if (!(cin >> t)) return 0;
     
     while (t--) {
-        int n, k;
+        int n;
+        long long k;
         cin >> n >> k;
         
         int wolverine_count = 0;
         for (int i = 0; i < n; ++i) {
-            int val;
+            long long val;
             cin >> val;
             
-            // Apply the mutation
-            int mutated_val = val + k;
+            // Apply transformation
+            long long new_val = val + k;
             
-            // Check if divisible by 7
-            if (mutated_val % 7 == 0) {
+            // Check divisibility by 7
+            if (new_val % 7 == 0) {
                 wolverine_count++;
             }
         }
         
-        // Output the result for the current test case
         cout << wolverine_count << "\n";
     }
     
