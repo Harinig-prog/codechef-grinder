@@ -13,7 +13,7 @@ using namespace std;
  * 0 <= Y <= 1000
  * 3 * X will be at most 300, which fits in a standard integer.
  * Time complexity per test case: O(1)
- * Space complexity: O(1)
+ * Total time complexity: O(T)
  */
 
 int main() {
@@ -23,20 +23,21 @@ int main() {
 
     int t;
     if (!(cin >> t)) return 0;
+    
     while (t--) {
         long long x, y;
         cin >> x >> y;
-
-        // Calculate total tablets needed
-        long long needed = 3 * x;
-
+        
+        // Calculate required tablets
+        long long required = 3 * x;
+        
         // Check if current tablets are sufficient
-        if (y >= needed) {
+        if (y >= required) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";
         }
     }
-
+    
     return 0;
 }

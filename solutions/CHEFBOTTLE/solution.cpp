@@ -3,19 +3,19 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef has N bottles, each of capacity X.
+ * Chef has N bottles, each with capacity X.
  * Total water available is K.
- * We need to find the maximum number of bottles that can be filled completely.
+ * We want to find the maximum number of bottles that can be filled completely.
  * 
- * 1. The number of bottles that can be filled by the water available is floor(K / X).
+ * 1. The number of bottles that can be filled by the water is floor(K / X).
  * 2. However, Chef only has N bottles available.
  * 3. Therefore, the number of bottles filled cannot exceed N.
- * 4. The answer is min(N, K / X).
+ * 4. The result is min(N, floor(K / X)).
  * 
  * Constraints:
- * N, X, K up to 10^5. The result will fit in a standard integer.
- * Time Complexity: O(1) per test case.
- * Space Complexity: O(1).
+ * N, X, K <= 10^5.
+ * The calculation fits within standard integer types, but using long long 
+ * is safe practice in competitive programming to prevent overflow in intermediate steps.
  */
 
 int main() {
@@ -35,13 +35,13 @@ int main() {
             continue;
         }
 
-        // Calculate how many bottles can be filled with K water
+        // Calculate maximum bottles possible based on water
         long long bottles_by_water = k / x;
 
-        // The answer is the minimum of available bottles and bottles possible by water
-        long long result = min(n, bottles_by_water);
+        // The answer is the minimum of available bottles and bottles filled by water
+        long long ans = min(n, bottles_by_water);
 
-        cout << result << "\n";
+        cout << ans << "\n";
     }
 
     return 0;

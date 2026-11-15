@@ -12,13 +12,13 @@ using namespace std;
  */
 
 int main() {
-    // Fast I/O setup
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     // The problem description implies a single input X per run based on the 
-    // sample format, but standard competitive programming practice handles 
-    // single inputs directly.
+    // sample format, but standard competitive programming practice often 
+    // involves a test case count 't'. Given the constraints and format:
     int X;
     if (!(cin >> X)) return 0;
 

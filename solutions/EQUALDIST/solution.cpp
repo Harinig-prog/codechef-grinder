@@ -5,18 +5,15 @@ using namespace std;
  * Problem Analysis:
  * Alice has A chocolates and Bob has B chocolates.
  * Total chocolates = A + B.
- * To distribute them equally between two people, the total sum (A + B)
+ * To distribute them equally between two people, the total sum (A + B) 
  * must be divisible by 2.
  * 
- * Constraints:
- * 1 <= T <= 1000
- * 1 <= A, B <= 10^5
- * The sum A + B will be at most 2 * 10^5, which fits in a standard 32-bit integer.
- * Using long long is safe practice for competitive programming.
+ * Time Complexity: O(T) where T is the number of test cases.
+ * Space Complexity: O(1) as we only use a few variables.
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -27,7 +24,7 @@ int main() {
         long long a, b;
         cin >> a >> b;
         
-        // Check if the total sum is even
+        // Check if the sum is even
         if ((a + b) % 2 == 0) {
             cout << "YES" << "\n";
         } else {

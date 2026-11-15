@@ -15,33 +15,36 @@ using namespace std;
  * If (W + Y * Z) < X: unfilled
  * 
  * Constraints:
- * W, X, Y, Z <= 1000
- * W + Y * Z <= 1000 + 1000 * 1000 = 1,001,000
- * This fits comfortably within a standard 32-bit integer, 
+ * W, X, Y, Z <= 1000.
+ * Max possible water = 1000 + (1000 * 1000) = 1,001,000.
+ * This fits comfortably within a standard 32-bit signed integer, 
  * but using long long is good practice to prevent overflow in similar problems.
  */
+
+void solve() {
+    long long W, X, Y, Z;
+    if (!(cin >> W >> X >> Y >> Z)) return;
+    
+    long long total_water = W + (Y * Z);
+    
+    if (total_water > X) {
+        cout << "overflow" << "\n";
+    } else if (total_water == X) {
+        cout << "filled" << "\n";
+    } else {
+        cout << "unfilled" << "\n";
+    }
+}
 
 int main() {
     // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-
+    
     int t;
     if (!(cin >> t)) return 0;
-    
     while (t--) {
-        long long W, X, Y, Z;
-        cin >> W >> X >> Y >> Z;
-        
-        long long total_water = W + (Y * Z);
-        
-        if (total_water > X) {
-            cout << "overflow" << "\n";
-        } else if (total_water == X) {
-            cout << "filled" << "\n";
-        } else {
-            cout << "unfilled" << "\n";
-        }
+        solve();
     }
     
     return 0;

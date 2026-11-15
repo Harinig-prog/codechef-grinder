@@ -4,8 +4,8 @@ using namespace std;
 /**
  * Problem Analysis:
  * The resolution passes if X >= N / 2.0.
- * To avoid floating point arithmetic, we can multiply both sides by 2:
- * 2 * X >= N
+ * Since N and X are integers, the condition "half or more than half" 
+ * is equivalent to X * 2 >= N.
  * 
  * Constraints:
  * T <= 5000
@@ -16,24 +16,25 @@ using namespace std;
  */
 
 int main() {
-    // Optimize I/O operations
+    // Optimize standard I/O operations for competitive programming
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t;
     if (!(cin >> t)) return 0;
+    
     while (t--) {
         int n, x;
         cin >> n >> x;
-
-        // The condition "half or more than half" means X >= N/2.0
-        // Which is equivalent to 2 * X >= N
+        
+        // The condition is X >= N / 2.
+        // To avoid floating point issues, we use 2 * X >= N.
         if (2 * x >= n) {
             cout << "YES" << "\n";
         } else {
             cout << "NO" << "\n";
         }
     }
-
+    
     return 0;
 }

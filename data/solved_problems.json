@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 177,
+  "total_solved": 201,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -179,7 +179,31 @@
     "FINDSHOES",
     "RATINGINPRAC",
     "INVESTMENT",
-    "LASTLEVELS"
+    "LASTLEVELS",
+    "BUDGET_",
+    "DOLL",
+    "HAPPYSTR",
+    "PARLIAMENT",
+    "WGHTS",
+    "TRAVELFAST",
+    "TABLETS",
+    "KITCHENSPICE",
+    "ELECTN",
+    "EQUALDIST",
+    "CHEFSCORE",
+    "NUM239",
+    "MONOPOLY",
+    "SST",
+    "DOREWARD",
+    "QUALIFY",
+    "PODIUM",
+    "OCTATHON",
+    "ASSIGNMNT",
+    "PROINC",
+    "MAXTASTE",
+    "MINCOINS",
+    "WATERFLOW",
+    "CHEFBOTTLE"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -1779,6 +1803,222 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-15 16:28:09"
+    },
+    {
+      "code": "BUDGET_",
+      "name": "Monthly Budget",
+      "status": "Accepted",
+      "solution_id": "1393259757",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:30:02"
+    },
+    {
+      "code": "DOLL",
+      "name": "Red Light, Green Light",
+      "status": "Accepted",
+      "solution_id": "1393260309",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:30:45"
+    },
+    {
+      "code": "HAPPYSTR",
+      "name": "Chef and Happy String ",
+      "status": "Accepted",
+      "solution_id": "1393260572",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:31:34"
+    },
+    {
+      "code": "PARLIAMENT",
+      "name": "Parliament",
+      "status": "Accepted",
+      "solution_id": "1393260827",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:32:30"
+    },
+    {
+      "code": "WGHTS",
+      "name": "Weights",
+      "status": "Accepted",
+      "solution_id": "1393261050",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:33:15"
+    },
+    {
+      "code": "TRAVELFAST",
+      "name": "Car or Bike",
+      "status": "Accepted",
+      "solution_id": "1393261225",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:33:52"
+    },
+    {
+      "code": "TABLETS",
+      "name": "Multivitamin Tablets",
+      "status": "Accepted",
+      "solution_id": "1393261343",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:34:25"
+    },
+    {
+      "code": "KITCHENSPICE",
+      "name": "Spice Level",
+      "status": "Accepted",
+      "solution_id": "1393261556",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:35:12"
+    },
+    {
+      "code": "ELECTN",
+      "name": "Elections in Chefland",
+      "status": "Accepted",
+      "solution_id": "1393261837",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:36:08"
+    },
+    {
+      "code": "EQUALDIST",
+      "name": "Equal Distribution",
+      "status": "Accepted",
+      "solution_id": "1393262095",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:36:59"
+    },
+    {
+      "code": "CHEFSCORE",
+      "name": "Test Score",
+      "status": "Accepted",
+      "solution_id": "1393262300",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:37:40"
+    },
+    {
+      "code": "NUM239",
+      "name": "Counting Pretty Numbers",
+      "status": "Accepted",
+      "solution_id": "1393262533",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:38:33"
+    },
+    {
+      "code": "MONOPOLY",
+      "name": "Monopoly in Chefland",
+      "status": "Accepted",
+      "solution_id": "1393262727",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:39:28"
+    },
+    {
+      "code": "SST",
+      "name": "Sasta Shark Tank",
+      "status": "Accepted",
+      "solution_id": "1393262957",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:40:16"
+    },
+    {
+      "code": "DOREWARD",
+      "name": "Donation Rewards",
+      "status": "Accepted",
+      "solution_id": "1393263195",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:41:06"
+    },
+    {
+      "code": "QUALIFY",
+      "name": "Qualify the round",
+      "status": "Accepted",
+      "solution_id": "1393263427",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:42:00"
+    },
+    {
+      "code": "PODIUM",
+      "name": "Podium Finish",
+      "status": "Accepted",
+      "solution_id": "1393263647",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:42:53"
+    },
+    {
+      "code": "OCTATHON",
+      "name": "October Marathon",
+      "status": "Accepted",
+      "solution_id": "1393263792",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:43:34"
+    },
+    {
+      "code": "ASSIGNMNT",
+      "name": "Pending Assignments",
+      "status": "Accepted",
+      "solution_id": "1393264111",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:45:02"
+    },
+    {
+      "code": "PROINC",
+      "name": "Profit Increment",
+      "status": "Accepted",
+      "solution_id": "1393264306",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:45:52"
+    },
+    {
+      "code": "MAXTASTE",
+      "name": "Maximise the Tastiness",
+      "status": "Accepted",
+      "solution_id": "1393264529",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:46:46"
+    },
+    {
+      "code": "MINCOINS",
+      "name": "Minimum number of coins",
+      "status": "Accepted",
+      "solution_id": "1393264693",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:47:25"
+    },
+    {
+      "code": "WATERFLOW",
+      "name": "Bucket and Water Flow ",
+      "status": "Accepted",
+      "solution_id": "1393264824",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:48:57"
+    },
+    {
+      "code": "CHEFBOTTLE",
+      "name": "Chef and Water Bottles",
+      "status": "Accepted",
+      "solution_id": "1393265242",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 19:49:54"
     }
   ]
 }

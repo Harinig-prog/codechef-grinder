@@ -3,20 +3,19 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Chef is 3rd.
- * Gap between Chef and 2nd place = A
- * Gap between 2nd place and 1st place = B
- * Total gap between Chef and 1st place = A + B
+ * Chef is in 3rd place.
+ * Time gap between Chef (3rd) and Runner-up (2nd) = A
+ * Time gap between Runner-up (2nd) and Winner (1st) = B
+ * The total time gap between Chef and the Winner is the sum of the two gaps: A + B.
  * 
  * Constraints:
- * T <= 100
+ * 1 <= T <= 100
  * 1 <= A, B <= 10
- * Since A and B are very small, the sum will not exceed 20, 
- * which fits comfortably within a standard integer.
+ * The sum A + B will be at most 20, which fits comfortably in a standard integer.
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -26,8 +25,9 @@ int main() {
     while (t--) {
         long long a, b;
         if (cin >> a >> b) {
-            // The time gap between Chef and the winner is the sum of the two gaps
-            cout << (a + b) << "\n";
+            // Calculate the total time gap
+            long long total_gap = a + b;
+            cout << total_gap << "\n";
         }
     }
 

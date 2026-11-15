@@ -2,7 +2,7 @@
 using namespace std;
 
 /**
- * Problem: DOREWARD - Donation Rewards
+ * Problem: Donation Rewards
  * Logic:
  * - If X <= 3: BRONZE
  * - If 3 < X <= 6: SILVER
@@ -13,17 +13,17 @@ using namespace std;
  */
 
 int main() {
-    // Fast I/O for competitive programming
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
     int t;
     if (!(cin >> t)) return 0;
-
+    
     while (t--) {
         int x;
         cin >> x;
-
+        
         if (x <= 3) {
             cout << "BRONZE" << "\n";
         } else if (x <= 6) {
@@ -32,6 +32,6 @@ int main() {
             cout << "GOLD" << "\n";
         }
     }
-
+    
     return 0;
 }

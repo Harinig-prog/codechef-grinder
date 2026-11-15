@@ -4,16 +4,17 @@ using namespace std;
 /**
  * Problem Analysis:
  * Akshat has X rupees.
- * Daily expenditure is Y.
+ * Daily expenditure is Y rupees.
  * The month has 30 days.
  * Total expenditure for the month = 30 * Y.
  * Akshat has enough money if X >= 30 * Y.
  * 
  * Constraints:
- * X, Y <= 10^5.
- * 30 * Y <= 30 * 10^5 = 3 * 10^6.
+ * 1 <= T <= 100
+ * 1 <= X, Y <= 10^5
+ * 30 * Y can be up to 30 * 10^5 = 3 * 10^6.
  * This fits within a standard 32-bit integer, but using long long is safer 
- * practice in competitive programming to prevent overflow in similar problems.
+ * and good practice in competitive programming to prevent overflow.
  */
 
 int main() {

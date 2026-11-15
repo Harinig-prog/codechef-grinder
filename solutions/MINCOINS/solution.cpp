@@ -3,18 +3,23 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We have denominations of 5 and 10.
- * 1. If X is not divisible by 5, it is impossible to form the sum. Output -1.
+ * We have coins of denominations 5 and 10.
+ * To pay exactly X rupees:
+ * 1. If X is not divisible by 5, it is impossible to pay, so output -1.
  * 2. If X is divisible by 5, we want to minimize the number of coins.
- *    Since 10 is larger than 5, we should use as many 10-rupee coins as possible.
- *    - If X is divisible by 10, the minimum coins = X / 10.
- *    - If X is not divisible by 10 (but is divisible by 5), we use (X / 10) coins of 10 rupees,
- *      and the remaining 5 rupees will be covered by exactly one 5-rupee coin.
- *      Total coins = (X / 10) + 1.
+ *    Since 10 > 5, we should use as many 10-rupee coins as possible.
+ *    - Number of 10-rupee coins = X / 10
+ *    - Remaining amount = X % 10
+ *    - If remainder is 0, we are done.
+ *    - If remainder is 5, we need exactly one 5-rupee coin.
  * 
- * Complexity:
- * Time: O(1) per test case, O(T) total.
- * Space: O(1).
+ * Logic:
+ * If X % 5 != 0: return -1
+ * Else:
+ *   coins = (X / 10) + ((X % 10) / 5)
+ *   This simplifies to:
+ *   If X % 10 == 0: X / 10
+ *   Else: (X / 10) + 1
  */
 
 int main() {
@@ -23,23 +28,22 @@ int main() {
     cin.tie(NULL);
 
     int t;
-    cin >> t;
+    if (!(cin >> t)) return 0;
     while (t--) {
         int x;
         cin >> x;
 
-        // If X is not divisible by 5, it's impossible to pay
+        // If X is not divisible by 5, it's impossible to form the sum
         if (x % 5 != 0) {
             cout << -1 << "\n";
         } else {
-            // If divisible by 10, use only 10-rupee coins
-            if (x % 10 == 0) {
-                cout << x / 10 << "\n";
-            } else {
-                // If divisible by 5 but not 10, use (X/10) 10-rupee coins 
-                // and one 5-rupee coin.
-                cout << (x / 10) + 1 << "\n";
+            // Use as many 10s as possible
+            int coins = x / 10;
+            // If there's a remainder (which must be 5 if divisible by 5), add one 5-rupee coin
+            if (x % 10 != 0) {
+                coins += 1;
             }
+            cout << coins << "\n";
         }
     }
 

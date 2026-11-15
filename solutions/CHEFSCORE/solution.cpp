@@ -5,13 +5,13 @@ using namespace std;
  * Problem Analysis:
  * Chef has N problems, each worth X marks.
  * Chef can get either 0 or X marks per problem.
- * Total score Y must be a multiple of X, where the number of problems 
- * solved correctly (Y/X) is between 0 and N inclusive.
+ * Total score Y must be a multiple of X, where the multiplier (number of problems solved)
+ * is between 0 and N inclusive.
  * 
- * Conditions:
+ * Mathematically:
  * 1. Y must be divisible by X (Y % X == 0).
  * 2. The number of problems solved (Y / X) must be <= N.
- * 3. Y must be >= 0 (given by constraints).
+ * 3. Special case: If Y == 0, it is always possible (solve 0 problems).
  */
 
 int main() {
@@ -25,12 +25,16 @@ int main() {
         long long n, x, y;
         cin >> n >> x >> y;
 
-        // If Y is 0, it's always possible (solve 0 problems).
-        // Otherwise, Y must be a multiple of X, and the number of problems
-        // solved (Y/X) must not exceed the total number of problems N.
-        if (y % x == 0 && (y / x) <= n) {
+        // If Y is 0, Chef can always achieve this by solving 0 problems.
+        if (y == 0) {
             cout << "YES" << "\n";
-        } else {
+        } 
+        // If Y is not 0, it must be a multiple of X, 
+        // and the number of problems solved (y/x) must not exceed N.
+        else if (y % x == 0 && (y / x) <= n) {
+            cout << "YES" << "\n";
+        } 
+        else {
             cout << "NO" << "\n";
         }
     }

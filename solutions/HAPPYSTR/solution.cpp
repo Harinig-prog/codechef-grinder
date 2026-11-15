@@ -4,8 +4,8 @@ using namespace std;
 /**
  * Problem: Chef and Happy String
  * Logic: We need to find if there exists a contiguous substring of vowels 
- * with length > 2. This is equivalent to checking if there are 3 or more 
- * consecutive vowels in the string.
+ * with length > 2. This is equivalent to checking if there is a sequence 
+ * of at least 3 consecutive vowels in the string.
  */
 
 bool isVowel(char c) {
@@ -44,10 +44,9 @@ int main() {
     cin.tie(NULL);
     
     int t;
-    cin >> t;
+    if (!(cin >> t)) return 0;
     while (t--) {
         solve();
     }
-    
     return 0;
 }
