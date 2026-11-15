@@ -12,14 +12,13 @@ using namespace std;
  * 
  * Constraints:
  * W, X, Y, Z <= 10^4
- * The maximum possible value is 10^4 + 10^4 * 10^4 = 100,010,000
- * The minimum possible value is 10^4 - 10^4 * 10^4 = -99,990,000
- * These values fit comfortably within a standard 32-bit signed integer (int),
- * but using long long is safer and good practice in competitive programming.
+ * The result can be negative, and the maximum possible value is 10^4 + 10^4 * 10^4 = 100,010,000.
+ * This fits comfortably within a standard 32-bit signed integer, but using long long 
+ * is a good practice to prevent overflow in competitive programming.
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

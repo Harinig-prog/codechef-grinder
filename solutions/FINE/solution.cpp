@@ -4,16 +4,16 @@ using namespace std;
 /**
  * Problem: Overspeeding Fine
  * Logic:
- * - If X <= 70, fine = 0
- * - If 70 < X <= 100, fine = 500
- * - If X > 100, fine = 2000
+ * - If X <= 70: Fine = 0
+ * - If 70 < X <= 100: Fine = 500
+ * - If X > 100: Fine = 2000
  * 
  * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1) as we only use a few variables.
  */
 
 int main() {
-    // Fast I/O setup
+    // Fast I/O for competitive programming
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

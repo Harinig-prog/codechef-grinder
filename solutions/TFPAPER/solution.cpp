@@ -3,8 +3,8 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * Alice has N questions.
- * She scored K marks, meaning she answered K questions correctly and (N - K) questions incorrectly.
+ * Alice has N questions in total.
+ * Alice scored K marks, meaning she answered K questions correctly and (N - K) questions incorrectly.
  * Bob answered every question opposite to Alice.
  * - If Alice answered a question correctly, Bob answered it incorrectly.
  * - If Alice answered a question incorrectly, Bob answered it correctly.
@@ -17,8 +17,7 @@ using namespace std;
  * 1 <= T <= 2000
  * 1 <= N <= 100
  * 0 <= K <= N
- * Time complexity: O(T)
- * Space complexity: O(1)
+ * The result will always be between 0 and 100, so 'int' is sufficient.
  */
 
 int main() {
@@ -29,14 +28,14 @@ int main() {
     int t;
     if (!(cin >> t)) return 0;
     while (t--) {
-        long long n, k;
+        int n, k;
         cin >> n >> k;
         
         // Bob's score is the number of questions Alice got wrong
-        long long bobs_score = n - k;
+        int bobs_score = n - k;
         
         cout << bobs_score << "\n";
     }
-    
+
     return 0;
 }

@@ -11,8 +11,9 @@ using namespace std;
  * 
  * Constraints:
  * - T <= 10, X <= 10, Q <= P <= 10.
- * - The values are small enough that standard 'int' is sufficient, 
- *   but 'long long' is used for robustness as per instructions.
+ * - The result will fit in a standard integer, but using long long is safe practice.
+ * - Time complexity per test case: O(1).
+ * - Space complexity: O(1).
  */
 
 int main() {
@@ -28,10 +29,10 @@ int main() {
         cin >> x >> p >> q;
         
         // Calculate number of passengers without tickets
-        long long passengers_without_ticket = p - q;
+        long long passengers_without_tickets = p - q;
         
         // Calculate total fine
-        long long total_fine = passengers_without_ticket * x;
+        long long total_fine = passengers_without_tickets * x;
         
         // Output the result
         cout << total_fine << "\n";

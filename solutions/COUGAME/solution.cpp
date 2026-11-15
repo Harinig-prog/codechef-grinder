@@ -3,15 +3,17 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * We have G girls and B boys.
- * A team consists of exactly 1 girl and 1 boy.
- * To form the maximum number of teams, we pair each girl with one boy.
- * Since B > G, we can form exactly G teams.
- * The number of boys used is G.
- * The number of boys remaining is B - G.
+ * We have G girls and B boys, where B > G.
+ * Each team requires exactly 1 girl and 1 boy.
+ * The maximum number of teams that can be formed is G (since there are only G girls).
+ * Therefore, G boys will be paired with G girls.
+ * The number of boys left over is the total number of boys minus the number of boys paired.
+ * Remaining boys = B - G.
  * 
- * Time Complexity: O(T) where T is the number of test cases.
- * Space Complexity: O(1) as we only use a few variables.
+ * Constraints:
+ * 1 <= T <= 100
+ * 1 <= G < B <= 100
+ * Since the values are small, standard 'int' is sufficient.
  */
 
 int main() {
@@ -26,11 +28,11 @@ int main() {
         long long g, b;
         cin >> g >> b;
         
-        // The number of boys who cannot participate is the total boys minus the number of girls
-        // (since each girl can form one team with one boy).
-        long long remaining_boys = b - g;
+        // The number of boys who cannot participate is the difference between
+        // the total number of boys and the number of girls (who limit the teams).
+        long long result = b - g;
         
-        cout << remaining_boys << "\n";
+        cout << result << "\n";
     }
     
     return 0;

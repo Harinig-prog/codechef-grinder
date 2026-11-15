@@ -11,8 +11,8 @@ using namespace std;
  * Constraints:
  * 1 <= X, Y <= 1000
  * Y is even.
- * Time complexity: O(1) per test case.
- * Space complexity: O(1).
+ * Since X and Y are small, standard integer types are sufficient, but we use long long 
+ * to adhere to best practices for competitive programming.
  */
 
 int main() {
@@ -20,15 +20,18 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    // The problem description does not explicitly state multiple test cases,
-    // but standard competitive programming practice often includes them.
-    // Based on the provided format, we read X and Y once.
-    int X, Y;
+    // The problem description implies a single test case per run based on the input format,
+    // but we structure it to handle input as specified.
+    long long X, Y;
     if (cin >> X >> Y) {
-        // Calculate time spent:
-        // First Y minutes at 2x speed = Y/2
-        // Remaining X-Y minutes at 1x speed = X-Y
-        int total_time = (Y / 2) + (X - Y);
+        // Calculate time spent on the first Y minutes at 2x speed
+        long long time_for_first_part = Y / 2;
+        
+        // Calculate time spent on the remaining part at 1x speed
+        long long time_for_second_part = X - Y;
+        
+        // Total time
+        long long total_time = time_for_first_part + time_for_second_part;
         
         cout << total_time << "\n";
     }

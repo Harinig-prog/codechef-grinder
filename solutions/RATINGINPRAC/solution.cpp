@@ -4,8 +4,7 @@ using namespace std;
 /**
  * Problem: Difficulty Rating Order
  * The task is to check if an array of N integers is sorted in non-decreasing order.
- * A sequence is non-decreasing if for every index i from 0 to N-2, 
- * array[i] <= array[i+1].
+ * A sequence is non-decreasing if for all i, A[i] <= A[i+1].
  * 
  * Time Complexity: O(N) per test case.
  * Space Complexity: O(N) to store the array, or O(1) if processed on the fly.

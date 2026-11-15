@@ -13,35 +13,33 @@ using namespace std;
  * 
  * Case 2: M < N
  * Chef needs (N - M) more left shoes and N right shoes.
- * Total to buy = (N - M) + N = 2*N - M.
+ * Total to buy = (N - M) + N = 2N - M.
  * 
  * Both cases can be generalized:
  * If M >= N, result is N.
- * If M < N, result is 2*N - M.
+ * If M < N, result is 2N - M.
  */
 
+void solve() {
+    long long N, M;
+    if (!(cin >> N >> M)) return;
+    
+    if (M >= N) {
+        cout << N << "\n";
+    } else {
+        cout << (2 * N - M) << "\n";
+    }
+}
+
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-
+    
     int t;
     if (!(cin >> t)) return 0;
     while (t--) {
-        long long n, m;
-        cin >> n >> m;
-
-        long long ans;
-        if (m >= n) {
-            // Chef has enough left shoes, just need N right shoes
-            ans = n;
-        } else {
-            // Chef needs (n - m) left shoes and n right shoes
-            ans = (n - m) + n;
-        }
-
-        cout << ans << "\n";
+        solve();
     }
-
     return 0;
 }

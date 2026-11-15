@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem: CHRISTGREET
- * The task is to check if the given day X in December is 25.
+ * The problem asks us to check if a given day X in December is the 25th.
  * Constraints: 1 <= X <= 31.
  * Time Complexity: O(1) per test case.
  * Space Complexity: O(1).

@@ -3,15 +3,20 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * An investment is "good" if X >= 2 * Y.
- * Constraints: 1 <= T <= 400, 1 <= X, Y <= 20.
+ * The investment is "good" if the interest rate X is at least twice the inflation rate Y.
+ * Mathematically, this is: X >= 2 * Y.
+ * 
+ * Constraints:
+ * 1 <= T <= 400
+ * 1 <= X, Y <= 20
+ * 
  * Since X and Y are small, standard integer types are sufficient.
- * Time Complexity: O(T) per test suite.
+ * Time Complexity: O(T) per test case, which is well within the 1s limit.
  * Space Complexity: O(1).
  */
 
 int main() {
-    // Fast I/O setup
+    // Optimize standard I/O operations
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -22,7 +27,7 @@ int main() {
         int x, y;
         cin >> x >> y;
 
-        // Check the condition: interest rate (X) is at least twice the inflation rate (Y)
+        // Check if interest rate X is at least twice the inflation rate Y
         if (x >= 2 * y) {
             cout << "YES" << "\n";
         } else {

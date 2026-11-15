@@ -3,18 +3,15 @@ using namespace std;
 
 /**
  * Problem Analysis:
- * The problem asks us to map pairs of binary digits to specific characters:
- * 00 -> A
- * 01 -> T
- * 10 -> C
- * 11 -> G
+ * We are given a binary string of even length N.
+ * We need to process the string in chunks of 2 characters.
+ * Mapping:
+ * "00" -> 'A'
+ * "01" -> 'T'
+ * "10" -> 'C'
+ * "11" -> 'G'
  * 
- * Since N is even and we process the string from left to right in pairs,
- * we can iterate through the string with a step of 2.
- * 
- * Time Complexity: O(N) per test case, where N is the length of the string.
- * Total time complexity: O(Sum of N), which is at most 10^3.
- * Space Complexity: O(1) auxiliary space (excluding the input/output storage).
+ * Since N <= 1000 and sum of N <= 1000, a simple linear scan O(N) is optimal.
  */
 
 void solve() {

@@ -7,22 +7,20 @@ using namespace std;
  * To minimize the number of moves, we should use the largest possible move (Y)
  * as many times as possible.
  * 
- * Let 'q' be the number of times we use the move of size Y.
- * q = X / Y (integer division)
- * The remaining distance is r = X % Y.
- * Since we can always take steps of size 1, we can cover the remaining 'r'
- * distance in 'r' moves of size 1.
+ * Let q = X / Y be the number of times we use the move of size Y.
+ * Let r = X % Y be the remaining steps to reach X.
+ * Since we can always take a move of size 1, we can cover the remaining r steps
+ * in exactly r moves of size 1.
  * 
+ * Total moves = (number of moves of size Y) + (number of moves of size 1)
  * Total moves = q + r
- * Total moves = (X / Y) + (X % Y)
  * 
- * Complexity:
- * Time: O(1) per test case, O(T) total.
- * Space: O(1).
+ * Time Complexity: O(1) per test case.
+ * Space Complexity: O(1).
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O setup
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -32,14 +30,15 @@ int main() {
         int x, y;
         cin >> x >> y;
 
-        // Calculate number of moves using Y-sized jumps
+        // Calculate the number of moves of size Y
         int moves_y = x / y;
-        // Calculate remaining distance to be covered by 1-sized jumps
-        int moves_one = x % y;
-
+        
+        // Calculate the remaining distance to be covered by moves of size 1
+        int moves_1 = x % y;
+        
         // Total minimum moves
-        int total_moves = moves_y + moves_one;
-
+        int total_moves = moves_y + moves_1;
+        
         cout << total_moves << "\n";
     }
 

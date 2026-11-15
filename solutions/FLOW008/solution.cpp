@@ -3,7 +3,7 @@ using namespace std;
 
 /**
  * Problem: FLOW008 - Helping Chef
- * Logic: If N < 10, print "Thanks for helping Chef!", else print "-1".
+ * Logic: If N < 10, print "Thanks for helping Chef!", otherwise print "-1".
  * Constraints: -20 <= N <= 20. 
  * Time Complexity: O(T) where T is the number of test cases.
  * Space Complexity: O(1).

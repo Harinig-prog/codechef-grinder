@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 155,
+  "total_solved": 177,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -157,7 +157,29 @@
     "CHEAPFOOD",
     "TYRE",
     "CANDYDIST",
-    "ACTEMP"
+    "ACTEMP",
+    "FLOW008",
+    "FINE",
+    "MINCOINSREQ",
+    "RECENTCONT",
+    "BROKENPHONE",
+    "COUGAME",
+    "BOBBANK",
+    "MOVIE2X",
+    "CHRISTGREET",
+    "XJUMP",
+    "MINCARS",
+    "MONOPOLY2",
+    "TFPAPER",
+    "COMPLEXITY",
+    "NIBBLE",
+    "DNASTORAGE",
+    "TCKTFINE",
+    "FCTRL",
+    "FINDSHOES",
+    "RATINGINPRAC",
+    "INVESTMENT",
+    "LASTLEVELS"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -1559,6 +1581,204 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-15 12:41:28"
+    },
+    {
+      "code": "FLOW008",
+      "name": "Helping Chef",
+      "status": "Accepted",
+      "solution_id": "1393128285",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:11:54"
+    },
+    {
+      "code": "FINE",
+      "name": "Overspeeding Fine",
+      "status": "Accepted",
+      "solution_id": "1393128916",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:12:36"
+    },
+    {
+      "code": "MINCOINSREQ",
+      "name": "Minimum Coins",
+      "status": "Accepted",
+      "solution_id": "1393129590",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:13:14"
+    },
+    {
+      "code": "RECENTCONT",
+      "name": "Recent contest problems",
+      "status": "Accepted",
+      "solution_id": "1393130145",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:13:50"
+    },
+    {
+      "code": "BROKENPHONE",
+      "name": "Broken Phone",
+      "status": "Accepted",
+      "solution_id": "1393130915",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:14:34"
+    },
+    {
+      "code": "COUGAME",
+      "name": "Couple Game",
+      "status": "Accepted",
+      "solution_id": "1393131761",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:15:26"
+    },
+    {
+      "code": "BOBBANK",
+      "name": "Bob at the Bank",
+      "status": "Accepted",
+      "solution_id": "1393132440",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:16:10"
+    },
+    {
+      "code": "MOVIE2X",
+      "name": "Watching Movies at 2x",
+      "status": "Accepted",
+      "solution_id": "1393133073",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:16:49"
+    },
+    {
+      "code": "CHRISTGREET",
+      "name": "Christmas Greetings",
+      "status": "Accepted",
+      "solution_id": "1393133822",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:17:41"
+    },
+    {
+      "code": "XJUMP",
+      "name": "X Jumps",
+      "status": "Accepted",
+      "solution_id": "1393134581",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:18:32"
+    },
+    {
+      "code": "MINCARS",
+      "name": "Minimum Cars required",
+      "status": "Accepted",
+      "solution_id": "1393135299",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:19:20"
+    },
+    {
+      "code": "MONOPOLY2",
+      "name": "Monopoly",
+      "status": "Accepted",
+      "solution_id": "1393135968",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:20:00"
+    },
+    {
+      "code": "TFPAPER",
+      "name": "True and False Paper",
+      "status": "Accepted",
+      "solution_id": "1393136658",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:20:46"
+    },
+    {
+      "code": "COMPLEXITY",
+      "name": "Time Complexity",
+      "status": "Accepted",
+      "solution_id": "1393137288",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:21:24"
+    },
+    {
+      "code": "NIBBLE",
+      "name": "Good Program",
+      "status": "Accepted",
+      "solution_id": "1393137892",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:22:03"
+    },
+    {
+      "code": "DNASTORAGE",
+      "name": "DNA Storage",
+      "status": "Accepted",
+      "solution_id": "1393138830",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:22:59"
+    },
+    {
+      "code": "TCKTFINE",
+      "name": "Ticket Fine",
+      "status": "Accepted",
+      "solution_id": "1393139433",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:24:33"
+    },
+    {
+      "code": "FCTRL",
+      "name": "Factorial",
+      "status": "Accepted",
+      "solution_id": "1393141135",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:25:22"
+    },
+    {
+      "code": "FINDSHOES",
+      "name": "Finding Shoes",
+      "status": "Accepted",
+      "solution_id": "1393141737",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:26:02"
+    },
+    {
+      "code": "RATINGINPRAC",
+      "name": "Difficulty Rating Order",
+      "status": "Accepted",
+      "solution_id": "1393142514",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:26:44"
+    },
+    {
+      "code": "INVESTMENT",
+      "name": "Good Investment or Not",
+      "status": "Accepted",
+      "solution_id": "1393143284",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:27:33"
+    },
+    {
+      "code": "LASTLEVELS",
+      "name": "The Last Levels",
+      "status": "Accepted",
+      "solution_id": "1393143887",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-15 16:28:09"
     }
   ]
 }
