@@ -12,14 +12,16 @@ using namespace std;
  * 4 mushrooms: HUGE
  * 5 mushrooms: SMALL
  * ...
- * The pattern repeats every 3 mushrooms:
- * X % 3 == 0 -> NORMAL
- * X % 3 == 1 -> HUGE
- * X % 3 == 2 -> SMALL
+ * The cycle repeats every 3 mushrooms: (NORMAL -> HUGE -> SMALL -> NORMAL).
+ * 
+ * We can determine the state by calculating X % 3:
+ * If X % 3 == 0: NORMAL
+ * If X % 3 == 1: HUGE
+ * If X % 3 == 2: SMALL
  */
 
 int main() {
-    // Optimize I/O operations
+    // Fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 

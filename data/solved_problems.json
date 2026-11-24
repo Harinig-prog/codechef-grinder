@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "account": "tiny_atom_79",
-  "total_solved": 223,
+  "total_solved": 224,
   "solved_codes": [
     "START01",
     "FLOW001",
@@ -225,7 +225,8 @@
     "MAXDIFFMIN",
     "ENSPACE",
     "BUILDINGRACE",
-    "CS2023_GIFT"
+    "CS2023_GIFT",
+    "TRANSFORM"
   ],
   "failed_codes": [
     "SEARCHINARR",
@@ -2239,6 +2240,15 @@
       "attempts": 1,
       "account": "tiny_atom_79",
       "time": "2026-11-15 22:27:23"
+    },
+    {
+      "code": "TRANSFORM",
+      "name": "Mario and Transformation",
+      "status": "Accepted",
+      "solution_id": "1399545502",
+      "attempts": 1,
+      "account": "tiny_atom_79",
+      "time": "2026-11-24 14:37:40"
     }
   ]
 }
