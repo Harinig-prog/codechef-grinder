@@ -1,3 +1,5 @@
+
+
 # 👨‍🍳 CodeChef Practice Archive Auto-Grinder (500+ Solved Scaler)
 
 An autonomous, serverless bot designed to grind through the CodeChef Practice Archive, solving 5 to 10 problems daily via **GitHub Actions** to push your **"Problems Solved"** counter to 500+ and beyond!
